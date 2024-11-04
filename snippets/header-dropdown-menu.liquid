@@ -122,10 +122,17 @@
             {% endif %}
           >
             {%- assign : curr_image = "image_for_menu_item_" | append: forloop.index -%}
-            }
             {%- if forloop.index == 1 -%}
-              {{ section.settings.image_for_menu_item_1 }}
               {{ section.settings.image_for_menu_item_1 | image_url: width: 120 | image_tag }}
+            {%- endif -%}
+            {%- if forloop.index == 2 -%}
+              {{ section.settings.image_for_menu_item_2 | image_url: width: 120 | image_tag }}
+            {%- endif -%}
+            {%- if forloop.index == 3 -%}
+              {{ section.settings.image_for_menu_item_3 | image_url: width: 120 | image_tag }}
+            {%- endif -%}
+            {%- if forloop.index == 4 -%}
+              {{ section.settings.image_for_menu_item_4 | image_url: width: 120 | image_tag }}
             {%- endif -%}
             <span
               {%- if link.current %}
