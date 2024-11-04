@@ -1143,14 +1143,14 @@
             "label": "Always, reduce logo size"
           }
         },
+        "enable_right_side_icons": {
+          "label": "Enable right side icons for search, user, cart and apps"
+        },
         "header__3": {
           "content": "Country/region selector"
         },
         "header__4": {
           "info": "To add a country/region, go to your [market settings.](/admin/settings/markets)"
-        },
-        "enable_right_side_icons": {
-          "label": "Enable right side icons for search, user, cart and apps"
         },
         "enable_country_selector": {
           "label": "Enable country/region selector"
