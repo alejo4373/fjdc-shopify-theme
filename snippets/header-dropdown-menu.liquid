@@ -5,6 +5,39 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
+<style>
+    #HeaderMenu-linea-del-tiempo {
+      position: relative;
+    }
+
+  {% comment %} #HeaderMenu-linea-del-tiempo::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+    } {% endcomment %}
+
+    #HeaderMenu-linea-del-tiempo::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 120px;
+      height: 120px;
+      background-image: url('/cdn/shop/files/puente.svg');
+      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+</style>
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -88,6 +121,14 @@
               aria-current="page"
             {% endif %}
           >
+            {%- assign : curr_image = "image_for_menu_item_" | append: forloop.index -%}
+            }
+            <div class="alejo {{ curr_image }}">
+              {{ curr_image }}
+              {% comment %} {{ section.settings[curr_image] | append: ' hi' }} {% endcomment %}
+              {{ section.settings.image_for_menu_item_1 | image_url | append: ' hi' }}
+            </div>
+            {{ section.settings.image_for_menu_item_1 | image_url: width: 120 | image_tag }}
             <span
               {%- if link.current %}
                 class="header__active-menu-item"
