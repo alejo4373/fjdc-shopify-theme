@@ -13,6 +13,13 @@
 
 
 <style>
+  {{ section.settings.menu_font | font_face }}
+  :root {
+  --header-font-family: {{ section.settings.menu_font.family }}, {{ section.settings.menu_font.fallback_families }};
+  --header-font-style: {{ section.settings.menu_font.style }};
+  --header-font-weight: {{ section.settings.menu_font.weight }};
+  }
+
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -65,10 +72,6 @@
     }
   }
 </style>
-
-{%- style -%}
-
-{%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
@@ -483,6 +486,12 @@
       "type": "number",
       "id": "image_for_menu_item_4_width",
       "label": "Width for Image for menu item 4"
+    },
+    {
+      "type": "font_picker",
+      "id": "menu_font",
+      "label": "Menu font",
+      "default": "inter_n6"
     },
     {
       "type": "link_list",
