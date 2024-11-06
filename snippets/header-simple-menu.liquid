@@ -1,11 +1,11 @@
 {% comment %}
-  Renders a standard dropdown style menu for the header.
+  Renders a simple menu for the header. No dropdowns, no drawers
 
   Usage:
-  {% render 'header-dropdown-menu' %}
+  {% render 'header-simple-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
+<nav class="header__simple-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>

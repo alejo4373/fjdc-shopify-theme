@@ -1126,6 +1126,9 @@
           },
           "options__3": {
             "label": "Drawer"
+          },
+          "options__4": {
+            "label": "Simple"
           }
         },
         "show_line_separator": {
