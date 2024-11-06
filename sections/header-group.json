@@ -26,7 +26,7 @@
         "image_for_menu_item_4": "shopify://shop_images/logo-omce-omce.svg",
         "image_for_menu_item_4_height": 95.7,
         "image_for_menu_item_4_width": 100.5,
-        "menu_font": "inter_n5",
+        "menu_font": "inter_n6",
         "menu": "menu-principal",
         "menu_type_desktop": "simple",
         "sticky_header_type": "on-scroll-up",
