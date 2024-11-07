@@ -44,8 +44,8 @@
         "show_text_below": false
       }
     },
-    "banner_with_center_image": {
-      "type": "banner-with-center-image",
+    "banner_center_image": {
+      "type": "banner-center-image",
       "blocks": {
         "image": {
           "type": "image",
