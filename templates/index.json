@@ -44,6 +44,34 @@
         "show_text_below": false
       }
     },
+    "image_banner_with_center_image": {
+      "type": "image-banner-with-center-image",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h0"
+          }
+        },
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -210,7 +238,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "image_banner_with_center_image",
     "rich_text",
     "featured_collection",
     "collage",
