@@ -239,6 +239,7 @@
   },
   "order": [
     "image_banner_with_center_image",
+    "image_banner",
     "rich_text",
     "featured_collection",
     "collage",
