@@ -49,10 +49,7 @@
       "blocks": {
         "image": {
           "type": "image",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
+          "settings": { }
         },
       },
       "block_order": [
