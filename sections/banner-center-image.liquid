@@ -1,4 +1,4 @@
-{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'banner-center-image.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
@@ -175,7 +175,18 @@
   "disabled_on": {
     "groups": ["header", "footer"]
   },
-  "settings": [],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Center image"
+    }
+  ],
   "blocks": [
     {
       "type": "image",
@@ -186,7 +197,7 @@
   ],
   "presets": [
     {
-      "name": "Image banner with center image 👍",
+      "name": "Banner with center image",
       "blocks": [
         {
           "type": "image"
