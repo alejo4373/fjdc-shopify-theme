@@ -2339,6 +2339,12 @@ input[type='checkbox'] {
   z-index: initial;
 }
 
+/* Make manu to overlay main content */
+#MainContent {
+  position: relative;
+  top: -196px /* The height of the .header-wrapper */
+}
+
 /* Main Header Layout */
 .header-wrapper {
   display: block;
