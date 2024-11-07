@@ -14,15 +14,14 @@
       "blocks": {
         "image_E78kPe": {
           "type": "image",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "image_E78kPe"
       ],
       "settings": {
-        "image": "shopify://shop_images/plataneras-principal.png",
+        "image": "shopify://shop_images/plataneras-principal-2.png",
         "image_2": "shopify://shop_images/logo-for-banner.svg"
       }
     },
