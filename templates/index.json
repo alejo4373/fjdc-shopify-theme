@@ -44,30 +44,16 @@
         "show_text_below": false
       }
     },
-    "image_banner_with_center_image": {
-      "type": "image-banner-with-center-image",
+    "banner_with_center_image": {
+      "type": "banner-with-center-image",
       "blocks": {
         "image": {
           "type": "image",
           "settings": { }
         },
       },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
+      "block_order": [ ],
+      "settings": { }
     },
     "rich_text": {
       "type": "rich-text",
