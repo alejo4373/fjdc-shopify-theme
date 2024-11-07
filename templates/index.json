@@ -44,16 +44,22 @@
         "show_text_below": false
       }
     },
-    "banner_center_image": {
+    "banner_center_image_L3zBzc": {
       "type": "banner-center-image",
       "blocks": {
-        "image": {
+        "image_E78kPe": {
           "type": "image",
-          "settings": { }
-        },
+          "settings": {
+          }
+        }
       },
-      "block_order": [ ],
-      "settings": { }
+      "block_order": [
+        "image_E78kPe"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/plataneras-principal.png",
+        "image_2": "shopify://shop_images/logo-for-banner.svg"
+      }
     },
     "rich_text": {
       "type": "rich-text",
@@ -221,8 +227,8 @@
     }
   },
   "order": [
-    "image_banner_with_center_image",
     "image_banner",
+    "banner_center_image_L3zBzc",
     "rich_text",
     "featured_collection",
     "collage",
