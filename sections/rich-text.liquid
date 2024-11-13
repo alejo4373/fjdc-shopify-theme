@@ -43,13 +43,26 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'text' -%}
+              {% liquid
+                assign text_style = ''
+
+                if settings.animations_reveal_on_scroll
+                  assign text_style = text_style | append: ' --animation-order: ' | append: forloop.index
+                endif
+                if block.settings.text_font == 'iowan-old-style'
+                  assign text_style = text_style | append: ' font-family: "Iowan Old Style", serif;'
+                endif
+                if block.settings.text_size != blank
+                  assign text_style = text_style | append: ' font-size: ' | append: block.settings.text_size | append: 'rem;'
+                endif
+              %}
               <div
                 class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
-                  style="--animation-order: {{ forloop.index }};"
                 {% endif %}
+                style="{{ textStyle }}"
               >
                 {{ block.settings.text }}
               </div>
@@ -282,6 +295,29 @@
           "id": "text",
           "default": "t:sections.rich-text.blocks.text.settings.text.default",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_font",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "iowan-old-style",
+              "label": "Iowan Old Style"
+            }
+          ],
+          "default": "default",
+          "label": "Text font"
+        },
+        {
+          "type": "number",
+          "id": "text_size",
+          "label": "Text size",
+          "default": 1,
+          "info": "Specify the text size in REM units"
         }
       ]
     },
