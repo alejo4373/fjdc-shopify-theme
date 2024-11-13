@@ -1465,5 +1465,15 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Background",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background image",
+      }
+    ]
   }
 ]
