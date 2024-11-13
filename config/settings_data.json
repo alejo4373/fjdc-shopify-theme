@@ -121,6 +121,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "background_image": "shopify://shop_images/textura-fondo-1-vertical_e1c5fc6d-994a-491b-ae21-3b63fe69ea14.svg",
+    "background_color": "#d9dada",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
