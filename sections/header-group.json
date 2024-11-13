@@ -32,7 +32,7 @@
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
         "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
-        "menu_color_scheme": "",
+        "menu_color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
         "enable_right_side_icons": false,
         "enable_country_selector": true,
         "enable_language_selector": true,
