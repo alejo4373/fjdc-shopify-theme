@@ -134,9 +134,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -201,6 +199,17 @@
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-f9ad4c5e-bc32-4204-8b6b-357c7a241991": {
+        "settings": {
+          "background": "#d9dada",
+          "background_gradient": "",
+          "text": "#1c487b",
+          "button": "#c25a45",
+          "button_label": "#d9dada",
+          "secondary_button_label": "#c25a45",
           "shadow": "#121212"
         }
       }
