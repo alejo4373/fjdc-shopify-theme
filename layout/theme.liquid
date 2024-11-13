@@ -253,6 +253,10 @@
           font-size: 1.6rem;
         }
       }
+
+      #MainContent {
+        background-image: url("{{settings.background_image | image_url: width: settings.background_image.width}}");
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
