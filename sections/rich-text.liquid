@@ -47,10 +47,10 @@
                 assign text_style = ''
 
                 if settings.animations_reveal_on_scroll
-                  assign text_style = text_style | append: ' --animation-order: ' | append: forloop.index
+                  assign text_style = text_style | append: ' --animation-order: ' | append: forloop.index | append: '; '
                 endif
                 if block.settings.text_font == 'iowan-old-style'
-                  assign text_style = text_style | append: ' font-family: "Iowan Old Style", serif;'
+                  assign text_style = text_style | append: 'font-family: Iowan Old Style, serif; '
                 endif
                 if block.settings.text_size != blank
                   assign text_style = text_style | append: ' font-size: ' | append: block.settings.text_size | append: 'rem;'
@@ -62,7 +62,7 @@
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                 {% endif %}
-                style="{{ textStyle }}"
+                style="{{ text_style }}"
               >
                 {{ block.settings.text }}
               </div>
