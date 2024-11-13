@@ -124,6 +124,16 @@
                 | image_tag
               }}
             {%- endif -%}
+            {% comment %} Update once icon for item 5 is added {% endcomment %}
+            {%- if forloop.index == 5 -%}
+              {{
+                section.settings.image_for_menu_item_4
+                | image_url:
+                  width: section.settings.image_for_menu_item_4_width,
+                  height: section.settings.image_for_menu_item_4_height
+                | image_tag
+              }}
+            {%- endif -%}
             <span
               {%- if link.current %}
                 class="header__active-menu-item"
