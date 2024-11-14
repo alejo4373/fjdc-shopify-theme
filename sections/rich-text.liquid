@@ -53,7 +53,10 @@
                   assign text_style = text_style | append: 'font-family: Iowan Old Style, serif; '
                 endif
                 if block.settings.text_size != blank
-                  assign text_style = text_style | append: ' font-size: ' | append: block.settings.text_size | append: 'rem;'
+                  assign text_style = text_style | append: 'font-size: ' | append: block.settings.text_size | append: 'rem; '
+                endif
+                if block.settings.text_lineheight != blank
+                  assign text_style = text_style | append: 'line-height: ' | append: block.settings.text_lineheight | append: ';'
                 endif
               %}
               <div
@@ -318,6 +321,12 @@
           "label": "Text size",
           "default": 1,
           "info": "Specify the text size in REM units"
+        },
+        {
+          "type": "number",
+          "id": "text_lineheight",
+          "label": "Line-height",
+          "default": 1
         }
       ]
     },
