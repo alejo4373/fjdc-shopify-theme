@@ -33,7 +33,8 @@
           "settings": {
             "text": "<p>Conectados con nuestro territorio ancestral, rodeado de montañas y petroglifos que evocan la vida, y una cultura campesina que florece en armonía entre cafetales y jardines, hemos dado vida a la <strong>Ruta Familias Jardineras del Cielo en Támesis, Suroeste de Antioquia.</strong></p><p>Como <strong>Organización Multisectorial de Campesinos Emprendedores (OMCE)</strong>, en alianza con <strong>Biophilia y el Grupo de Manejo Eficiente de la Energía (GIMEL) de la Universidad de Antioquia</strong>, desarrollamos un producto innovador que combina el aviturismo comunitario con la caficultura regenerativa, apoyados por el Ministerio de Ciencias de Colombia.</p>",
             "text_font": "default",
-            "text_size": 2.4
+            "text_size": 2.4,
+            "text_lineheight": 1.4
           }
         }
       },
