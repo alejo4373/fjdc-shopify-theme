@@ -186,9 +186,9 @@
         "settings": {
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
-          "text": "#334fb4",
+          "text": "#074a7d",
           "button": "#ffffff",
-          "button_label": "#334fb4",
+          "button_label": "#074a7d",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
