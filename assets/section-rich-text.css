@@ -5,7 +5,8 @@
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
-  width: calc(100% - 4rem / var(--font-body-scale));
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .rich-text__blocks {
@@ -68,4 +69,17 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
+}
+
+.rich-text__text {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.rich-text__image.right {
+  padding-right: 2rem;
+}
+
+.rich-text__image.left {
+  padding-left: 2rem;
 }

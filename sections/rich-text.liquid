@@ -58,12 +58,6 @@
                 if block.settings.text_lineheight != blank
                   assign text_style = text_style | append: 'line-height: ' | append: block.settings.text_lineheight | append: '; '
                 endif
-                if block.settings.padding_left != blank
-                  assign text_style = text_style | append: 'padding-left: ' | append: block.settings.padding_left | append: 'px; '
-                endif
-                if block.settings.padding_right != blank
-                  assign text_style = text_style | append: 'padding-right: ' | append: block.settings.padding_right | append: 'px; '
-                endif
               %}
               <div
                 class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -341,26 +335,6 @@
           "id": "text_lineheight",
           "label": "Line-height",
           "default": 1
-        },
-        {
-          "type": "range",
-          "id": "padding_left",
-          "min": 0,
-          "max": 100,
-          "step": 4,
-          "unit": "px",
-          "label": "Padding left",
-          "default": 20
-        },
-        {
-          "type": "range",
-          "id": "padding_right",
-          "min": 0,
-          "max": 100,
-          "step": 4,
-          "unit": "px",
-          "label": "Padding right",
-          "default": 20
         }
       ]
     },
