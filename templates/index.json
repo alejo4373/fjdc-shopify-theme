@@ -89,7 +89,7 @@
           "settings": {
             "text": "<p>Hemos tejido 3 rutas con hilos de colores, <strong>recorriendo senderos<br/>naturales, caminos de herradura, cascadas y ríos, </strong>para recibir a los viajeros que aman las aves, el café, las flores y la naturaleza.<br/></p>",
             "text_font": "default",
-            "text_size": 2.4,
+            "text_size": 4,
             "text_lineheight": 1.4
           }
         }
