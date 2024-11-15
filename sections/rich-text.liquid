@@ -46,9 +46,6 @@
               {% liquid
                 assign text_style = ''
 
-                if settings.animations_reveal_on_scroll
-                  assign text_style = text_style | append: ' --animation-order: ' | append: forloop.index | append: '; '
-                endif
                 if block.settings.text_font == 'iowan-old-style'
                   assign text_style = text_style | append: 'font-family: Iowan Old Style, serif; '
                 endif
