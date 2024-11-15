@@ -128,7 +128,7 @@
           "settings": {
             "button_image": "shopify://shop_images/petro-human.png",
             "button_image_width": 100,
-            "button_label": "Ruta   Nº 2",
+            "button_label": "Ruta \n  Nº 2",
             "button_link": "/ruta-1"
           }
         },
@@ -137,7 +137,7 @@
           "settings": {
             "button_image": "shopify://shop_images/petro-espiral.png",
             "button_image_width": 100,
-            "button_label": "Ruta   Nº 3",
+            "button_label": "Ruta \n  Nº 3",
             "button_link": "/ruta-1"
           }
         }
