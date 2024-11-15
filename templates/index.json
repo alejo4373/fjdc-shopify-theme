@@ -122,13 +122,35 @@
             "button_label": "Ruta \n  Nº 1",
             "button_link": "/ruta-1"
           }
+        },
+        "button_Ta6fez": {
+          "type": "button",
+          "settings": {
+            "button_image": "shopify://shop_images/petro-human.png",
+            "button_image_width": 100,
+            "button_label": "Ruta   Nº 2",
+            "button_link": "/ruta-1"
+          }
+        },
+        "button_6wR9wF": {
+          "type": "button",
+          "settings": {
+            "button_image": "shopify://shop_images/petro-espiral.png",
+            "button_image_width": 100,
+            "button_label": "Ruta   Nº 3",
+            "button_link": "/ruta-1"
+          }
         }
       },
       "block_order": [
-        "button_rHEMDF"
+        "button_rHEMDF",
+        "button_Ta6fez",
+        "button_6wR9wF"
       ],
       "custom_css": [
-        ".inline-button__button.block-n-1 {color: #d05747;}"
+        ".inline-button__button.block-n-1 {color: #d05747;}",
+        ".inline-button__button.block-n-2 {color: #556445;}",
+        ".inline-button__button.block-n-3 {color: #264570;}"
       ],
       "settings": {
         "color_scheme": "",
