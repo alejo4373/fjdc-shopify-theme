@@ -74,3 +74,18 @@
 .rich-text__text {
   letter-spacing: 0.9px;
 }
+
+.rich-text__image {
+  display: flex;
+}
+
+.rich-text__image--center {
+  justify-content: center;
+}
+.rich-text__image--left {
+  justify-content: left;
+}
+
+.rich-text__image--right {
+  justify-content: right;
+}
