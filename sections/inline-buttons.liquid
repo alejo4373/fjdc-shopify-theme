@@ -32,7 +32,8 @@
     padding: 0 3rem;
     cursor: pointer;
     font: inherit;
-    font-size: 1.5rem;
+    font-size: 4rem;
+    font-weight: 800;
     text-decoration: none;
     transition: box-shadow var(--duration-short) ease;
     -webkit-appearance: none;
@@ -44,15 +45,15 @@
 
   .button__label {
     margin-left: 2rem;
-    font-size: 4rem;
+    white-space: break-spaces;
   }
 {%- endstyle -%}
 
 {% liquid
   assign style = ''
 
-  if section.settings.buttons_font == 'iowan-old-style'
-    assign style = style | append: 'font-family: Iowan Old Style, serif; '
+  if section.settings.buttons_font == 'iowan-old-style-black'
+    assign style = style | append: 'font-family: Iowan Old Style Black, serif; '
   endif
 %}
 <div class="section-{{ section.id }}-padding" style="{{ style }}">
@@ -107,8 +108,8 @@
           "label": "Default"
         },
         {
-          "value": "iowan-old-style",
-          "label": "Iowan Old Style"
+          "value": "iowan-old-style-black",
+          "label": "Iowan Old Style-black"
         }
       ],
       "default": "default",

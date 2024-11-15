@@ -59,6 +59,11 @@
         src: url("{{ 'iowan-old-style.woff' | asset_url }}") format('woff');
       }
 
+      @font-face {
+        font-family: 'Iowan Old Style Black';
+        src: url("{{ 'iowan-old-style-black.woff' | asset_url }}") format('woff');
+      }
+
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
         {% if forloop.index == 1 -%}

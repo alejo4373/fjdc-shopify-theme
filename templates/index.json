@@ -119,7 +119,7 @@
           "settings": {
             "button_image": "shopify://shop_images/petro-mono.png",
             "button_image_width": 100,
-            "button_label": "RutaNº 1",
+            "button_label": "Ruta \n  Nº 1",
             "button_link": "/ruta-1"
           }
         }
@@ -129,7 +129,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "buttons_font": "iowan-old-style",
+        "buttons_font": "iowan-old-style-black",
         "padding_top": 40,
         "padding_bottom": 52
       }
