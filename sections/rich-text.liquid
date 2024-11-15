@@ -104,7 +104,7 @@
                 {%- endif -%}
               </div>
             {%- when 'image' -%}
-              <div class="rich-text__image {{ block.settings.image_position }}">
+              <div class="rich-text__image {{ block.settings.image_position }} block-n-{{ forloop.index }}">
                 {{
                   block.settings.image
                   | image_url: width: block.settings.image_width
