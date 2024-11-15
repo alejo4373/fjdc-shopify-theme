@@ -32,7 +32,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ave-2.svg",
-            "image_position": "right"
+            "image_position": "right",
+            "image_width": 100
           }
         },
         "text": {
@@ -48,7 +49,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ave-1.svg",
-            "image_position": "right"
+            "image_position": "left",
+            "image_width": 100
           }
         }
       },
