@@ -98,6 +98,9 @@
         "image_fXQkFb",
         "text_VQ9G3f"
       ],
+      "custom_css": [
+        ".rich-text__image.block-n-1 .rich-text__image-image {width: 200%; height: auto; max-width: 1770px;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
