@@ -1,7 +1,14 @@
 {%- style -%}
+  .section-{{ section.id }} {
+    max-width: 1440px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
     padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+
   }
 
   @media screen and (min-width: 750px) {
@@ -9,6 +16,35 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+  }
+
+  .inline-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .inline-button__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0 3rem;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    max-width: 330px;
+    line-height: 1;
+  }
+
+  .button__label {
+    margin-left: 2rem;
+    font-size: 4rem;
   }
 {%- endstyle -%}
 
@@ -31,7 +67,7 @@
               {% else %}
                 href="{{ block.settings.button_link }}"
               {% endif %}
-              class="button block-n-{{ forloop.index }}"
+              class="inline-button__button block-n-{{ forloop.index }}"
             >
               {%- if block.settings.button_image != blank -%}
                 {{
@@ -40,7 +76,9 @@
                   | image_tag: class: 'button__image'
                 }}
               {% endif %}
-              {{- block.settings.button_label | escape -}}
+              <span class="button__label">
+                {{- block.settings.button_label | escape -}}
+              </span>
             </a>
           {%- endif -%}
       {%- endcase -%}
