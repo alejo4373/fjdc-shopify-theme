@@ -113,8 +113,25 @@
     },
     "inline-buttons": {
       "type": "inline-buttons",
+      "blocks": {
+        "button_rHEMDF": {
+          "type": "button",
+          "settings": {
+            "button_image": "shopify://shop_images/petro-mono.png",
+            "button_image_width": 5,
+            "button_label": "Ruta Nro. 1",
+            "button_link": "/ruta-1"
+          }
+        }
+      },
+      "block_order": [
+        "button_rHEMDF"
+      ],
       "settings": {
-        
+        "color_scheme": "",
+        "buttons_font": "iowan-old-style",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "collage": {
