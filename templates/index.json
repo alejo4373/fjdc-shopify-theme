@@ -118,7 +118,7 @@
           "type": "button",
           "settings": {
             "button_image": "shopify://shop_images/petro-mono.png",
-            "button_image_width": 5,
+            "button_image_width": 100,
             "button_label": "Ruta Nro. 1",
             "button_link": "/ruta-1"
           }
