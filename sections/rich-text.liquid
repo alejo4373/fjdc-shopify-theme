@@ -103,6 +103,14 @@
                   </a>
                 {%- endif -%}
               </div>
+            {%- when 'image' -%}
+              <div class="rich-text__image {{ block.settings.image_position }}">
+                {{
+                  block.settings.image
+                  | image_url: width: block.settings.image_width
+                  | image_tag: alt: block.settings.image.alt, class: 'rich-text__image-image'
+                }}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -378,6 +386,12 @@
           ],
           "default": "center",
           "label": "Image position"
+        },
+        {
+          "type": "number",
+          "id": "image_width",
+          "label": "Image width",
+          "default": 100
         }
       ]
     },
