@@ -111,6 +111,12 @@
         "padding_bottom": 40
       }
     },
+    "inline-buttons": {
+      "type": "inline-buttons",
+      "settings": {
+        
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -222,6 +228,7 @@
     "banner_center_image_L3zBzc",
     "rich_text",
     "rich_text_hmqNmj",
+    "inline-buttons",
     "collage",
     "video",
     "multicolumn"
