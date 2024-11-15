@@ -28,6 +28,13 @@
     "rich_text": {
       "type": "rich-text",
       "blocks": {
+        "image_LngXWa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ave-2.svg",
+            "image_position": "right"
+          }
+        },
         "text": {
           "type": "text",
           "settings": {
@@ -43,19 +50,12 @@
             "image": "shopify://shop_images/ave-1.svg",
             "image_position": "right"
           }
-        },
-        "image_LngXWa": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ave-2.svg",
-            "image_position": "right"
-          }
         }
       },
       "block_order": [
+        "image_LngXWa",
         "text",
-        "image_tnt4V3",
-        "image_LngXWa"
+        "image_tnt4V3"
       ],
       "settings": {
         "desktop_content_position": "center",
