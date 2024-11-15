@@ -127,6 +127,9 @@
       "block_order": [
         "button_rHEMDF"
       ],
+      "custom_css": [
+        ".inline-button__button.block-n-1 {color: #d05747;}"
+      ],
       "settings": {
         "color_scheme": "",
         "buttons_font": "iowan-old-style-black",
