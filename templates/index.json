@@ -60,7 +60,7 @@
         "image_tnt4V3"
       ],
       "custom_css": [
-        ".rich-text__wrapper {padding: 0 4rem; }",
+        ".rich-text__wrapper {padding: 0 4rem;}",
         ".rich-text__image.block-n-1 {position: relative; top: 4rem; padding-right: 4rem;}",
         ".rich-text__image.block-n-3 {padding-left: 1.5rem;}"
       ],
@@ -73,32 +73,38 @@
         "padding_bottom": 44
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "rich_text_hmqNmj": {
+      "type": "rich-text",
+      "blocks": {
+        "image_fXQkFb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bosque-y-ave.png",
+            "image_position": "center",
+            "image_width": 1440
+          }
+        },
+        "text_VQ9G3f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hemos tejido 3 rutas con hilos de colores, <strong>recorriendo senderos<br/>naturales, caminos de herradura, cascadas y ríos, </strong>para recibir a los viajeros que aman las aves, el café, las flores y la naturaleza.<br/></p>",
+            "text_font": "default",
+            "text_size": 2.4,
+            "text_lineheight": 1.4
+          }
+        }
+      },
+      "block_order": [
+        "image_fXQkFb",
+        "text_VQ9G3f"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "collage": {
@@ -211,7 +217,7 @@
   "order": [
     "banner_center_image_L3zBzc",
     "rich_text",
-    "featured_collection",
+    "rich_text_hmqNmj",
     "collage",
     "video",
     "multicolumn"
