@@ -36,10 +36,18 @@
             "text_size": 2.4,
             "text_lineheight": 1.4
           }
+        },
+        "image_tnt4V3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ave-1.svg",
+            "image_position": "right"
+          }
         }
       },
       "block_order": [
-        "text"
+        "text",
+        "image_tnt4V3"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -47,7 +55,9 @@
         "color_scheme": "scheme-5",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 44
+        "padding_right": 20,
+        "padding_bottom": 44,
+        "padding_left": 20
       }
     },
     "featured_collection": {
