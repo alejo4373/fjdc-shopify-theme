@@ -60,7 +60,8 @@
         "image_tnt4V3"
       ],
       "custom_css": [
-        ".rich-text__image.block-n-1 {position: relative; top: 40px;}"
+        ".rich-text__image.block-n-1 {position: relative; top: 4rem; padding-right: 4rem;}",
+        ".rich-text__image.block-n-3 {padding-left: 1.5rem;}"
       ],
       "settings": {
         "desktop_content_position": "center",
