@@ -1,12 +1,22 @@
 {%- style -%}
-  .section-{{ section.id }}-padding {
+  .overflow-x-clip {
+    overflow-x: clip;
+  }
+
+  .section-{{ section.id }} {
+    position: relative; /* To create a stacking context */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
     padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+    max-width: 1440px;
+    margin: 0 auto;
 
   }
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
+    .section-{{ section.id }} {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
@@ -14,11 +24,23 @@
 
   .two-columns {
     display: grid;
+    position: relative;
     grid-template-areas: "left right";
+  }
+
+  .section-{{ section.id }}__background {
+    position: absolute;
+    background: url("{{ 'fondo-azul-2.svg' | asset_url }}");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 1763px;
+    height: 120%;
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }}-padding">
+<div class="section-{{ section.id }}">
+  <div class="section-{{ section.id }}__background" style="display: block"></div>
   <div class="two-columns">
     <div class="two-columns__left">
       {%- if section.settings.image != blank -%}
@@ -48,13 +70,18 @@
 {
   "name": "Two columns",
   "tag": "section",
-  "class": "section",
+  "class": "section overflow-x-clip",
   "settings": [
     {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Image"
     },
     {
       "type": "text",
