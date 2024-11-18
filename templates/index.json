@@ -171,13 +171,13 @@
         "color_scheme": "",
         "buttons_font": "iowan-old-style-black",
         "padding_top": 40,
-        "padding_bottom": 100 
+        "padding_bottom": 100
       }
     },
     "two-columns": {
       "type": "two-columns",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
         "title": "Nuestra Ruta Impulsa",
         "image": "shopify://shop_images/espiral-rojo.svg",
         "list_text": "<ul><li>La agricultura regenerativa</li><li>La apropiación social del conocimiento</li><li>La sostenibilidad de las  economías rurales y la gobernanza de nuestro territorio. \u0003</li><li>La conservación comunitaria de la biodiversidad.<br/></li></ul>",
@@ -219,7 +219,7 @@
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "card_styles": "product-card-wrapper",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
         "padding_top": 36,
         "padding_bottom": 36
       }
