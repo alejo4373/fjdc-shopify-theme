@@ -211,7 +211,9 @@
         "text_RzNNw6"
       ],
       "custom_css": [
-        ".rich-text__image.block-n-1 {position: relative; left: 10rem; top: 3rem;}"
+        ".rich-text__image.block-n-1 {position: relative; left: 10rem; top: 3rem;}",
+        ".rich-text__text {font-weight: bold; letter-spacing: 4px;}",
+        ".rich-text__text strong {font-family: \"Iowan Old Style Black\"; font-weight: 500;}"
       ],
       "settings": {
         "desktop_content_position": "center",
