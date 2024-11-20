@@ -272,8 +272,8 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
+        "slide_height": "medium",
+        "slider_visual": "numbers",
         "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "none",
