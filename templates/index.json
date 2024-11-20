@@ -193,15 +193,15 @@
           "settings": {
             "image": "shopify://shop_images/ave-3.svg",
             "image_position": "left",
-            "image_width": 200
+            "image_width": 180
           }
         },
         "text_RzNNw6": {
           "type": "text",
           "settings": {
-            "text": "<p>Creemos que <strong>el turismo</strong>, cuando se practica <strong>con conciencia</strong>, puede ser un motor de desarrollo para nuestras comunidades y <strong>contribuir a la conservación de nuestra biodiversidad.</strong></p>",
+            "text": "<p>Creemos que <strong>el turismo</strong>, cuando se practica <strong>con conciencia</strong>,<br/> puede ser un motor de desarrollo para nuestras comunidades y <strong>contribuir a la conservación de nuestra biodiversidad.</strong></p>",
             "text_font": "iowan-old-style",
-            "text_size": 7,
+            "text_size": 8,
             "text_lineheight": 1
           }
         }
