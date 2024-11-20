@@ -1,7 +1,7 @@
 {{ 'banner-center-image.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .banner {
+  #Banner-{{ section.id }} .banner {
     position: relative;
     z-index: 1; /* to create a stacking context */
     width: 100%;
