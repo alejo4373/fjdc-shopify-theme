@@ -201,7 +201,7 @@
           "settings": {
             "text": "<p>Creemos que <strong>el turismo</strong>, cuando se practica <strong>con conciencia</strong>,<br/> puede ser un motor de desarrollo para nuestras comunidades y <strong>contribuir a la conservación de nuestra biodiversidad.</strong></p>",
             "text_font": "iowan-old-style",
-            "text_size": 8,
+            "text_size": "",
             "text_lineheight": 1
           }
         }
@@ -211,9 +211,11 @@
         "text_RzNNw6"
       ],
       "custom_css": [
-        ".rich-text__image.block-n-1 {position: relative; left: 10rem; top: 3rem;}",
-        ".rich-text__text {font-weight: bold; letter-spacing: 4px;}",
-        ".rich-text__text strong {font-family: \"Iowan Old Style Black\"; font-weight: 500;}"
+        ".rich-text__wrapper {padding: 0 3.5rem;}",
+        ".rich-text__image.block-n-1 {padding-left: 10rem;}",
+        ".rich-text__text {font-weight: bold;}",
+        ".rich-text__text strong {font-family: \"Iowan Old Style Black\"; font-weight: 500;}",
+        "@media screen and (min-width: 1024px) { .rich-text__text { font-size: 8rem; letter-spacing: 4px; } }"
       ],
       "settings": {
         "desktop_content_position": "center",
