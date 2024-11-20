@@ -180,10 +180,43 @@
         "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
         "title": "Nuestra Ruta Impulsa",
         "image": "shopify://shop_images/espiral-rojo.svg",
-        "image_width": 400,
         "list_text": "<ul><li>La agricultura regenerativa.</li><li>La apropiación social del conocimiento.</li><li>La sostenibilidad de las  economías rurales y la gobernanza de nuestro territorio.</li><li>La conservación comunitaria de la biodiversidad.<br/></li></ul>",
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "rich_text_ig7Cjz": {
+      "type": "rich-text",
+      "blocks": {
+        "image_7CpCW4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ave-3.svg",
+            "image_position": "left",
+            "image_width": 100
+          }
+        },
+        "text_RzNNw6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Creemos que <strong>el turismo</strong>, cuando se practica <strong>con conciencia</strong>, puede ser un motor de desarrollo para nuestras comunidades y <strong>contribuir a la conservación de nuestra biodiversidad.</strong></p>",
+            "text_font": "iowan-old-style",
+            "text_size": 7,
+            "text_lineheight": 0.8
+          }
+        }
+      },
+      "block_order": [
+        "image_7CpCW4",
+        "text_RzNNw6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "collage": {
@@ -339,6 +372,7 @@
     "rich_text_hmqNmj",
     "inline-buttons",
     "two-columns",
+    "rich_text_ig7Cjz",
     "collage",
     "multicolumn",
     "slideshow_C9UTjj"
