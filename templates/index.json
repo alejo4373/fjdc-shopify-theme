@@ -229,9 +229,10 @@
     "slideshow_C9UTjj": {
       "type": "slideshow",
       "blocks": {
-        "slide_RcEzLq": {
+        "slide_eyr4Rx": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/plataneras-principal.png",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -242,13 +243,14 @@
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         },
         "slide_HgP3EB": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/lagarto.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -265,7 +267,7 @@
         }
       },
       "block_order": [
-        "slide_RcEzLq",
+        "slide_eyr4Rx",
         "slide_HgP3EB"
       ],
       "settings": {
