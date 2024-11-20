@@ -1,51 +1,141 @@
 {%- style -%}
-  .overflow-x-clip {
-    overflow-x: clip;
-  }
-
-  .section-{{ section.id }} {
-    position: relative; /* To create a stacking context */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
-    max-width: 1440px;
-    margin: 0 auto;
-
-  }
-
-  @media screen and (min-width: 750px) {
     .section-{{ section.id }} {
+      position: relative; /* To create a stacking context */
+      display: flex;
+      justify-content: center;
+      align-items: end;
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+      height: 1020px;
+      margin: 0 auto;
+      font-size: 0.5rem;
+      width: 100%;
+      background: url("{{ 'fondo-azul-2.svg' | asset_url }}");
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: center;
+    }
+
+    .two-columns {
+      display: block;
+      width: 100%;
+      max-width: 1440px;
+      padding: 0 4rem;
+    }
+
+    .two-columns__title {
+      font-family: 'Iowan Old Style', serif;
+      font-size: 10em;
+      font-weight: 600;
+      text-align: left;
+      line-height: 0.883;
+      max-width: 400px;
+      margin: 20px 0 40px 0;
+      letter-spacing: 7px;
+    }
+
+    .two-columns__image {
+      text-align: center;
+    }
+
+    .two-columns__list ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-size: 25px;
+      letter-spacing: -1.5px;
+      line-height: 1;
+    }
+
+    .two-columns li {
+        margin-bottom: 1em;
+    }
+
+    .two-columns li:after {
+      display: inline-block;
+      content: " ";
+      height: 12px;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .two-columns li:nth-child(4n + 1):after {
+      background-image: url("{{ 'linea-subraya-1.svg' | asset_url }}");
+    }
+    .two-columns li:nth-child(4n + 2):after {
+      background-image: url("{{ 'linea-subraya-2.svg' | asset_url }}");
+  }
+   .two-columns li:nth-child(4n + 3):after {
+    background-image: url("{{ 'linea-subraya-3.svg' | asset_url }}");
+  }
+   .two-columns li:nth-child(4n + 4):after {
+    background-image: url("{{ 'linea-subraya-4.svg' | asset_url }}");
+  }
+
+  @media screen and (min-width: 425px) {
+    .section-{{ section.id }} {
+      align-items: center;
     }
   }
 
-  .two-columns {
-    display: grid;
-    position: relative;
-    grid-template-areas: "left right";
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }} {
+      font-size: 0.9rem;
+      height: 1150px;
+    }
+
+    .two-columns__image {
+      text-align: left;
+      padding-left: 7em;
+    }
+
+    .two-columns__title {
+      font-size: 5.6rem;
+    }
+
+    .two-columns__list ul {
+      font-size: 35px
+    }
+
   }
 
-  .section-{{ section.id }}__background {
-    position: absolute;
-    background: url("{{ 'fondo-azul-2.svg' | asset_url }}");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 1770px;
-    height: 200%;
+  @media screen and (min-width: 1024px) {
+    .section-{{ section.id }} {
+      font-size: 0.8rem;
+      align-items: center;
+    }
+
+    .two-columns {
+      display: grid;
+      gap: 4rem;
+      position: relative;
+      grid-template-areas: "left right";
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .two-columns__title {
+      font-size: 9.6rem;
+    }
+
+    .two-columns__image img {
+      height: 400px;
+      width: 400px;
+      margin-bottom: 24px;
+    }
+
+    .two-columns__list ul {
+      font-size: 5.5em;
+      margin: 27px 0;
+    }
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }}">
-  <div class="section-{{ section.id }}__background" style="display: block"></div>
+<div class="section-{{ section.id }} gradient isolate color-{{ section.settings.color_scheme }}">
   <div class="two-columns">
     <div class="two-columns__left">
       {%- if section.settings.image != blank -%}
         <div class="two-columns__image">
-          {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {{ section.settings.image | image_url: width: 200 | image_tag }}
         </div>
       {%- endif -%}
       <div class="two-columns__text">
@@ -55,13 +145,13 @@
           </h2>
         {%- endif -%}
       </div>
-      <div class="two-columns__right">
-        {%- if section.settings.list_text != blank -%}
-          <div class="two-columns__list">
-            {{ section.settings.list_text }}
-          </div>
-        {%- endif -%}
-      </div>
+    </div>
+    <div class="two-columns__right">
+      {%- if section.settings.list_text != blank -%}
+        <div class="two-columns__list">
+          {{ section.settings.list_text }}
+        </div>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -70,7 +160,7 @@
 {
   "name": "Two columns",
   "tag": "section",
-  "class": "section overflow-x-clip",
+  "class": "section",
   "settings": [
     {
       "type": "color_scheme",
