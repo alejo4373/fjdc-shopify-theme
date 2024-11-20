@@ -201,7 +201,7 @@
           "settings": {
             "text": "<p>Creemos que <strong>el turismo</strong>, cuando se practica <strong>con conciencia</strong>,<br/> puede ser un motor de desarrollo para nuestras comunidades y <strong>contribuir a la conservación de nuestra biodiversidad.</strong></p>",
             "text_font": "iowan-old-style",
-            "text_size": "",
+            "text_size": -1,
             "text_lineheight": 1
           }
         }
