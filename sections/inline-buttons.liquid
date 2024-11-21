@@ -63,27 +63,25 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'button' -%}
-          {%- if block.settings.button_label != blank -%}
-            <a
-              {% if block.settings.button_link == blank %}
-                role="link" aria-disabled="true"
-              {% else %}
-                href="{{ block.settings.button_link }}"
-              {% endif %}
-              class="inline-button__button block-n-{{ forloop.index }}"
-            >
-              {%- if block.settings.button_image != blank -%}
-                {{
-                  block.settings.button_image
-                  | image_url: width: block.settings.button_image_width
-                  | image_tag: class: 'button__image'
-                }}
-              {% endif %}
-              <span class="button__label">
-                {{- block.settings.button_label | escape -}}
-              </span>
-            </a>
-          {%- endif -%}
+          <a
+            {% if block.settings.button_link == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ block.settings.button_link }}"
+            {% endif %}
+            class="inline-button__button block-n-{{ forloop.index }}"
+          >
+            {%- if block.settings.button_image != blank -%}
+              {{
+                block.settings.button_image
+                | image_url: width: block.settings.button_image_width
+                | image_tag: class: 'button__image'
+              }}
+            {% endif %}
+            <span class="button__label">
+              {{- block.settings.button_label | escape -}}
+            </span>
+          </a>
       {%- endcase -%}
     {%- endfor -%}
   </div>
