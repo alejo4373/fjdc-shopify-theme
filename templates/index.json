@@ -270,6 +270,9 @@
         "slide_eyr4Rx",
         "slide_HgP3EB"
       ],
+      "custom_css": [
+        ".banner__box {color: #D9DADA}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
