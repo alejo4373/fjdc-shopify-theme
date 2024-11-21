@@ -313,7 +313,7 @@
           "settings": {
             "button_image": "shopify://shop_images/ave-3.svg",
             "button_image_width": 100,
-            "button_label": "1",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -330,7 +330,7 @@
           "settings": {
             "button_image": "shopify://shop_images/ave-1-izquierda.svg",
             "button_image_width": 100,
-            "button_label": "2",
+            "button_label": "",
             "button_link": ""
           }
         }
