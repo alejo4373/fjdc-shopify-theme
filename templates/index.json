@@ -241,7 +241,7 @@
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": true,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
@@ -251,18 +251,18 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/lagarto.jpg",
-            "heading": "Image slide",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "Ven y unete",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
+            "box_align": "bottom-left",
             "show_text_box": true,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "left"
           }
         }
       },
