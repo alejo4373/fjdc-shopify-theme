@@ -342,11 +342,15 @@
         "button_tcDa4c",
         "button_F4jJr4"
       ],
+      "custom_css": [
+        ".inline-buttons {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;}",
+        ".inline-button__button.block-n-2 {background-color: #cf5342; color: transparent;}"
+      ],
       "settings": {
         "color_scheme": "",
         "buttons_font": "default",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "rich_text_JEPKK9": {
