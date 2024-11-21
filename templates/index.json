@@ -281,6 +281,96 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "rich_text_tLTPtp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NfwWEN": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Descubre las 3 rutas que diseñamos para ti</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NfwWEN"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "inline_buttons_cTpHkR": {
+      "type": "inline-buttons",
+      "blocks": {
+        "button_G9FewY": {
+          "type": "button",
+          "settings": {
+            "button_image": "shopify://shop_images/ave-3.svg",
+            "button_image_width": 100,
+            "button_label": "1",
+            "button_link": ""
+          }
+        },
+        "button_tcDa4c": {
+          "type": "button",
+          "settings": {
+            "button_image_width": 5,
+            "button_label": "Mapa",
+            "button_link": "/mapa"
+          }
+        },
+        "button_F4jJr4": {
+          "type": "button",
+          "settings": {
+            "button_image": "shopify://shop_images/ave-1-izquierda.svg",
+            "button_image_width": 100,
+            "button_label": "2",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_G9FewY",
+        "button_tcDa4c",
+        "button_F4jJr4"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "buttons_font": "default",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_JEPKK9": {
+      "type": "rich-text",
+      "blocks": {
+        "text_EVEfHi": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Bienvenidos a la “Tierra del Siempre Volverˮ, donde el cielo y la tierra se entrelazan entre aves, flores y café.</strong></p>",
+            "text_font": "default",
+            "text_size": 2,
+            "text_lineheight": 1
+          }
+        }
+      },
+      "block_order": [
+        "text_EVEfHi"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -291,6 +381,9 @@
     "inline-buttons",
     "two-columns",
     "rich_text_ig7Cjz",
-    "slideshow_C9UTjj"
+    "slideshow_C9UTjj",
+    "rich_text_tLTPtp",
+    "inline_buttons_cTpHkR",
+    "rich_text_JEPKK9"
   ]
 }
