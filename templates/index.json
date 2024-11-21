@@ -288,9 +288,9 @@
         "text_iY8TQQ": {
           "type": "text",
           "settings": {
-            "text": "<h2><strong>Descubre las 3 rutas que diseñamos para ti</strong></h2>",
+            "text": "<p><strong>Descubre las 3 rutas que diseñamos para ti</strong></p>",
             "text_font": "iowan-old-style",
-            "text_size": 10,
+            "text_size": 6,
             "text_lineheight": 1
           }
         }
