@@ -343,8 +343,8 @@
         "button_F4jJr4"
       ],
       "custom_css": [
-        ".inline-buttons {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;}",
-        ".inline-button__button.block-n-2 {background-color: #cf5342; color: transparent;}"
+        ".inline-buttons {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; max-width: 900px;}",
+        ".inline-button__button.block-n-2 {background-color: #cf5342; border-radius: 20px;}"
       ],
       "settings": {
         "color_scheme": "",
