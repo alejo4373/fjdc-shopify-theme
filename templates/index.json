@@ -344,10 +344,10 @@
       ],
       "custom_css": [
         ".inline-buttons {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; max-width: 900px;}",
-        ".inline-button__button.block-n-2 {background-color: #cf5342; border-radius: 20px;}"
+        ".inline-button__button.block-n-2 {background-color: #cf5342; border-radius: 20px; color: #D9DADA;}"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
         "buttons_font": "default",
         "padding_top": 0,
         "padding_bottom": 0
