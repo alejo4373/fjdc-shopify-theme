@@ -285,16 +285,18 @@
     "rich_text_tLTPtp": {
       "type": "rich-text",
       "blocks": {
-        "heading_NfwWEN": {
-          "type": "heading",
+        "text_iY8TQQ": {
+          "type": "text",
           "settings": {
-            "heading": "<strong>Descubre las 3 rutas que diseñamos para ti</strong>",
-            "heading_size": "h1"
+            "text": "<h2><strong>Descubre las 3 rutas que diseñamos para ti</strong></h2>",
+            "text_font": "iowan-old-style",
+            "text_size": 10,
+            "text_lineheight": 1
           }
         }
       },
       "block_order": [
-        "heading_NfwWEN"
+        "text_iY8TQQ"
       ],
       "settings": {
         "desktop_content_position": "center",
