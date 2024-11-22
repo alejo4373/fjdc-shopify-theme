@@ -78,9 +78,11 @@
                 | image_tag: class: 'button__image'
               }}
             {% endif %}
-            <span class="button__label">
-              {{- block.settings.button_label | escape -}}
-            </span>
+            {%- if block.settings.button_label != blank -%}
+              <span class="button__label">
+                {{- block.settings.button_label | escape -}}
+              </span>
+            {%- endif -%}
           </a>
       {%- endcase -%}
     {%- endfor -%}
