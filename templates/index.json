@@ -290,7 +290,7 @@
           "settings": {
             "text": "<p><strong>Descubre las 3 rutas que diseñamos para ti</strong></p>",
             "text_font": "iowan-old-style",
-            "text_size": 6,
+            "text_size": -1,
             "text_lineheight": 1
           }
         }
@@ -298,12 +298,17 @@
       "block_order": [
         "text_iY8TQQ"
       ],
+      "custom_css": [
+        ".rich-text__wrapper {padding-top: 4rem; max-width: 60%; font-size: 30px;}",
+        "@media and screen (min-width: 768px) {.rich-text_wrapper {padding-top: 10rem; font-size: 40px; }}",
+        "@media and screen (min-width: 1440px) {.rich-text_wrapper {max-width: 820px; padding-top: 19rem; }}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-5",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 40
       }
     },
@@ -314,7 +319,7 @@
           "type": "button",
           "settings": {
             "button_image": "shopify://shop_images/ave-3.svg",
-            "button_image_width": 100,
+            "button_image_width": 200,
             "button_label": "",
             "button_link": ""
           }
@@ -331,7 +336,7 @@
           "type": "button",
           "settings": {
             "button_image": "shopify://shop_images/ave-1-izquierda.svg",
-            "button_image_width": 100,
+            "button_image_width": 200,
             "button_label": "",
             "button_link": ""
           }
@@ -343,8 +348,8 @@
         "button_F4jJr4"
       ],
       "custom_css": [
-        ".inline-buttons {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; max-width: 900px;}",
-        ".inline-button__button.block-n-2 {background-color: #cf5342; border-radius: 20px; color: #D9DADA;}"
+        ".inline-buttons {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0rem; max-width: 900px;}",
+        ".inline-button__button.block-n-2 {line-height: 6rem; background-color: #cf5342; border-radius: 20px; color: #d9dada; align-self: center; width: 25rem;}"
       ],
       "settings": {
         "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
