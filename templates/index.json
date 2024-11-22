@@ -299,8 +299,8 @@
         "text_iY8TQQ"
       ],
       "custom_css": [
-        ".rich-text__wrapper {padding-top: 4rem; max-width: 60%; font-size: 30px;}",
-        "@media screen and (min-width: 768px) {.rich-text__wrapper {padding-top: 8rem; } .rich-text__wrapper .rich-text__text {font-size: 50px; }}",
+        ".rich-text__wrapper {padding-top: 4rem; max-width: 80%; font-size: 30px;}",
+        "@media screen and (min-width: 768px) {.rich-text__wrapper {padding-top: 8rem; max-width: 60%; } .rich-text__wrapper .rich-text__text {font-size: 50px; }}",
         "@media screen and (min-width: 1024px) {.rich-text__wrapper {max-width: 670px; padding-top: 10rem; } .rich-text__wrapper .rich-text__text {font-size: 60px; }}",
         "@media screen and (min-width: 1440px) {.rich-text__wrapper {padding-top: 19rem; max-width: 900px; } .rich-text__wrapper .rich-text__text {font-size: 90px; }}"
       ],
