@@ -299,7 +299,7 @@
         "text_iY8TQQ"
       ],
       "custom_css": [
-        ".rich-text__wrapper {padding-top: 4rem; padding-left: 1rem; font-size: 30px;}",
+        ".rich-text__wrapper {padding-top: 4rem; font-size: 30px;}",
         "@media screen and (min-width: 768px) {.rich-text__wrapper {padding-top: 8rem; max-width: 60%; } .rich-text__wrapper .rich-text__text {font-size: 50px; }}",
         "@media screen and (min-width: 1024px) {.rich-text__wrapper {max-width: 670px; padding-top: 10rem; } .rich-text__wrapper .rich-text__text {font-size: 60px; }}",
         "@media screen and (min-width: 1440px) {.rich-text__wrapper {padding-top: 19rem; max-width: 900px; } .rich-text__wrapper .rich-text__text {font-size: 90px; }}"
@@ -316,14 +316,6 @@
     "inline_buttons_cTpHkR": {
       "type": "inline-buttons",
       "blocks": {
-        "button_TKDMjF": {
-          "type": "button",
-          "settings": {
-            "button_image_width": 5,
-            "button_label": "My button",
-            "button_link": ""
-          }
-        },
         "button_G9FewY": {
           "type": "button",
           "settings": {
@@ -352,7 +344,6 @@
         }
       },
       "block_order": [
-        "button_TKDMjF",
         "button_G9FewY",
         "button_tcDa4c",
         "button_F4jJr4"
