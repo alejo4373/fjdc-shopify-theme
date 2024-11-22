@@ -300,8 +300,8 @@
       ],
       "custom_css": [
         ".rich-text__wrapper {padding-top: 4rem; max-width: 60%; font-size: 30px;}",
-        "@media and screen (min-width: 768px) {.rich-text_wrapper {padding-top: 10rem; font-size: 40px; }}",
-        "@media and screen (min-width: 1440px) {.rich-text_wrapper {max-width: 820px; padding-top: 19rem; }}"
+        "@media screen and (min-width: 768px) {.rich-text_wrapper {padding-top: 10rem; font-size: 40px; }}",
+        "@media screen and (min-width: 1440px) {.rich-text_wrapper {max-width: 820px; padding-top: 19rem; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
