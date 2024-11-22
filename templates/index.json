@@ -371,13 +371,17 @@
           "settings": {
             "text": "<p><strong>Bienvenidos a la “Tierra del Siempre Volverˮ, donde el cielo y la tierra se entrelazan entre aves, flores y café.</strong></p>",
             "text_font": "default",
-            "text_size": 2,
+            "text_size": -1,
             "text_lineheight": 1
           }
         }
       },
       "block_order": [
         "text_EVEfHi"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper .rich-text__text {font-size: 14px; padding: 1rem;}",
+        "@media screen and (min-width: 768px) {.rich-text__wrapper .rich-text__text {font-size: 20px; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
