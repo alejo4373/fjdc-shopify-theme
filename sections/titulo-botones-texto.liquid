@@ -46,7 +46,9 @@
   }
 {%- endstyle -%}
 
+{%- assign titulo = '' -%}
 {%- assign botones = '' -%}
+{%- assign texto = '' -%}
 <div class="isolate">
   <div class="rich-text content-container gradient color-{{ section.settings.color_scheme }} {% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}">
@@ -54,7 +56,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'titulo' -%}
-              {% capture titulo %}
+              {% capture titulo_cap %}
                 <h2
                   class="rich-text__heading rte inline-richtext"
                   {{ block.shopify_attributes }}
@@ -62,7 +64,7 @@
                   {{ block.settings.titulo }}
                 </h2>
               {% endcapture %}
-              {%- assign titulo = titulo | append: titulo %}
+              {%- assign titulo = titulo | append: titulo_cap -%}
             {%- when 'boton' -%}
               {% capture boton %}
                 <a
@@ -96,7 +98,7 @@
                   assign text_style = text_style | append: 'font-family: Iowan Old Style, serif; '
                 endif
               %}
-              {% capture texto %}
+              {% capture texto_cap %}
                 <div
                   class="rich-text__text rte"
                   {{ block.shopify_attributes }}
@@ -105,10 +107,10 @@
                   {% endif %}
                   style="{{ text_style }}"
                 >
-                  {{ block.settings.text }}
+                  {{ block.settings.texto }}
                 </div>
               {% endcapture %}
-              {%- assign texto = texto | append: texto -%}
+              {%- assign texto = texto | append: texto_cap -%}
           {%- endcase -%}
         {%- endfor -%}
         <div>
