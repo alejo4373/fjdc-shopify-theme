@@ -1,0 +1,256 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .inline-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .inline-button__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0 3rem;
+    cursor: pointer;
+    font: inherit;
+    font-size: 4rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    max-width: 330px;
+    line-height: 1;
+  }
+
+  .button__label {
+    margin-left: 2rem;
+    white-space: break-spaces;
+  }
+{%- endstyle -%}
+
+{%- assign titulo = '' -%}
+{%- assign botones = '' -%}
+{%- assign texto = '' -%}
+<div class="isolate">
+  <div class="rich-text content-container gradient color-{{ section.settings.color_scheme }} {% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}">
+      <div class="rich-text__blocks {{ section.settings.content_alignment }}">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'titulo' -%}
+              {% capture titulo %}
+                <h2
+                  class="rich-text__heading rte inline-richtext"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.titulo }}
+                </h2>
+              {% endcapture %}
+              {%- assign titulo = titulo | append: titulo %}
+            {%- when 'boton' -%}
+              {% capture boton %}
+                <a
+                  {% if block.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link }}"
+                  {% endif %}
+                  class="inline-button__button block-n-{{ forloop.index }}"
+                >
+                  {%- if block.settings.button_image != blank -%}
+                    {{
+                      block.settings.button_image
+                      | image_url: width: block.settings.button_image_width
+                      | image_tag: class: 'button__image'
+                    }}
+                  {% endif %}
+                  {%- if block.settings.button_label != blank -%}
+                    <span class="button__label">
+                      {{- block.settings.button_label | escape -}}
+                    </span>
+                  {%- endif -%}
+                </a>
+              {% endcapture %}
+              {%- assign botones = botones | append: boton -%}
+            {%- when 'texto' -%}
+              {% liquid
+                assign text_style = ''
+
+                if block.settings.text_font == 'iowan-old-style'
+                  assign text_style = text_style | append: 'font-family: Iowan Old Style, serif; '
+                endif
+              %}
+              {% capture texto %}
+                <div
+                  class="rich-text__text rte"
+                  {{ block.shopify_attributes }}
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                  {% endif %}
+                  style="{{ text_style }}"
+                >
+                  {{ block.settings.text }}
+                </div>
+              {% endcapture %}
+              {%- assign texto = texto | append: texto -%}
+          {%- endcase -%}
+        {%- endfor -%}
+        <div>
+          {{ titulo }}
+          <div class="botones">
+            {{ botones }}
+          </div>
+          {{ texto }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.rich-text.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "number",
+      "id": "padding_top",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "number",
+      "id": "padding_bottom",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "titulo",
+      "name": "Titulo",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Titulo",
+          "label": "Titulo"
+        }
+      ]
+    },
+    {
+      "type": "texto",
+      "name": "texto",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "richtext",
+          "default": "Texto",
+          "label": "Texto"
+        },
+        {
+          "type": "select",
+          "id": "text_font",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "iowan-old-style",
+              "label": "Iowan Old Style"
+            }
+          ],
+          "default": "default",
+          "label": "Text font"
+        }
+      ]
+    },
+    {
+      "type": "boton",
+      "name": "Boton",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "button_image",
+          "label": "Button image"
+        },
+        {
+          "type": "number",
+          "id": "button_image_width",
+          "label": "Button image width",
+          "default": 5,
+          "info": "Specify the image with in REM units"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "My button",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Titulo-Boton-Texto",
+      "blocks": [
+        {
+          "type": "titulo"
+        },
+        {
+          "type": "boton"
+        },
+        {
+          "type": "texto"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
