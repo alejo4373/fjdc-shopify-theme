@@ -281,116 +281,6 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
-    },
-    "rich_text_tLTPtp": {
-      "type": "rich-text",
-      "blocks": {
-        "text_iY8TQQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Descubre las 3 rutas que diseñamos para ti</strong></p>",
-            "text_font": "iowan-old-style",
-            "text_size": -1,
-            "text_lineheight": 1
-          }
-        }
-      },
-      "block_order": [
-        "text_iY8TQQ"
-      ],
-      "custom_css": [
-        ".rich-text__wrapper {padding-top: 4rem; font-size: 30px;}",
-        "@media screen and (min-width: 768px) {.rich-text__wrapper {padding-top: 8rem; max-width: 60%; } .rich-text__wrapper .rich-text__text {font-size: 50px; }}",
-        "@media screen and (min-width: 1024px) {.rich-text__wrapper {max-width: 670px; padding-top: 10rem; } .rich-text__wrapper .rich-text__text {font-size: 60px; }}",
-        "@media screen and (min-width: 1440px) {.rich-text__wrapper {padding-top: 19rem; max-width: 900px; } .rich-text__wrapper .rich-text__text {font-size: 90px; }}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-5",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 40
-      }
-    },
-    "inline_buttons_cTpHkR": {
-      "type": "inline-buttons",
-      "blocks": {
-        "button_G9FewY": {
-          "type": "button",
-          "settings": {
-            "button_image": "shopify://shop_images/ave-3.svg",
-            "button_image_width": 200,
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "button_tcDa4c": {
-          "type": "button",
-          "settings": {
-            "button_image_width": 5,
-            "button_label": "Mapa",
-            "button_link": "/mapa"
-          }
-        },
-        "button_F4jJr4": {
-          "type": "button",
-          "settings": {
-            "button_image": "shopify://shop_images/ave-1-izquierda.svg",
-            "button_image_width": 200,
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "button_G9FewY",
-        "button_tcDa4c",
-        "button_F4jJr4"
-      ],
-      "custom_css": [
-        ".inline-buttons {display: grid; grid-template-columns: auto 100px auto; gap: 0rem; width: 100%; max-width: 900px; justify-content: center;}",
-        ".inline-button__button.block-n-2 {font-size: 10px; line-height: 3rem; background-color: #cf5342; border-radius: 20px; color: #d9dada; align-self: center;}",
-        ".inline-button__button img {width: 70px; height: 100%;}",
-        ".inline-button__button .button__label {margin: 0;}",
-        "@media screen and (min-width: 768px) {}",
-        "@media screen and (min-width: 1020px) {.inline-buttons {display: grid; }}"
-      ],
-      "settings": {
-        "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
-        "buttons_font": "default",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_JEPKK9": {
-      "type": "rich-text",
-      "blocks": {
-        "text_EVEfHi": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Bienvenidos a la “Tierra del Siempre Volverˮ, donde el cielo y la tierra se entrelazan entre aves, flores y café.</strong></p>",
-            "text_font": "default",
-            "text_size": -1,
-            "text_lineheight": 1
-          }
-        }
-      },
-      "block_order": [
-        "text_EVEfHi"
-      ],
-      "custom_css": [
-        ".rich-text__wrapper .rich-text__text {font-size: 14px; padding: 1rem;}",
-        "@media screen and (min-width: 768px) {.rich-text__wrapper .rich-text__text {font-size: 20px; }}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
@@ -401,9 +291,6 @@
     "inline-buttons",
     "two-columns",
     "rich_text_ig7Cjz",
-    "slideshow_C9UTjj",
-    "rich_text_tLTPtp",
-    "inline_buttons_cTpHkR",
-    "rich_text_JEPKK9"
+    "slideshow_C9UTjj"
   ]
 }
