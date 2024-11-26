@@ -287,7 +287,9 @@
       "blocks": {
         "titulo_cBFeUF": {
           "type": "titulo",
-          "settings": {}
+          "settings": {
+            "titulo": "<strong>Descubre las 3 rutas que diseñamos para ti</strong>"
+          }
         },
         "boton_bTGin4": {
           "type": "boton",
@@ -318,6 +320,7 @@
         "texto_egxMjM": {
           "type": "texto",
           "settings": {
+            "texto": "Bienvenidos a la “Tierra del Siempre Volverˮ, donde el cielo y la tierra se entrelazan entre aves, flores y café.",
             "text_font": "default"
           }
         }
@@ -330,7 +333,7 @@
         "texto_egxMjM"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-5",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 40
