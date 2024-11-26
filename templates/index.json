@@ -282,8 +282,8 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "titulo-botones-text_font": {
-      
+    "titulo-botones-text": {
+      "type": "rich-text"
     }
   },
   "order": [
