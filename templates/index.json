@@ -281,6 +281,63 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "titulo_botones_texto_LxAW7g": {
+      "type": "titulo-botones-texto",
+      "blocks": {
+        "titulo_tjdhcA": {
+          "type": "titulo",
+          "settings": {
+            "titulo": "<strong>Descubre las 3 rutasque diseñamos para ti</strong>"
+          }
+        },
+        "boton_hCehNg": {
+          "type": "boton",
+          "settings": {
+            "button_image": "shopify://shop_images/ave-3.svg",
+            "button_image_width": 100,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "boton_HgibXd": {
+          "type": "boton",
+          "settings": {
+            "button_image_width": 5,
+            "button_label": "Mapa",
+            "button_link": "/mapa"
+          }
+        },
+        "boton_BqWMzJ": {
+          "type": "boton",
+          "settings": {
+            "button_image": "shopify://shop_images/ave-1-izquierda.svg",
+            "button_image_width": 100,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "texto_HjkCY9": {
+          "type": "texto",
+          "settings": {
+            "texto": "Bienvenidos a la “Tierra del Siempre Volverˮ, donde el cielo y la tierra se entrelazan entre aves, flores y café.",
+            "text_font": "default"
+          }
+        }
+      },
+      "block_order": [
+        "titulo_tjdhcA",
+        "boton_hCehNg",
+        "boton_HgibXd",
+        "boton_BqWMzJ",
+        "texto_HjkCY9"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -291,6 +348,7 @@
     "inline-buttons",
     "two-columns",
     "rich_text_ig7Cjz",
-    "slideshow_C9UTjj"
+    "slideshow_C9UTjj",
+    "titulo_botones_texto_LxAW7g"
   ]
 }
