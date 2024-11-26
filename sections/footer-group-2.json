@@ -4,15 +4,7 @@
   "sections": {
     "footer": {
       "type": "footer-2",
-      "blocks": {
-        "footer-0": {
-          "type": "heading",
-          "settings": {
-            "type": "footer",
-            "id": "footer"
-          }
-      },
-    },
+      "blocks": {},
       "block_order": [ ],
       "settings": {
         "color_scheme": "scheme-1",
