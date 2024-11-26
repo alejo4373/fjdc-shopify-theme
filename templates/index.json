@@ -282,16 +282,14 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "titulo_botones_texto_Gz4iiq": {
+    "titulo_botones_texto_7JPYEB": {
       "type": "titulo-botones-texto",
       "blocks": {
-        "titulo_bGejT4": {
+        "titulo_cBFeUF": {
           "type": "titulo",
-          "settings": {
-            "heading": "<strong>Descubre las 3 rutasque diseñamos para ti</strong>"
-          }
+          "settings": {}
         },
-        "boton_atQ8Ct": {
+        "boton_bTGin4": {
           "type": "boton",
           "settings": {
             "button_image": "shopify://shop_images/ave-3.svg",
@@ -300,7 +298,7 @@
             "button_link": ""
           }
         },
-        "boton_yVmTJ9": {
+        "boton_x7fJFt": {
           "type": "boton",
           "settings": {
             "button_image_width": 5,
@@ -308,7 +306,7 @@
             "button_link": "/mapa"
           }
         },
-        "boton_4fRa8M": {
+        "boton_wD3tbT": {
           "type": "boton",
           "settings": {
             "button_image": "shopify://shop_images/ave-1-izquierda.svg",
@@ -317,23 +315,22 @@
             "button_link": ""
           }
         },
-        "texto_JL6wcA": {
+        "texto_egxMjM": {
           "type": "texto",
           "settings": {
-            "richtext": "Hello",
             "text_font": "default"
           }
         }
       },
       "block_order": [
-        "titulo_bGejT4",
-        "boton_atQ8Ct",
-        "boton_yVmTJ9",
-        "boton_4fRa8M",
-        "texto_JL6wcA"
+        "titulo_cBFeUF",
+        "boton_bTGin4",
+        "boton_x7fJFt",
+        "boton_wD3tbT",
+        "texto_egxMjM"
       ],
       "settings": {
-        "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
+        "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 40
@@ -349,6 +346,6 @@
     "two-columns",
     "rich_text_ig7Cjz",
     "slideshow_C9UTjj",
-    "titulo_botones_texto_Gz4iiq"
+    "titulo_botones_texto_7JPYEB"
   ]
 }
