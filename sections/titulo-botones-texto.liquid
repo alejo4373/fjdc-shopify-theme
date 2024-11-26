@@ -13,7 +13,46 @@
     }
   }
 
-  .inline-buttons {
+  .section-{{ section.id }} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-{{ section.id }} h2 {
+    margin-top: 0;
+    font-family: 'Iowan Old Style', serif;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.3px;
+    line-height: 0.9;
+  }
+
+  .section-{{ section.id }} .botones {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+  }
+
+  .section-{{ section.id }} .inline-button__button.block-n-3 {
+    font-family: 'Iowan Old Style Black', serif;
+    font-size: 1rem;
+    line-height: 3;
+    background-color: #cf5342;
+    border-radius: 20px;
+    color: #d9dada;
+    align-self: center;
+  }
+
+  .section-{{ section.id }} .button__image {
+    width: 100px;
+    height: 40px;
+  }
+
+  .section-{{ section.id }} .inline-button__button .button__label {
+      margin: 0;
+    }
+
+  .section-{{ section.id }} .inline-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -21,12 +60,12 @@
     margin: 0 auto;
   }
 
-  .inline-button__button {
+  .section-{{ section.id }} .inline-button__button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     border: 0;
-    padding: 0 3rem;
+    padding: unset;
     cursor: pointer;
     font: inherit;
     font-size: 4rem;
@@ -40,9 +79,121 @@
     line-height: 1;
   }
 
-  .button__label {
-    margin-left: 2rem;
-    white-space: break-spaces;
+  .section-{{ section.id }} .rich-text__text {
+    color: #576744;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 0.9;
+    text-align: center;
+    margin-top: 2rem;
+    letter-spacing: -0.9px;
+  }
+
+
+  @media screen and (min-width: 425px) {
+    .section-{{ section.id }} {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    .section-{{ section.id }} .botones {
+      max-width: 405px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }} h2 {
+      font-size: 4.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: 2px;
+    }
+
+    .section-{{ section.id }} .botones {
+      gap: 5rem;
+      grid-template-columns: 120px 150px 120px;
+      max-width: 490px;
+      margin: 0 auto;
+    }
+
+    .section-{{ section.id }} .button__image {
+      height: 100px;
+      width: 120px;
+    }
+
+    .section-{{ section.id }} .inline-button__button.block-n-3 {
+      font-size: 1.5rem;
+      line-height: 2.5;
+    }
+
+    .section-{{ section.id }} .rich-text__text {
+      font-size: 2rem;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .section-{{ section.id }} h2 {
+      font-size: 6rem;
+      word-spacing: 8px;
+    }
+
+    .section-{{ section.id }} .botones {
+      gap: 10rem;
+      grid-template-columns: 150px 200px 150px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section-{{ section.id }} .button__image {
+      height: 100px;
+      width: auto;
+    }
+
+    .section-{{ section.id }} .inline-button__button.block-n-3 {
+      font-size: 2.7rem;
+      line-height: 1.7;
+    }
+
+    .section-{{ section.id }} .rich-text__text {
+      margin-top: 4rem;
+      max-width: 80%;
+      font-size: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+      .section-{{ section.id }} h2 {
+        font-size: 9.6rem;
+        max-width: 1048px;
+      }
+
+      .section-{{ section.id }} .botones {
+        gap: 8rem;
+        grid-template-columns: 200px 300px 200px;
+        max-width: 860px;
+      }
+
+      .section-{{ section.id }} .button__image {
+        height: 130px;
+        width: auto;
+      }
+
+      .section-{{ section.id }} .inline-button__button.block-n-3 {
+        font-size: 3rem;
+        line-height: 2;
+      }
+
+      .section-{{ section.id }} .rich-text__text {
+        margin-top: 6rem;
+        max-width: unset;
+        font-size: 5rem;
+      }
+
   }
 {%- endstyle -%}
 
@@ -50,7 +201,7 @@
 {%- assign botones = '' -%}
 {%- assign texto = '' -%}
 <div class="isolate">
-  <div class="rich-text content-container gradient color-{{ section.settings.color_scheme }} {% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="rich-text content-container gradient color-{{ section.settings.color_scheme }} section-{{ section.id }} {% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
@@ -78,7 +229,7 @@
                   {%- if block.settings.button_image != blank -%}
                     {{
                       block.settings.button_image
-                      | image_url: width: block.settings.button_image_width
+                      | image_url: width: 200
                       | image_tag: class: 'button__image'
                     }}
                   {% endif %}
@@ -183,7 +334,7 @@
       "limit": 3,
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "texto",
           "default": "Texto",
           "label": "Texto"
@@ -214,13 +365,6 @@
           "type": "image_picker",
           "id": "button_image",
           "label": "Button image"
-        },
-        {
-          "type": "number",
-          "id": "button_image_width",
-          "label": "Button image width",
-          "default": 5,
-          "info": "Specify the image with in REM units"
         },
         {
           "type": "text",
