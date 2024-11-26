@@ -4,9 +4,16 @@
   "sections": {
     "footer": {
       "type": "footer-2",
-      "blocks": {},
-      "block_order": [
-      ],
+      "blocks": {
+        "footer-0": {
+          "type": "heading",
+          "settings": {
+            "type": "footer",
+            "id": "footer"
+          }
+      },
+    },
+      "block_order": [ ],
       "settings": {
         "color_scheme": "scheme-1",
         "margin_top": 0,
