@@ -320,7 +320,7 @@
         "texto_HjkCY9": {
           "type": "texto",
           "settings": {
-            "texto": "Bienvenidos a la “Tierra del Siempre Volverˮ, donde el cielo y la tierra se entrelazan entre aves, flores y café.",
+            "texto": "<p>Bienvenidos a la “Tierra del Siempre Volverˮ, donde el cielo y la tierra se entrelazan entre aves, flores y café.</p>",
             "text_font": "default"
           }
         }
