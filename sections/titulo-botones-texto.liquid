@@ -46,9 +46,7 @@
   }
 {%- endstyle -%}
 
-{%- assign titulo = '' -%}
 {%- assign botones = '' -%}
-{%- assign texto = '' -%}
 <div class="isolate">
   <div class="rich-text content-container gradient color-{{ section.settings.color_scheme }} {% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}">
@@ -127,7 +125,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.rich-text.name",
+  "name": "Titulo-Botones-Texto",
   "tag": "section",
   "class": "section",
   "disabled_on": {
