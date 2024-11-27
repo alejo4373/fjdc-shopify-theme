@@ -1,15 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "Footer",
   "type": "footer",
   "sections": {
     "footer": {
       "type": "footer-2",
-      "blocks": {},
-      "block_order": [ ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
+        "titulo": "Contáctanos",
+        "telefono": "Tel: 324-208-3566",
+        "direccion": "Dirección: Cra. 11 #11-35, Támesis, Antioquia",
+        "nombre_de_contacto": "Nombre de contacto: Alejandro Franco Marin",
+        "logo": "shopify://shop_images/logo-for-banner.svg",
+        "imagen_fondo": "shopify://shop_images/fondo-de-footer.svg",
         "margin_top": 0,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     }
