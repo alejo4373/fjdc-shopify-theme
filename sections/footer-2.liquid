@@ -1,12 +1,26 @@
 {%- style -%}
-  .footer {
+  .section-{{ section.id }} {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-    background-image: url("{{ section.settings.imagen_fondo | asset_url }}");
+    background-image: url("{{ section.settings.imagen_fondo | image_url }}");
+    background-repeat: no-repeat;
+    background-size: 1770px auto;
+    background-position: bottom center;
+    background-color: transparent;
+  }
+
+  .footer__content {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .section-{{ section.id }} .footer__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media screen and (min-width: 750px) {
@@ -21,21 +35,26 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding page-width">
+<footer class="footer section-{{ section.id }} color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
   <div class="footer__content">
     <div class="footer__content-left">
-      <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+      <h2 class="footer-block__heading inline-richtext">{{- section.settings.titulo -}}</h2>
+      <div>
+        <p>{{ section.settings.telefono }}</p>
+        <p>{{ section.settings.direccion }}</p>
+        <p>{{ section.settings.nombre_de_contacto }}</p>
+      </div>
     </div>
     <div class="footer__content-right">
       {{ section.settings.logo | image_url: width: 600 | image_tag: loading: 'lazy' }}
     </div>
+  </div>
+  <div class="footer__content-bottom-wrapper page-width">
     <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__content-bottom-wrapper page-width">
-        <div class="footer__copyright caption">
-          <small class="copyright__content"
-            >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
-          </small>
-        </div>
+      <div class="footer__copyright caption">
+        <small class="copyright__content"
+          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+        </small>
       </div>
     </div>
   </div>
