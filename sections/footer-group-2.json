@@ -20,10 +20,8 @@
         "direccion": "Dirección: Cra. 11 #11-35, Támesis, Antioquia",
         "nombre_de_contacto": "Nombre de contacto: Alejandro Franco Marin",
         "logo": "shopify://shop_images/logo-for-banner.svg",
-        "imagen_fondo": "shopify://shop_images/fondo-de-footer.svg",
-        "margin_top": 0,
-        "padding_top": 0,
-        "padding_bottom": 36
+        "imagen_fondo": "shopify://shop_images/fondo-de-footer-png.png",
+        "margin_top": 0
       }
     }
   },
