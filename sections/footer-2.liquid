@@ -8,6 +8,7 @@
     margin: 0 auto;
     background-position: bottom center;
     background-color: transparent;
+    padding: 20px;
   }
 
   .footer__content {
@@ -15,16 +16,10 @@
     margin: 0 auto;
   }
 
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
   .section-{{ section.id }} .footer__content {
     display: grid;
     gap: 3rem;
     grid-template-columns: 1fr;
-    padding: 20px;
   }
 
   .section-{{ section.id }} .footer__heading {
@@ -77,19 +72,14 @@
     }
   }
 
-  @media screen and (min-width: 750px) {
-    .footer {
-      margin-top: {{ section.settings.margin_top }}px;
-    }
-
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+  @media screen and (min-width: 1024px) {
+    .section-{{section.id }} {
+      background-size: 100% auto;
     }
   }
 {%- endstyle -%}
 
-<footer class="footer section-{{ section.id }} color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+<footer class="footer section-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <div class="footer__content">
     <div class="footer__content-left">
       <h2 class="footer__heading inline-richtext">{{- section.settings.titulo -}}</h2>
@@ -160,22 +150,6 @@
       "id": "margin_top",
       "label": "t:sections.footer.settings.margin_top.label",
       "default": 0
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "number",
-      "id": "padding_top",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "number",
-      "id": "padding_bottom",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
     }
   ],
   "default": {}
