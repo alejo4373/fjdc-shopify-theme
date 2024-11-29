@@ -3,12 +3,12 @@
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
     background-image: url("{{ section.settings.imagen_fondo | image_url }}");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     max-width: 1770px;
     margin: 0 auto;
     background-position: bottom center;
     background-color: transparent;
-    padding: 20px;
+    padding: 40px 20px;
   }
 
   .footer__content {
@@ -46,19 +46,41 @@
    }
 
   .section-{{ section.id }} .footer__logo img {
-    max-width: 200px;
+    max-width: 100px;
     width: 100%;
     height: auto;
+  }
+  .section-{{ section.id }} .footer__logo {
+    width: 100%;
+    text-align: center;
   }
 
   .section-{{section.id }} .footer__copyright {
     text-align: center;
+    margin-top: 3rem;
   }
 
 
   @media screen and (min-width: 540px) {
+
+    .section-{{ section.id }} .footer__logo img {
+      max-width: 200px;
+    }
+
+    .section-{{ section.id }} {
+      padding: 60px 40px;
+    }
+
     .section-{{ section.id }} .footer__content {
       grid-template-columns: 1fr 1fr;
+    }
+
+    .section-{{ section.id }} .footer__content-right {
+      justify-content: flex-end;
+    }
+
+    .section-{{ section.id }} .footer__logo {
+      text-align: right;
     }
   }
 
@@ -73,8 +95,38 @@
   }
 
   @media screen and (min-width: 1024px) {
-    .section-{{section.id }} {
-      background-size: 100% auto;
+    .section-{{ section.id }} {
+      padding: 80px 40px;
+    }
+
+    .section-{{section.id }} .footer__heading {
+      font-size: 4.5rem;
+    }
+
+    .section-{{section.id }} .footer__info {
+      font-size: 3rem;
+    }
+
+    .section-{{ section.id }} .footer__logo img {
+      max-width: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .section-{{ section.id }} {
+      padding: 100px 40px;
+    }
+
+    .section-{{section.id }} .footer__heading {
+      font-size: 6.5rem;
+    }
+
+    .section-{{section.id }} .footer__info {
+      font-size: 4rem;
+    }
+
+    .section-{{ section.id }} .footer__logo img {
+      max-width: 400px;
     }
   }
 {%- endstyle -%}
