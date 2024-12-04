@@ -26,7 +26,7 @@
   }
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
-    @media screen and (min-width: 1308px) {
+    @media screen and (min-width: 1103px) {
       header-drawer {
         display: none;
       }
@@ -286,7 +286,7 @@
 
       this.setHeaderHeight();
 
-      window.matchMedia('(max-width: 1308px)').addEventListener('change', this.setHeaderHeight.bind(this));
+     window.matchMedia('(max-width: 1103px)').addEventListener('change', this.setHeaderHeight.bind(this));
 
       if (this.headerIsAlwaysSticky) {
         this.header.classList.add('shopify-section-header-sticky');

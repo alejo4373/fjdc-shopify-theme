@@ -2,8 +2,8 @@
 
 {%- style -%}
   #Banner-{{ section.id }} .banner {
-    position: relative;
-    z-index: 1; /* to create a stacking context */
+    /* position: relative; */
+    z-index: 1;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -38,17 +38,21 @@
 
   /* Foreground Image */
   .banner__foreground {
-    position: relative;
     z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45%;
+    width: 65%;
+    height: auto;
   }
 
   .banner__foreground img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 425px) {
+    .banner__foreground {
+      width: 45%;
+      height: 45%;
+    }
   }
 {%- endstyle -%}
 

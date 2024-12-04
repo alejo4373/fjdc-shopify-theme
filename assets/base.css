@@ -2385,9 +2385,14 @@ input[type="checkbox"] {
 /* Make manu to overlay main content */
 #MainContent {
   position: relative;
-  top: -196px; /* The height of the .header-wrapper */
+  top: -84px; /* The height of the .header-wrapper */
 }
 
+@media screen and (min-width: 1103px) {
+  #MainContent {
+    top: -172px; /* The height of the .header-wrapper */
+  }
+}
 /* Main Header Layout */
 .header-wrapper {
   display: block;
@@ -2420,19 +2425,16 @@ input[type="checkbox"] {
   position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
 }
 
-@media screen and (min-width: 1308px) {
+@media screen and (min-width: 1103px) {
   .header {
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
-    /* padding-left: 13.4rem; */
-    /* padding-right: 13.4rem; */
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 3.7rem;
     padding-bottom: 3.7rem;
   }
-
   .header .header__simple-menu {
     display: flex;
     justify-content: center;
