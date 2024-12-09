@@ -5,23 +5,13 @@
     padding-right: 4rem;
   }
 
-  .section-{{ section.id }}-padding {
-    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
-
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-
   .inline-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 3rem;
+    justify-content: center;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -31,10 +21,9 @@
     justify-content: center;
     align-items: center;
     border: 0;
-    padding: 0 3rem;
     cursor: pointer;
     font: inherit;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 800;
     text-decoration: none;
     transition: box-shadow var(--duration-short) ease;
@@ -48,6 +37,41 @@
   .button__label {
     margin-left: 2rem;
     white-space: break-spaces;
+  }
+
+  /* For custom CSS */
+  .inline-button__button img {
+    width: 40px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 473px) {
+    .inline-buttons {
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .inline-buttons {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  @media screen and (min-width: 1020px) {
+    .inline-buttons {
+      padding-left: 13rem;
+      padding-right: 13rem;
+    }
+
+    .inline-button__button {
+      font-size: 3.5rem;
+    }
+
+    .inline-button__button img {
+      width: 80px;
+      height: auto;
+    }
   }
 {%- endstyle -%}
 
@@ -116,30 +140,6 @@
       ],
       "default": "default",
       "label": "Text font"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 40
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 52
     }
   ],
   "blocks": [
