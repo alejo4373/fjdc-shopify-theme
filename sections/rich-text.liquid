@@ -49,12 +49,6 @@
                 if block.settings.text_font == 'iowan-old-style'
                   assign text_style = text_style | append: 'font-family: Iowan Old Style, serif; '
                 endif
-                if block.settings.text_size != blank
-                  assign text_style = text_style | append: 'font-size: ' | append: block.settings.text_size | append: 'rem; '
-                endif
-                if block.settings.text_lineheight != blank
-                  assign text_style = text_style | append: 'line-height: ' | append: block.settings.text_lineheight | append: '; '
-                endif
               %}
               <div
                 class="rich-text__text rte"
@@ -319,19 +313,6 @@
           ],
           "default": "default",
           "label": "Text font"
-        },
-        {
-          "type": "number",
-          "id": "text_size",
-          "label": "Text size",
-          "default": 1,
-          "info": "Specify the text size in REM units"
-        },
-        {
-          "type": "number",
-          "id": "text_lineheight",
-          "label": "Line-height",
-          "default": 1
         }
       ]
     },
