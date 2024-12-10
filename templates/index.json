@@ -166,9 +166,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "buttons_font": "iowan-old-style-black",
-        "padding_top": 40,
-        "padding_bottom": 100
+        "buttons_font": "iowan-old-style-black"
       }
     },
     "two-columns": {
@@ -205,13 +203,7 @@
         "image_7CpCW4",
         "text_RzNNw6"
       ],
-      "custom_css": [
-        ".rich-text__wrapper {padding: 0 3.5rem;}",
-        ".rich-text__image.block-n-1 {padding-left: 10rem;}",
-        ".rich-text__text {font-weight: bold;}",
-        ".rich-text__text strong {font-family: \"Iowan Old Style Black\"; font-weight: 500;}",
-        "@media screen and (min-width: 1024px) {.rich-text__text {font-size: 8rem; letter-spacing: 4px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
