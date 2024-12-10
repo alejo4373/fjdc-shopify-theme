@@ -3,7 +3,7 @@ slideshow-component {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1770px;
+  max-width: 1440px;
 }
 
 slideshow-component .slideshow.banner {
