@@ -51,7 +51,7 @@
                 endif
               %}
               <div
-                class="rich-text__text rte"
+                class="rich-text__text rte {% if block.settings.larger_text %} rich-text__text--larger{% endif %} {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} {{ block.settings.text_font }} }}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -313,6 +313,18 @@
           ],
           "default": "default",
           "label": "Text font"
+        },
+        {
+          "type": "checkbox",
+          "id": "larger_text",
+          "label": "Use larger text",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "bolder_text",
+          "label": "Use bolder text",
+          "default": false
         }
       ]
     },

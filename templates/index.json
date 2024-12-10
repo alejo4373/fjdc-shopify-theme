@@ -194,8 +194,10 @@
         "text_RzNNw6": {
           "type": "text",
           "settings": {
-            "text": "<p>Creemos que <strong>el turismo</strong>, cuando se practica <strong>con conciencia</strong>,<br/> puede ser un motor de desarrollo para nuestras comunidades y <strong>contribuir a la conservación de nuestra biodiversidad.</strong></p>",
-            "text_font": "iowan-old-style"
+            "text": "<p>Creemos que <strong>el turismo</strong>, cuando se practica <strong>con conciencia</strong>, puede ser un motor de desarrollo para nuestras comunidades y <strong>contribuir a la conservación de nuestra biodiversidad.</strong></p>",
+            "text_font": "iowan-old-style",
+            "larger_text": true,
+            "bolder_text": true
           }
         }
       },
@@ -209,8 +211,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-5",
         "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 50,
+        "padding_bottom": 80
       }
     },
     "slideshow_C9UTjj": {

@@ -116,3 +116,27 @@
 .rich-text__image--right {
   justify-content: right;
 }
+
+.rich-text__text.rich-text__text--larger {
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.rich-text__text.rich-text__text--bolder strong {
+  font-family: "Iowan Old Style Black";
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .rich-text__text.rich-text__text--larger {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .rich-text__text.rich-text__text--larger {
+    font-size: 5rem;
+  }
+}
