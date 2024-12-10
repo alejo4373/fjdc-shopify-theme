@@ -210,9 +210,10 @@
         "text_RzNNw6"
       ],
       "custom_css": [
-        "@media screen and (min-width: 768px) {.rich-text__image.block-n-1 img {width: 100px; }}",
         ".rich-text__image.block-n-1 img {width: 70px; height: auto;}",
-        "@media screen and (min-width: 1024px) {.rich-text__image.block-n-1 img {width: 150px; }@media screen and (min-width: 1440px) {.rich-text__wrapper {padding-top: 7rem; padding-bottom: 8rem; }}"
+        "@media screen and (min-width: 768px) {.rich-text__image.block-n-1 img {width: 100px; }}",
+        "@media screen and (min-width: 1024px) {.rich-text__image.block-n-1 img {width: 150px; }}",
+        "@media screen and (min-width: 1440px) {.rich-text__wrapper {padding-top: 7rem; padding-bottom: 8rem; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
