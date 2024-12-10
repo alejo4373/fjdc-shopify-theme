@@ -1,19 +1,21 @@
 {%- style -%}
   .section-{{ section.id }} {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-    background-image: url("{{ section.settings.imagen_fondo | image_url }}");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    max-width: 1770px;
     margin: 0 auto;
-    background-position: bottom center;
+    max-width: 1440px;
     background-color: transparent;
-    padding: 40px 20px;
   }
 
-  .footer__content {
-    max-width: 1440px;
-    margin: 0 auto;
+  .borde-superior-footer {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 1px;
+  }
+
+  .section-{{ section.id }} .footer__wrapper {
+    padding: 40px 2rem;
+    background-color: #576744;
   }
 
   .section-{{ section.id }} .footer__content {
@@ -23,7 +25,8 @@
   }
 
   .section-{{ section.id }} .footer__heading {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 800;
     font-family: 'Iowan Old Style', serif;
     margin-bottom: 1rem;
   }
@@ -36,7 +39,7 @@
   }
 
   .section-{{ section.id }} .footer__info {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .section-{{ section.id }} .footer__content-right {
@@ -60,19 +63,18 @@
     margin-top: 3rem;
   }
 
+  .section-{{section.id }} .footer__copyright a:visited {
+    color: inherit;
+  }
 
   @media screen and (min-width: 540px) {
 
     .section-{{ section.id }} .footer__logo img {
-      max-width: 200px;
-    }
-
-    .section-{{ section.id }} {
-      padding: 60px 40px;
+      max-width: 150px;
     }
 
     .section-{{ section.id }} .footer__content {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 60% auto;
     }
 
     .section-{{ section.id }} .footer__content-right {
@@ -85,6 +87,28 @@
   }
 
   @media screen and (min-width: 768px) {
+    .section-{{ section.id }} .footer__wrapper {
+      padding: 60px 5rem;
+    }
+
+    .section-{{section.id }} .footer__heading {
+      font-size: 3rem;
+    }
+
+    .section-{{ section.id }} .footer__logo img {
+      max-width: 200px;
+    }
+
+    .section-{{section.id }} .footer__info {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .section-{{ section.id }} .footer__wrapper {
+      padding: 80px 13rem;
+    }
+
     .section-{{section.id }} .footer__heading {
       font-size: 4rem;
     }
@@ -92,67 +116,57 @@
     .section-{{section.id }} .footer__info {
       font-size: 2rem;
     }
+
+    .section-{{ section.id }} .footer__logo img {
+      max-width: 250px;
+    }
   }
 
-  @media screen and (min-width: 1024px) {
-    .section-{{ section.id }} {
-      padding: 80px 40px;
+  @media screen and (min-width: 1440px) {
+    .section-{{ section.id }} .footer__wrapper {
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
 
     .section-{{section.id }} .footer__heading {
-      font-size: 4.5rem;
+      font-size: 5rem;
     }
 
     .section-{{section.id }} .footer__info {
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
 
     .section-{{ section.id }} .footer__logo img {
       max-width: 300px;
     }
   }
-
-  @media screen and (min-width: 1440px) {
-    .section-{{ section.id }} {
-      padding: 100px 40px;
-    }
-
-    .section-{{section.id }} .footer__heading {
-      font-size: 6.5rem;
-    }
-
-    .section-{{section.id }} .footer__info {
-      font-size: 4rem;
-    }
-
-    .section-{{ section.id }} .footer__logo img {
-      max-width: 400px;
-    }
-  }
 {%- endstyle -%}
 
 <footer class="footer section-{{ section.id }} color-{{ section.settings.color_scheme }}">
-  <div class="footer__content">
-    <div class="footer__content-left">
-      <h2 class="footer__heading inline-richtext">{{- section.settings.titulo -}}</h2>
-      <div class="footer__info">
-        <p>{{ section.settings.telefono }}</p>
-        <p>{{ section.settings.direccion }}</p>
-        <p>{{ section.settings.nombre_de_contacto }}</p>
+  {{ 'borde-superior-footer.svg' | inline_asset_content }}
+  <div class="footer__wrapper">
+    <div class="footer__content">
+      <div class="footer__content-left">
+        <h2 class="footer__heading inline-richtext">{{- section.settings.titulo -}}</h2>
+        <div class="footer__info">
+          <p>{{ section.settings.telefono }}</p>
+          <p>{{ section.settings.direccion }}</p>
+          <p>{{ section.settings.nombre_de_contacto }}</p>
+        </div>
+      </div>
+      <div class="footer__content-right">
+        <div class="footer__logo">
+          {{ section.settings.logo | image_url: width: 600 | image_tag: loading: 'lazy' }}
+        </div>
       </div>
     </div>
-    <div class="footer__content-right">
-      <div class="footer__logo">
-        {{ section.settings.logo | image_url: width: 600 | image_tag: loading: 'lazy' }}
-      </div>
-    </div>
-  </div>
-  <div class="footer__content-bottom-wrapper page-width">
     <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__copyright caption">
-        <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
-        </small>
+      <div class="footer__content-bottom-wrapper page-width">
+        <div class="footer__copyright caption">
+          <small class="copyright__content"
+            >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+          </small>
+        </div>
       </div>
     </div>
   </div>
@@ -191,11 +205,6 @@
       "type": "image_picker",
       "id": "logo",
       "label": "Logo"
-    },
-    {
-      "type": "image_picker",
-      "id": "imagen_fondo",
-      "label": "Imagen de fondo"
     },
     {
       "type": "number",

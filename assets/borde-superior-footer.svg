@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_2"
+   data-name="Layer 2"
+   viewBox="0 0 2879.252 68.845702"
+   version="1.1"
+   class="borde-superior-footer"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .cls-3 {
+        fill: #576645;
+      }
+    </style>
+  </defs>
+  <path
+     id="path1"
+     class="cls-3"
+     d="M 2127.6406,0 C 1396.9429,13.193825 817.63447,119.36731 0,8.703125 V 68.845703 H 2879.2519 V 24.191406 C 2692.7158,8.6169749 2537.2088,2.4588412 2420.4922,0 Z" />
+</svg>
