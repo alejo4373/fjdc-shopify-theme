@@ -1,3 +1,25 @@
+.video-section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+@media screen and (min-width: 768px) {
+  .video-section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .video-section {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+
 .video-section__media {
   --ratio-percent: 56.25%;
   position: relative;
@@ -14,7 +36,8 @@
 }
 
 .video-section__media.deferred-media {
-  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
+  box-shadow: var(--media-shadow-horizontal-offset)
+    var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
     rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
