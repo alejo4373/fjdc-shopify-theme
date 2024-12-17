@@ -15,9 +15,19 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "custom_liquid_gf6ff9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<iframe id=\"vakiIframe\"\n    title=\"La Vaki de @elefantescol\"\n    width=\"350\"\n    height=\"415\"\n    src=\"https://vaki.co/iframe/RKqr3R13rXlk8GbfDRCW\">\n</iframe>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
+    "custom_liquid_gf6ff9"
   ]
 }
