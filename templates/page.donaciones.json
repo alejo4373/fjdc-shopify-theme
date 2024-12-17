@@ -19,7 +19,7 @@
     "custom_liquid_gf6ff9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<iframe id=\"vakiIframe\"\n    title=\"Hagamos un Bosque Entre Todos\"\n    width=\"100%\"\n    height=\"900px\"\n    src=\"https://vaki.co/iframe/9bL7ORKbh4SNaMLtCXQ2\">\n</iframe>",
+        "custom_liquid": "<div class=\"page-width section-template--15087385215105__main-padding\">\n<iframe id=\"vakiIframe\"\n    title=\"Hagamos un Bosque Entre Todos\"\n    width=\"100%\"\n    height=\"900px\" src=\"https://vaki.co/iframe/9bL7ORKbh4SNaMLtCXQ2\">\n</iframe>\n</div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
