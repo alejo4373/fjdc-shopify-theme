@@ -2382,17 +2382,6 @@ input[type="checkbox"] {
   z-index: initial;
 }
 
-/* Make 1st section be behind header */
-.shopify-section.section:nth-child(1) {
-  position: relative;
-  top: -84px; /* The height of the .header-wrapper */
-}
-
-@media screen and (min-width: 1103px) {
-  .shopify-section.section:nth-child(1) {
-    top: -172px; /* The height of the .header-wrapper */
-  }
-}
 /* Main Header Layout */
 .header-wrapper {
   display: block;
