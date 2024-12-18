@@ -114,6 +114,9 @@
         "collapsible-row-3",
         "share"
       ],
+      "custom_css": [
+        ".global-media-settings {background: transparent;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-f74c8ac1-1107-45d8-926e-0aa9cf1954f3",
