@@ -26,6 +26,12 @@
   {%- endif -%}
 
   {%- style -%}
+    {% if section.settings.background_transparent %}
+    #MainProduct-{{ section.id }} {
+      --gradient-background: transparent
+    }
+    {% endif %}
+
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -2088,6 +2094,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "background_transparent",
+      "default": false,
+      "label": "Fondo transparente"
     },
     {
       "type": "header",
