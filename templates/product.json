@@ -12,15 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_zGbyz7": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "caption": {
@@ -64,8 +61,8 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
+        "judge_me_reviews_preview_badge_zGbyz7",
         "caption",
         "price",
         "variant_picker",
