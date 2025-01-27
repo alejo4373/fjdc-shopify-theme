@@ -12,6 +12,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .section-{{ section.id }} {
+    background-image: url('{{ section.settings.background_image }}');
+    background-size: cover;
+    background-position: center center;
+  }
 {%- endstyle -%}
 
 <div class="isolate">
@@ -186,6 +192,15 @@
       "id": "padding_bottom",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
     }
   ],
   "blocks": [
