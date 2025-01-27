@@ -13,8 +13,8 @@
     }
   }
 
-  .section-{{ section.id }} {
-    background-image: url('{{ section.settings.background_image }}');
+  .rich-text {
+    background-image: url('{{ section.settings.background_image |  image_url: width: section.settings.background_image.width}}');
     background-size: cover;
     background-position: center center;
   }
