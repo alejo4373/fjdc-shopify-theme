@@ -35,8 +35,8 @@
         "image_LngXWa": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ave-2.svg",
-            "image_position": "right",
+            "image": "shopify://shop_images/antropomorfo-1.svg",
+            "image_position": "center",
             "image_width": 150
           }
         },
@@ -52,9 +52,9 @@
         "image_tnt4V3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ave-1.svg",
-            "image_position": "left",
-            "image_width": 220
+            "image": "shopify://shop_images/aves.svg",
+            "image_position": "center",
+            "image_width": 400
           }
         }
       },
@@ -76,7 +76,8 @@
         "color_scheme": "scheme-5",
         "full_width": false,
         "padding_top": 0,
-        "padding_bottom": 44
+        "padding_bottom": 44,
+        "background_image": "shopify://shop_images/fondo-pantalla-2.png"
       }
     },
     "video": {
