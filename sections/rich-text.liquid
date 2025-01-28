@@ -46,8 +46,10 @@
               {% liquid
                 assign text_style = ''
 
-                if block.settings.text_font == 'iowan-old-style'
+                if block.settings.text_font_custom == 'iowan-old-style'
                   assign text_style = text_style | append: 'font-family: Iowan Old Style, serif; '
+                elsif block.settings.text_font
+                  assign text_style = text_style | append: 'font-family: {{ block.settings.text_font.family }}, sans-serif; '
                 endif
               %}
               <div
@@ -300,8 +302,14 @@
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
         },
         {
-          "type": "select",
+          "type": "font_picker",
           "id": "text_font",
+          "default": "assistant_n4",
+          "label": "Text font"
+        },
+        {
+          "type": "select",
+          "id": "text_font_custom",
           "options": [
             {
               "value": "default",
