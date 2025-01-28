@@ -1,56 +1,24 @@
-{{ 'banner-center-image.css' | asset_url | stylesheet_tag }}
-
 {%- style -%}
   #Banner-{{ section.id }} .banner {
-    /* position: relative; */
-    z-index: 1;
     width: 100%;
-    height: 100vh;
+    overflow: hidden;
+    border: 2px solid red;
+  }
+
+  .banner__image {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-  }
-
-  /* Background Image */
-  .banner__background {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    z-index: 1;
+    max-width: 1440px;
+    max-height: 900px;
+    height: calc(100vw / 1.6);
+    margin: 0 auto;
   }
 
-  /* Semi-Transparent Overlay */
-  .banner__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    z-index: 2;
-  }
-
-  /* Foreground Image */
-  .banner__foreground {
-    z-index: 3;
-    width: 65%;
+  .banner__image img {
+    width: 45%;
     height: auto;
-  }
-
-  .banner__foreground img {
-    width: 100%;
-    height: 100%;
-  }
-
-  @media screen and (min-width: 425px) {
-    .banner__foreground {
-      width: 45%;
-      height: 45%;
-    }
   }
 {%- endstyle -%}
 
@@ -59,14 +27,7 @@
   class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
   <div class="banner">
-    <div class="banner__background" style="display: block;"></div>
-
-    <div
-      class="banner__overlay"
-      style="background-image: url('{{ section.settings.image | image_url: width: section.settings.image.width }}'); display: block"
-    ></div>
-
-    <div class="banner__foreground">
+    <div class="banner__image">
       {{
         section.settings.image_2
         | image_url: width: section.settings.image_2.width
