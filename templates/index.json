@@ -63,11 +63,9 @@
         "image_tnt4V3"
       ],
       "custom_css": [
-        ".rich-text__image.block-n-1 {position: relative; top: 2rem; padding-right: 1rem;}",
-        ".rich-text__image.block-n-1 img,.rich-text__image.block-n-3 img {width: 80px; height: auto;}",
-        ".rich-text__image.block-n-3 {margin-top: 0; position: relative; top: 1rem; left: 1rem;}",
-        "@media screen and (min-width: 1024px) {.rich-text__image.block-n-1 img, .rich-text__image.block-n-3 img {width: 120px; height: auto; }}",
-        "@media screen and (min-width: 1440px) {.rich-text__image.block-n-1 img, .rich-text__image.block-n-3 img {width: 160px; height: auto; }}"
+        ".rich-text__image.block-n-1 img {width: 50px; height: auto;}",
+        ".rich-text__image.block-n-3 img {width: 110px; height: auto;}",
+        "@media screen and (min-width: 1024px) {.rich-text__image.block-n-1 img {width: 120px; height: auto; } .rich-text__image.block-n-3 img {width: 270px; height: auto; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
