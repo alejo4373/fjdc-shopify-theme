@@ -25,7 +25,6 @@
         "@media screen and (min-width: 1103px) {.banner-center-image {top: -172px; /* The height of the .header-wrapper */ }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/fondo-pantalla-1.png",
         "image_2": "shopify://shop_images/logo-for-banner-2.svg"
       }
     },
@@ -76,8 +75,7 @@
         "color_scheme": "scheme-5",
         "full_width": false,
         "padding_top": 0,
-        "padding_bottom": 44,
-        "background_image": "shopify://shop_images/fondo-pantalla-2.png"
+        "padding_bottom": 44
       }
     },
     "video": {
