@@ -12,12 +12,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-
-  .rich-text {
-    background-image: url('{{ section.settings.background_image |  image_url: width: section.settings.background_image.width}}');
-    background-size: cover;
-    background-position: center center;
-  }
 {%- endstyle -%}
 
 <div class="isolate">
