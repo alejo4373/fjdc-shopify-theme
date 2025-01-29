@@ -44,16 +44,30 @@
               </p>
             {%- when 'text' -%}
               {% liquid
-                assign text_style = ''
+                assign chosen_font = block.settings.text_font | font_url
+                assign default_theme_font = settings.type_body_font | font_url
+              %}
+              {% if chosen_font != default_theme_font %}
+                {%- style -%}
+                  /* Load the font face picked by the user */
+                  {{block.settings.text_font | font_face}}
+                {%- endstyle -%}
+              {% endif %}
+              {% liquid
+                assign font_family = ''
+                assign font_weight = ''
 
                 if block.settings.text_font_custom == 'iowan-old-style'
-                  assign text_style = text_style | append: 'font-family: Iowan Old Style, serif; '
-                elsif block.settings.text_font
-                  assign text_style = text_style | append: 'font-family: {{ block.settings.text_font.family }}, sans-serif; '
+                  assign font_family = 'Iowan Old Style, serif; '
+                elsif chosen_font != default_theme_font
+                  assign font_family = block.settings.text_font.family | append: ', ' | append: block.settings.text_font.fallback_families
+                  assign font_weight = block.settings.text_font.weight
                 endif
+
+                assign text_style = 'font-family: ' | append: font_family | append: '; font-weight: ' | append: font_weight | append: ';'
               %}
               <div
-                class="rich-text__text rte {% if block.settings.larger_text %} rich-text__text--larger{% endif %} {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} {{ block.settings.text_font }} }}"
+                class="rich-text__text rte {% if block.settings.larger_text %} rich-text__text--larger{% endif %} {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} }}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
