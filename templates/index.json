@@ -96,7 +96,7 @@
         "text_VQ9G3f": {
           "type": "text",
           "settings": {
-            "text": "<p>Hemos tejido 3 rutas con hilos de colores, <br/></p>",
+            "text": "<p><strong>Hemos tejido 3 rutas con hilos de colores, <br/></strong></p>",
             "text_font": "assistant_n4",
             "text_font_custom": "iowan-old-style",
             "larger_text": false,
