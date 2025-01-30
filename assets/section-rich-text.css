@@ -15,10 +15,17 @@
   width: 100%;
 }
 
-.rich-text__font_scale--1 {
-  font-size: 1.6rem;
+.rich-text__text {
   letter-spacing: normal;
   line-height: 1;
+}
+
+.rich-text__font_scale--1 {
+  font-size: 1.6rem;
+}
+
+.rich-text__font_scale--2 {
+  font-size: 2.148rem;
 }
 
 .rich-text__blocks * {
@@ -123,6 +130,10 @@
     line-height: 1.2;
   }
 
+  .rich-text__font_scale--2 {
+    font-size: 2.686rem;
+  }
+
   .rich-text__text.rich-text__text--larger {
     font-size: 3rem;
   }
@@ -131,6 +142,10 @@
 @media screen and (min-width: 1024px) {
   .rich-text__font_scale--1 {
     font-size: 2.5rem;
+  }
+
+  .rich-text__font_scale--2 {
+    font-size: 3.35rem;
   }
 
   .rich-text__wrapper {
@@ -150,6 +165,11 @@
 @media screen and (min-width: 1440px) {
   .rich-text__font_scale--1 {
     font-size: 3rem;
+  }
+
+  .rich-text__font_scale--2 {
+    font-size: 4.029rem;
+    line-height: 1.07;
   }
 
   .rich-text__wrapper {

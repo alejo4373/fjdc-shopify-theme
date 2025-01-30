@@ -101,7 +101,8 @@
             "text_font": "assistant_n4",
             "text_font_custom": "iowan-old-style",
             "larger_text": false,
-            "bolder_text": true
+            "bolder_text": true,
+            "font_scale": "2"
           }
         },
         "text_ePipNE": {
@@ -111,7 +112,8 @@
             "text_font": "inter_n3",
             "text_font_custom": "iowan-old-style",
             "larger_text": false,
-            "bolder_text": false
+            "bolder_text": false,
+            "font_scale": "2"
           }
         }
       },
@@ -120,7 +122,8 @@
         "text_ePipNE"
       ],
       "custom_css": [
-        ".rich-text__image.block-n-1 .rich-text__image-image {width: 200%; height: auto; max-width: 1440px;}"
+        ".rich-text__image.block-n-1 .rich-text__image-image {width: 200%; height: auto; max-width: 1440px;}",
+        ".rich-text__blocks > * + * { margin-top: 0; }"
       ],
       "settings": {
         "desktop_content_position": "center",
