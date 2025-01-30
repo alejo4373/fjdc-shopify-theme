@@ -58,7 +58,7 @@
                 assign font_weight = 'normal'
 
                 if block.settings.text_font_custom == 'iowan-old-style'
-                  assign font_family = 'Iowan Old Style, serif; '
+                  assign font_family = "'Iowan Old Style', serif; "
                 elsif chosen_font != default_theme_font
                   assign font_family = block.settings.text_font.family | append: ', ' | append: block.settings.text_font.fallback_families
                   assign font_weight = block.settings.text_font.weight
@@ -67,7 +67,7 @@
                 assign text_style = 'font-family: ' | append: font_family | append: '; font-weight: ' | append: font_weight | append: ';'
               %}
               <div
-                class="rich-text__text rte {% if block.settings.larger_text %} rich-text__text--larger{% endif %} {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} rich-text__align--{{ block.settings.text_alignment }}"
+                class="rich-text__text rte {% if block.settings.larger_text %} rich-text__text--larger{% endif %} {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} rich-text__align--{{ block.settings.text_alignment }} rich-text__font_scale--{{ block.settings.font_scale }}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -354,6 +354,17 @@
           "id": "text_alignment",
           "label": "Text alignment",
           "default": "center"
+        },
+        {
+          "type": "radio",
+          "id": "font_scale",
+          "options": [
+            { "value": "1", "label": "1" },
+            { "value": "2", "label": "2" },
+            { "value": "3", "label": "3" }
+          ],
+          "default": "1",
+          "label": "Font scale"
         }
       ]
     },
