@@ -72,7 +72,7 @@
         "color_scheme": "scheme-31df9d14-5d2c-4ce2-bcb1-99a39cf432f9",
         "full_width": false,
         "padding_top": 90,
-        "padding_bottom": 90 
+        "padding_bottom": 90
       }
     },
     "video": {
@@ -93,28 +93,30 @@
     "rich_text_hmqNmj": {
       "type": "rich-text",
       "blocks": {
-        "image_fXQkFb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bosque-y-ave.png",
-            "image_position": "center",
-            "image_width": 1440
-          }
-        },
         "text_VQ9G3f": {
           "type": "text",
           "settings": {
-            "text": "<p>Hemos tejido 3 rutas con hilos de colores, <strong>recorriendo senderos naturales, caminos de herradura, cascadas y ríos, </strong>para recibir a los viajeros que aman las aves, el café, las flores y la naturaleza.<br/></p>",
+            "text": "<p>Hemos tejido 3 rutas con hilos de colores, <br/></p>",
             "text_font": "assistant_n4",
-            "text_font_custom": "default",
+            "text_font_custom": "iowan-old-style",
+            "larger_text": false,
+            "bolder_text": true
+          }
+        },
+        "text_ePipNE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>recorriendo senderos naturales, caminos de herradura, cascadas y ríos, para recibir a los viajeros que aman las aves, el café, las flores y la naturaleza.</strong></p>",
+            "text_font": "inter_n3",
+            "text_font_custom": "iowan-old-style",
             "larger_text": false,
             "bolder_text": false
           }
         }
       },
       "block_order": [
-        "image_fXQkFb",
-        "text_VQ9G3f"
+        "text_VQ9G3f",
+        "text_ePipNE"
       ],
       "custom_css": [
         ".rich-text__image.block-n-1 .rich-text__image-image {width: 200%; height: auto; max-width: 1440px;}"
