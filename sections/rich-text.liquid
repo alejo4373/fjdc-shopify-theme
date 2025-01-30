@@ -55,7 +55,7 @@
               {% endif %}
               {% liquid
                 assign font_family = ''
-                assign font_weight = ''
+                assign font_weight = 'normal'
 
                 if block.settings.text_font_custom == 'iowan-old-style'
                   assign font_family = 'Iowan Old Style, serif; '
@@ -67,7 +67,7 @@
                 assign text_style = 'font-family: ' | append: font_family | append: '; font-weight: ' | append: font_weight | append: ';'
               %}
               <div
-                class="rich-text__text rte {% if block.settings.larger_text %} rich-text__text--larger{% endif %} {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} }}"
+                class="rich-text__text rte {% if block.settings.larger_text %} rich-text__text--larger{% endif %} {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} rich-text__align--{{ block.settings.text_alignment }}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -348,6 +348,12 @@
           "id": "bolder_text",
           "label": "Use bolder text",
           "default": false
+        },
+        {
+          "type": "text_alignment",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "default": "center"
         }
       ]
     },
