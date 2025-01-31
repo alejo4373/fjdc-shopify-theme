@@ -262,7 +262,7 @@
           {% if settings.background_image_2 %}
             , url("{{settings.background_image_2 | image_url: width: settings.background_image_2.width}}")
           {% endif %};
-        background-repeat: no-repeat, no-repeat;
+        background-repeat: no-repeat, repeat;
         background-position: center 0;
         background-color: rgba({{ settings.background_color.red }}, {{ settings.background_color.green }}, {{ settings.background_color.blue }}, {{ settings.background_color.alpha }});
       }`
