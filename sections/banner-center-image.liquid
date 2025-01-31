@@ -11,13 +11,23 @@
     width: 100%;
     max-width: 1440px;
     max-height: 728px;
-    height: calc(100vw / 1.98);
+    height: 447px;
     margin: 0 auto;
   }
 
   .banner__image img {
-    width: 50%;
+    width: 256px;
     height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    .banner__image img {
+      width: 50%;
+    }
+
+    .banner__image {
+      height: calc(100vw / 1.98);
+    }
   }
 {%- endstyle -%}
 
