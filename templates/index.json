@@ -126,7 +126,11 @@
       ],
       "custom_css": [
         ".rich-text__image.block-n-1 .rich-text__image-image {width: 200%; height: auto; max-width: 1440px;}",
-        ".rich-text__blocks > * + * {margin-top: 0;}"
+        ".rich-text__blocks > * + * {margin-top: 0;}",
+        ".rich-text__wrapper { padding-top: 30px; padding-bottom: 30px; }",
+        "@media screen and (min-width: 768px) { .rich-text__wrapper { padding-top: 100px; padding-bottom: 40px; } }",
+        "@media screen and (min-width: 1024px) { .rich-text__wrapper { padding-top: 140px; } }",
+        "@media screen and (min-width: 1440px) { .rich-text__wrapper { padding-top: 200px; padding-bottom: 80px;} }"
       ],
       "settings": {
         "desktop_content_position": "center",
