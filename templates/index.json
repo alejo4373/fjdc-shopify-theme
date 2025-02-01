@@ -143,27 +143,27 @@
         "button_rHEMDF": {
           "type": "button",
           "settings": {
-            "button_image": "shopify://shop_images/petro-mono.png",
-            "button_image_width": 100,
-            "button_label": "Ruta \n  Nº 1",
+            "button_image": "shopify://shop_images/ruta-san-luis-boton.svg",
+            "button_image_width": 200,
+            "button_label": "",
             "button_link": "/ruta-1"
           }
         },
         "button_Ta6fez": {
           "type": "button",
           "settings": {
-            "button_image": "shopify://shop_images/petro-human.png",
-            "button_image_width": 100,
-            "button_label": "Ruta \n  Nº 2",
+            "button_image": "shopify://shop_images/ruta-el-hacha-boton.svg",
+            "button_image_width": 200,
+            "button_label": "",
             "button_link": "/ruta-1"
           }
         },
         "button_6wR9wF": {
           "type": "button",
           "settings": {
-            "button_image": "shopify://shop_images/petro-espiral.png",
+            "button_image": "shopify://shop_images/ruta-la-alacena-boton.svg",
             "button_image_width": 100,
-            "button_label": "Ruta \n  Nº 3",
+            "button_label": "",
             "button_link": "/ruta-1"
           }
         }
