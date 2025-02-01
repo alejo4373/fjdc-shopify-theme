@@ -204,8 +204,8 @@
         "image_7CpCW4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ave-3.svg",
-            "image_position": "left",
+            "image": "shopify://shop_images/aves-2.svg",
+            "image_position": "right",
             "image_width": 180
           }
         },
@@ -220,11 +220,20 @@
             "text_alignment": "center",
             "font_scale": "1"
           }
+        },
+        "image_dzWMa4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/petro-mono-2.svg",
+            "image_position": "left",
+            "image_width": 100
+          }
         }
       },
       "block_order": [
         "image_7CpCW4",
-        "text_RzNNw6"
+        "text_RzNNw6",
+        "image_dzWMa4"
       ],
       "custom_css": [
         ".rich-text__image.block-n-1 img {width: 70px; height: auto;}",
