@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     padding-left: 2rem;
     padding-right: 2rem;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
     max-width: 1440px;
     margin: 0 auto;
@@ -41,15 +41,10 @@
 
   /* For custom CSS */
   .inline-button__button img {
-    width: 40px;
+    width: 100px;
     height: auto;
   }
 
-  @media screen and (min-width: 473px) {
-    .inline-buttons {
-      justify-content: space-between;
-    }
-  }
 
   @media screen and (min-width: 768px) {
     .inline-buttons {
@@ -58,20 +53,22 @@
     }
   }
 
-  @media screen and (min-width: 1020px) {
-    .inline-buttons {
-      padding-left: 13rem;
-      padding-right: 13rem;
-    }
-
-    .inline-button__button {
-      font-size: 3.5rem;
-    }
-
+  @media screen and (min-width: 1024px) {
     .inline-button__button img {
-      width: 80px;
+      width: 130px;
       height: auto;
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .inline-button__button img {
+      width: 221.19px;
+      height: auto;
+    }
+
+  .inline-buttons {
+    gap: 5.9rem;
+  }
   }
 {%- endstyle -%}
 
