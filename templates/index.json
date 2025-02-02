@@ -261,10 +261,10 @@
             "link": "",
             "button_style_secondary": false,
             "box_align": "bottom-left",
-            "show_text_box": false,
+            "show_text_box": true,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-8d640c88-7887-4292-9eb6-3db2903fffe3",
             "text_alignment_mobile": "center"
           }
         },
