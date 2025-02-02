@@ -263,7 +263,7 @@
             "box_align": "bottom-left",
             "show_text_box": true,
             "text_alignment": "left",
-            "image_overlay_opacity": 30,
+            "image_overlay_opacity": 0,
             "color_scheme": "scheme-a69a5185-abfe-40d4-af50-1ec79be4517c",
             "text_alignment_mobile": "center"
           }
@@ -279,10 +279,10 @@
             "link": "",
             "button_style_secondary": false,
             "box_align": "bottom-left",
-            "show_text_box": false,
+            "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-a69a5185-abfe-40d4-af50-1ec79be4517c",
             "text_alignment_mobile": "left"
           }
         }
