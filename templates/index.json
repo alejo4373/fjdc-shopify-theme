@@ -73,7 +73,8 @@
         "color_scheme": "scheme-31df9d14-5d2c-4ce2-bcb1-99a39cf432f9",
         "full_width": false,
         "padding_top": 90,
-        "padding_bottom": 90
+        "padding_bottom": 90,
+        "seventh_screen_layout": false
       }
     },
     "video": {
@@ -135,7 +136,8 @@
         "color_scheme": "scheme-5",
         "full_width": false,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "seventh_screen_layout": false
       }
     },
     "inline-buttons": {
@@ -233,7 +235,7 @@
       ],
       "custom_css": [
         ".block-n-1 {padding-right: 30px; margin-bottom: 15px;}",
-        ".block-n-3 {padding-left: 30px;}",
+        ".block-n-3 {padding-left: 30px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -251,7 +253,7 @@
         "slide_eyr4Rx": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/plataneras-principal.png",
+            "image": "shopify://shop_images/1724350426650_1.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "Talleres de co-creación para el diseño de la Ruta Familias Jardineras del Cielo a cargo de Biophilia.",
@@ -269,7 +271,7 @@
         "slide_HgP3EB": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/lagarto.jpg",
+            "image": "shopify://shop_images/PXL_20240621_195343241.PORTRAIT_1.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "Ven y unete",
