@@ -238,7 +238,10 @@
     height: auto;
   }
 
-  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner):not(
+      .banner--color
+    )
+    .banner__box {
     background: transparent;
   }
 
