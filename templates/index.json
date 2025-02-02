@@ -309,7 +309,7 @@
         "titulo_tjdhcA": {
           "type": "titulo",
           "settings": {
-            "titulo": "<strong>Descubre las 3 rutas que diseñamos para ti</strong>"
+            "titulo": "Descubre las 3 rutas que diseñamos para ti"
           }
         },
         "boton_hCehNg": {
@@ -323,7 +323,7 @@
         "boton_HgibXd": {
           "type": "boton",
           "settings": {
-            "button_label": "Mapa",
+            "button_label": "Rutas",
             "button_link": "/mapa"
           }
         },
@@ -350,11 +350,15 @@
         "boton_BqWMzJ",
         "texto_HjkCY9"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 1440px) { h2 { max-width: 600px; }}",
+        ".rich-text .block-n-3 { margin-top: unset; }"
+      ],
       "settings": {
         "color_scheme": "scheme-5",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 7,
+        "padding_bottom": 7
       }
     }
   },

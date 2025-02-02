@@ -2,21 +2,17 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+    padding-top: {{ section.settings.padding_top}}%;
+    padding-bottom: {{ section.settings.padding_bottom}}%;
   }
 
   .section-{{ section.id }} h2 {
     margin-top: 0;
-    font-family: 'Iowan Old Style', serif;
-    font-size: 3rem;
+    font-family: 'Iowan Old Style Black', serif;
+    font-size: 2rem;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     letter-spacing: 0.3px;
     line-height: 0.9;
@@ -25,15 +21,15 @@
   .section-{{ section.id }} .botones {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .section-{{ section.id }} .inline-button__button.block-n-3 {
     font-family: 'Iowan Old Style Black', serif;
-    font-size: 1rem;
-    line-height: 3;
+    font-size: 1.1rem;
+    line-height: 2.2;
     background-color: #cf5342;
-    border-radius: 20px;
+    border-radius: 40px;
     color: #d9dada;
     align-self: center;
   }
@@ -64,7 +60,7 @@
     cursor: pointer;
     font: inherit;
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 500;
     text-decoration: none;
     transition: box-shadow var(--duration-short) ease;
     -webkit-appearance: none;
@@ -81,7 +77,10 @@
     line-height: 0.9;
     text-align: center;
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: -0.9px;
+    max-width: 408px;
   }
 
 
@@ -94,11 +93,9 @@
 
   @media screen and (min-width: 768px) {
     .section-{{ section.id }} h2 {
-      font-size: 4.5rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      letter-spacing: 2px;
+      font-size: 2.6rem;
+      max-width: 300px;
+      letter-spacing: -1px;
     }
 
     .section-{{ section.id }} .botones {
@@ -114,22 +111,22 @@
     }
 
     .section-{{ section.id }} .inline-button__button.block-n-3 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       line-height: 2.5;
     }
 
     .section-{{ section.id }} .rich-text__text {
       font-size: 2rem;
-      margin-left: auto;
-      margin-right: auto;
       letter-spacing: 0.8px;
+      max-width: 671px;
     }
   }
 
   @media screen and (min-width: 1024px) {
     .section-{{ section.id }} h2 {
-      font-size: 6rem;
-      word-spacing: 8px;
+      font-size: 3.6rem;
+      max-width: 450px;
+      /* word-spacing: 8px; */
     }
 
     .section-{{ section.id }} .botones {
@@ -152,18 +149,20 @@
     .section-{{ section.id }} .rich-text__text {
       margin-top: 4rem;
       font-size: 3rem;
+      max-width: 916px;
     }
   }
 
   @media screen and (min-width: 1440px) {
       .section-{{ section.id }} h2 {
-        font-size: 9.6rem;
-        max-width: 1048px;
+        font-size: 4.7rem;
+        margin-bottom: 50px;
+        line-height: 1.1;
       }
 
       .section-{{ section.id }} .botones {
-        gap: 8rem;
-        grid-template-columns: 200px 300px 200px;
+        gap: 12rem;
+        grid-template-columns: 200px 208px 200px;
         max-width: 860px;
       }
 
@@ -173,14 +172,14 @@
       }
 
       .section-{{ section.id }} .inline-button__button.block-n-3 {
-        font-size: 3.5rem;
-        line-height: 2.2;
+        font-size: 3rem;
+        line-height: 1.8;
       }
 
       .section-{{ section.id }} .rich-text__text {
         margin-top: 6rem;
         max-width: unset;
-        font-size: 5rem;
+        font-size: 3.8rem;
       }
 
   }
