@@ -42,7 +42,6 @@
             "text": "<p>Conectados con nuestro territorio ancestral, rodeado de montañas y petroglifos que evocan la vida, y una cultura campesina que florece en armonía entre cafetales y jardines, hemos dado vida a la <strong>Ruta Familias Jardineras del Cielo en Támesis, Suroeste de Antioquia.</strong></p><p>Como <strong>Organización Multisectorial de Campesinos Emprendedores (OMCE)</strong>, en alianza con <strong>Biophilia y el Grupo de Manejo Eficiente de la Energía (GIMEL) de la Universidad de Antioquia</strong>, desarrollamos un producto innovador que combina el aviturismo comunitario con la caficultura regenerativa, apoyados por el Ministerio de Ciencias de Colombia.</p>",
             "text_font": "inter_n3",
             "text_font_custom": "default",
-            "larger_text": false,
             "bolder_text": false,
             "text_alignment": "center",
             "font_scale": "1"
@@ -101,7 +100,6 @@
             "text": "<p><strong>Hemos tejido 3 rutas con hilos de colores, <br/></strong></p>",
             "text_font": "assistant_n4",
             "text_font_custom": "iowan-old-style",
-            "larger_text": false,
             "bolder_text": true,
             "text_alignment": "center",
             "font_scale": "2"
@@ -113,7 +111,6 @@
             "text": "<p><strong>recorriendo senderos naturales, caminos de herradura, cascadas y ríos, para recibir a los viajeros que aman las aves, el café, las flores y la naturaleza.</strong></p>",
             "text_font": "inter_n3",
             "text_font_custom": "iowan-old-style",
-            "larger_text": false,
             "bolder_text": false,
             "text_alignment": "center",
             "font_scale": "2"
@@ -206,7 +203,7 @@
           "settings": {
             "image": "shopify://shop_images/aves-2.svg",
             "image_position": "right",
-            "image_width": 180
+            "image_width": 100
           }
         },
         "text_RzNNw6": {
@@ -214,11 +211,10 @@
           "settings": {
             "text": "<p>Creemos que <strong>el turismo</strong>, cuando se practica <strong>con conciencia</strong>, puede ser un motor de desarrollo para nuestras comunidades y <strong>contribuir a la conservación de nuestra biodiversidad.</strong></p>",
             "text_font": "assistant_n4",
-            "text_font_custom": "default",
-            "larger_text": true,
+            "text_font_custom": "iowan-old-style",
             "bolder_text": true,
             "text_alignment": "center",
-            "font_scale": "1"
+            "font_scale": "3"
           }
         },
         "image_dzWMa4": {
@@ -226,7 +222,7 @@
           "settings": {
             "image": "shopify://shop_images/petro-mono-2.svg",
             "image_position": "left",
-            "image_width": 100
+            "image_width": 50
           }
         }
       },
@@ -236,10 +232,13 @@
         "image_dzWMa4"
       ],
       "custom_css": [
-        ".rich-text__image.block-n-1 img {width: 70px; height: auto;}",
-        "@media screen and (min-width: 768px) {.rich-text__image.block-n-1 img {width: 100px; }}",
-        "@media screen and (min-width: 1024px) {.rich-text__image.block-n-1 img {width: 150px; }}",
-        "@media screen and (min-width: 1440px) {.rich-text__wrapper {padding-top: 7rem; padding-bottom: 8rem; }}"
+        ".rich-text__text { font-weight: 600; }",
+        ".block-n-1 {padding-right: 30px; margin-bottom: 15px;}",
+        ".block-n-2 {margin-bottom;}",
+        ".block-n-3 {padding-left: 30px;}",
+        "@media screen and (min-width: 768px) {.rich-text { padding-top: 60px; padding-bottom: 60px; } .block-n-1 img {width: 170px; height: auto; } .block-n-3 img {width: 80px; height: auto; }}",
+        "@media screen and (min-width: 1024px) {.block-n-1 img {width: 200px; } .block-n-3 img {width: 100px; }}",
+        "@media screen and (min-width: 1440px) { .block-n-1 { margin-bottom: 91px; } .block-n-1 img {width: 241px; } .block-n-3 { margin-top: 81px } .block-n-3 img {width: 163px; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -247,7 +246,7 @@
         "color_scheme": "scheme-5",
         "full_width": true,
         "padding_top": 50,
-        "padding_bottom": 80
+        "padding_bottom": 50 
       }
     },
     "slideshow_C9UTjj": {

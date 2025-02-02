@@ -55,7 +55,7 @@
               {% endif %}
               {% liquid
                 assign font_family = ''
-                assign font_weight = 'normal'
+                assign font_weight = ''
 
                 if block.settings.text_font_custom == 'iowan-old-style'
                   assign font_family = "'Iowan Old Style', serif; "
@@ -67,7 +67,7 @@
                 assign text_style = 'font-family: ' | append: font_family | append: '; font-weight: ' | append: font_weight | append: ';'
               %}
               <div
-                class="rich-text__text rte {% if block.settings.larger_text %} rich-text__text--larger{% endif %} {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} rich-text__align--{{ block.settings.text_alignment }} rich-text__font_scale--{{ block.settings.font_scale }}"
+                class="rich-text__text rte {% if block.settings.bolder_text %} rich-text__text--bolder{% endif %} rich-text__align--{{ block.settings.text_alignment }} rich-text__font_scale--{{ block.settings.font_scale }}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -336,12 +336,6 @@
           ],
           "default": "default",
           "label": "Text font"
-        },
-        {
-          "type": "checkbox",
-          "id": "larger_text",
-          "label": "Use larger text",
-          "default": false
         },
         {
           "type": "checkbox",

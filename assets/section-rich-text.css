@@ -28,6 +28,10 @@
   font-size: 2.148rem;
 }
 
+.rich-text__font_scale--3 {
+  font-size: 2.148rem;
+}
+
 .rich-text__blocks * {
   overflow-wrap: break-word;
 }
@@ -87,12 +91,6 @@
   justify-content: right;
 }
 
-.rich-text__text.rich-text__text--larger {
-  margin-top: 0;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
 .rich-text__text.rich-text__text--bolder strong {
   font-family: "Iowan Old Style Black";
   font-weight: 500;
@@ -134,7 +132,7 @@
     font-size: 2.686rem;
   }
 
-  .rich-text__text.rich-text__text--larger {
+  .rich-text__font_scale--3 {
     font-size: 3rem;
   }
 }
@@ -148,6 +146,10 @@
     font-size: 3.35rem;
   }
 
+  .rich-text__font_scale--3 {
+    font-size: 3.7rem;
+  }
+
   .rich-text__wrapper {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -155,10 +157,6 @@
 
   .rich-text__blocks > * + * {
     margin-top: 4rem;
-  }
-
-  .rich-text__text.rich-text__text--larger {
-    font-size: 5rem;
   }
 }
 
@@ -169,6 +167,11 @@
 
   .rich-text__font_scale--2 {
     font-size: 4.029rem;
+    line-height: 1.07;
+  }
+
+  .rich-text__font_scale--3 {
+    font-size: 4.7rem;
     line-height: 1.07;
   }
 
