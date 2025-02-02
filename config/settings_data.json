@@ -270,7 +270,7 @@
       "scheme-a69a5185-abfe-40d4-af50-1ec79be4517c": {
         "settings": {
           "background": "#ffffff",
-          "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 1) 50%)",
+          "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.7) 56%)",
           "text": "#ffffff",
           "button": "#121212",
           "button_label": "#ffffff",
