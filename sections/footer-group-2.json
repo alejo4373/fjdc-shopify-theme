@@ -16,11 +16,10 @@
       "settings": {
         "color_scheme": "scheme-facde178-9adc-4ff8-9764-fe01a4300775",
         "titulo": "Contáctanos",
-        "telefono": "Tel: 324-208-3566",
+        "telefono": "Tel: 324-555-1234",
         "direccion": "Dirección: Cra. 11 #11-35, Támesis, Antioquia",
-        "nombre_de_contacto": "Nombre de contacto: Alejandro Franco Marin",
+        "nombre_de_contacto": "Nombre de contacto: Pepito Perez",
         "logo": "shopify://shop_images/logo-for-banner.svg",
-        "imagen_fondo": "shopify://shop_images/fondo-de-footer-png.png",
         "margin_top": 0
       }
     }
