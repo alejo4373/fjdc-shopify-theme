@@ -12,7 +12,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "p {font-size: 25px; color: #22487B; text-align: center; }"
+        "p {font-size: 25px; color: #22487b;}"
       ],
       "settings": {
         "padding_top": 28,
