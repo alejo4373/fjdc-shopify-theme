@@ -97,8 +97,8 @@
         "column_6MPHaa": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/puente.svg",
-            "title": "Sabor delicioso",
+            "image": "shopify://shop_images/PXL_20240621_195343241.PORTRAIT_1.jpg",
+            "title": "Apoyas a pequeñas familias agricultoras",
             "text": "<p>Vincula un texto con una imagen para atraer la atención hacia tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad y estilo, o incluso ofrece una reseña.</p>",
             "link_label": "",
             "link": ""
@@ -107,9 +107,9 @@
         "column_Phnn8y": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/logo-omce.svg",
-            "title": "Organico",
-            "text": "<p>Vincula un texto con una imagen para atraer la atención hacia tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad y estilo, o incluso ofrece una reseña.</p>",
+            "image": "shopify://shop_images/PXL_20220625_222115062.PORTRAIT.jpg",
+            "title": "Promueves el cuidado de nuestra biodiversidad",
+            "text": "<p>Las familias agricultoras seleccionadas para este proyecto implementan prácticas agroecológicas en sus cultivos, promoviendo el cuidado de nuestra biodiversidad</p>",
             "link_label": "",
             "link": ""
           }
@@ -117,9 +117,9 @@
         "column_BB9BTJ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/espiral.svg",
-            "title": "Apoya pequeñas familias caficultoras",
-            "text": "<p>Vincula un texto con una imagen para atraer la atención hacia tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad y estilo, o incluso ofrece una reseña.</p>",
+            "image": "shopify://shop_images/Tamesis_Jardineros_del_cielo_HD-31.jpg",
+            "title": "Sabores únicos y auténticos",
+            "text": "<p>Gracias a la biodiversidad de nuestros cultivos y a las peculiaridades geoclimaticas de nuestro municipio, nuestros productos poseen sabores y aromas auténticos</p>",
             "link_label": "",
             "link": ""
           }
@@ -131,7 +131,7 @@
         "column_BB9BTJ"
       ],
       "settings": {
-        "title": "Benficions de nuestro {{ product.title }}",
+        "title": "Beneficios de nuestro {{ product.title }}",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
