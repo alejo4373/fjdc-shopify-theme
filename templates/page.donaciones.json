@@ -16,7 +16,8 @@
       ],
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 28,
+        "hide_title": true
       }
     },
     "custom_liquid_gf6ff9": {
