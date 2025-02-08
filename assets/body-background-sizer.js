@@ -13,9 +13,21 @@ const resizeBg = () => {
     .getBoundingClientRect().height;
 
   const bgHeight = firstTwoSectionsHeight + headerMenuHeight;
+
+  let background1Size = `100% ${bgHeight}px`;
+  let background2Size = `100% auto`;
+
+  /* Hide 2nd background if page is not the index page */
+  if (window.location.pathname !== "/") {
+    background1Size = `0 0`;
+  }
+
   document
     .querySelector("body")
-    .style.setProperty("background-size", `auto ${bgHeight}px, 100% auto`);
+    .style.setProperty(
+      "background-size",
+      `${background1Size}, ${background2Size}`,
+    );
 };
 
 window.addEventListener("resize", () => {
