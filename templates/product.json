@@ -98,8 +98,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/PXL_20240621_195343241.PORTRAIT_1.jpg",
-            "title": "Apoyas a pequeñas familias agricultoras",
-            "text": "<p>Vincula un texto con una imagen para atraer la atención hacia tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad y estilo, o incluso ofrece una reseña.</p>",
+            "title": "<em><strong>Apoyas a pequeñas familias agricultoras</strong></em>",
+            "text": "<p>Cuando consumes nuestros productos estás apoyando a pequeñas familias agricultoras emprendedoras de nuestro municipio quienes quiere mantener latentes los valores del campo</p>",
             "link_label": "",
             "link": ""
           }
@@ -108,7 +108,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/PXL_20220625_222115062.PORTRAIT.jpg",
-            "title": "Promueves el cuidado de nuestra biodiversidad",
+            "title": "<em>Promueves el cuidado de nuestra biodiversidad</em>",
             "text": "<p>Las familias agricultoras seleccionadas para este proyecto implementan prácticas agroecológicas en sus cultivos, promoviendo el cuidado de nuestra biodiversidad</p>",
             "link_label": "",
             "link": ""
@@ -118,7 +118,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Tamesis_Jardineros_del_cielo_HD-31.jpg",
-            "title": "Sabores únicos y auténticos",
+            "title": "<em>Sabores únicos y auténticos</em>",
             "text": "<p>Gracias a la biodiversidad de nuestros cultivos y a las peculiaridades geoclimaticas de nuestro municipio, nuestros productos poseen sabores y aromas auténticos</p>",
             "link_label": "",
             "link": ""
