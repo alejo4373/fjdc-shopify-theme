@@ -208,6 +208,7 @@
         "collapsible_row_my4A9k",
         "collapsible_row_UpCYaR"
       ],
+      "disabled": true,
       "settings": {
         "caption": "Estamos aqui para ayudarte",
         "heading": "Preguntas Frequentes",
@@ -230,7 +231,7 @@
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
-        "color_scheme": "scheme-f18f7b4f-c7b9-4855-9668-ddcb80ef13ab",
+        "color_scheme": "scheme-5",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
