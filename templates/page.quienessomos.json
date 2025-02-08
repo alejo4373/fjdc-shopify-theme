@@ -11,6 +11,9 @@
   "sections": {
     "main": {
       "type": "quienessomos-page",
+      "custom_css": [
+        "p {font-size: 25px; color: #576645; text-align: center;}"
+      ],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
