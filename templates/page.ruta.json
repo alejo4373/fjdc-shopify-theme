@@ -11,11 +11,22 @@
   "sections": {
     "main": {
       "type": "ruta-page",
+      "blocks": {
+        "punto_de_mapa_fkiEmF": {
+          "type": "punto-de-mapa",
+          "settings": {
+            "image": "shopify://shop_images/ficha-tecnica-gallito-de-roca.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "punto_de_mapa_fkiEmF"
+      ],
       "custom_css": [],
       "settings": {
         "padding_top": 48,
         "padding_bottom": 100,
-        "mapa_svg": "shopify://shop_images/ruta-el-hacha.svg"
+        "mapa": "ruta-el-hacha"
       }
     }
   },
