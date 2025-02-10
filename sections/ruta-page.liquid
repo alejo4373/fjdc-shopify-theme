@@ -18,15 +18,15 @@
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
-  <div class="puntos-del-mapa">
+  <div class="puntos-del-mapa visually-hidden">
     {% for block in section.blocks %}
       {%- case block.type -%}
         {%- when 'punto-de-mapa' -%}
-          {{ block.settings.image | image_url: width: 300 | image_tag }}
+          {{ block.settings.image | image_url: width: 300 | image_tag: id: 'gallito-de-roca' }}
       {% endcase %}
     {% endfor %}
   </div>
-  <div id="mapa">
+  <div id="mapa" class="overflow-hidden" style="border: 1px solid #000">
     {% case section.settings.mapa %}
       {% when 'ruta-el-hacha' %}
         {% render 'ruta-el-hacha' %}
@@ -44,7 +44,8 @@
     panzoom(document.querySelector('#g1'));
 
     tippy('#ave1', {
-      content: 'My tooltip!',
+      content: document.querySelector('#gallito-de-roca'),
+      allowHTML: true,
     });
   });
 {% endjavascript %}
