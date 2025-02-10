@@ -15,6 +15,7 @@
       "settings": {
         "padding_top": 48,
         "padding_bottom": 100,
+        "mapa_svg": "shopify://shop_images/ruta-el-hacha.svg"
       }
     }
   },
