@@ -18,13 +18,36 @@
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
-  <div id="mapa">
-    {{ section.settings.mapa_svg | inline_asset_content }}
+  <div class="puntos-del-mapa">
+    {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when 'punto-de-mapa' -%}
+          {{ block.settings.image | image_url: width: 300 | image_tag }}
+      {% endcase %}
+    {% endfor %}
   </div>
-
-  <script src="https://unpkg.com/@popperjs/core@2" async></script>
-  <script src="https://unpkg.com/tippy.js@6" async></script>
+  <div id="mapa">
+    {% case section.settings.mapa %}
+      {% when 'ruta-el-hacha' %}
+        {% render 'ruta-el-hacha' %}
+      {% else %}
+        <p>Mapa no disponible</p>
+    {% endcase %}
+  </div>
 </div>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js"></script>
+{% javascript %}
+  document.addEventListener('DOMContentLoaded', () => {
+    // Make map draggable and zoomable
+    panzoom(document.querySelector('#g1'));
+
+    tippy('#ave1', {
+      content: 'My tooltip!',
+    });
+  });
+{% endjavascript %}
 
 {% schema %}
 {
@@ -58,12 +81,40 @@
     },
     {
       "type": "header",
-      "content": "Mapa en .SVG"
+      "content": "Mapa"
     },
     {
-      "type": "image_picker",
-      "id": "mapa_svg",
-      "label": "Mapa"
+      "type": "select",
+      "id": "mapa",
+      "label": "Mapa",
+      "default": "ruta-el-hacha",
+      "options": [
+        {
+          "label": "Ruta El Hacha",
+          "value": "ruta-el-hacha"
+        },
+        {
+          "label": "Ruta San Luis",
+          "value": "ruta-san-luis"
+        },
+        {
+          "label": "Ruta La Alacena",
+          "value": "ruta-la-alacena"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "punto-de-mapa",
+      "name": "Punto de mapa",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Contenido desplegable"
+        }
+      ]
     }
   ]
 }
