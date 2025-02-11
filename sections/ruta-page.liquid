@@ -18,11 +18,16 @@
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
-  <div class="puntos-del-mapa visually-hidden">
+  <div class="fichas-tecnicas visually-hidden">
     {% for block in section.blocks %}
       {%- case block.type -%}
-        {%- when 'punto-de-mapa' -%}
-          {{ block.settings.image | image_url: width: 300 | image_tag: id: 'gallito-de-roca' }}
+        {%- when 'ficha-tecnica' -%}
+          <div class="ficha-tecnica" id="punto-del-mapa">
+            {{ block.settings.image | image_url: width: 400 | image_tag: id: 'gallito-de-roca' }}
+            <div class="rich-text__text rte" {{ block.shopify_attributes }}>
+              {{ block.settings.text }}
+            </div>
+          </div>
       {% endcase %}
     {% endfor %}
   </div>
@@ -35,18 +40,34 @@
     {% endcase %}
   </div>
 </div>
+
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js"></script>
 {% javascript %}
   document.addEventListener('DOMContentLoaded', () => {
     // Make map draggable and zoomable
-    panzoom(document.querySelector('#g1'));
+    const mapContainer = document.querySelector('#g1');
 
-    tippy('#ave1', {
-      content: document.querySelector('#gallito-de-roca'),
+    const panZoomInstance = panzoom(mapContainer);
+
+    const ave = document.getElementById('rect681');
+    const instance = tippy(ave, {
+      content: document.querySelector('#punto-del-mapa'),
       allowHTML: true,
-      trigger: 'mouseenter focus',
+      trigger: 'manual',
+      maxWidth: 'none',
+      flipOnUpdate: true,
+    });
+
+    ave.addEventListener('touchend', (e) => {
+      instance.show();
+      panZoomInstance.pause();
+    });
+
+    ave.addEventListener('click', (e) => {
+      instance.show();
+      panZoomInstance.pause();
     });
   });
 {% endjavascript %}
@@ -108,13 +129,29 @@
   ],
   "blocks": [
     {
-      "type": "punto-de-mapa",
-      "name": "Punto de mapa",
+      "type": "ficha-tecnica",
+      "name": "Ficha tecnica de punto en el mapa",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Contenido desplegable"
+          "label": "Imagen"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Color de fondo"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Texto"
+        },
+        {
+          "type": "text",
+          "id": "element_id",
+          "label": "ID del punto en el mapa",
+          "info": "Identificador unico"
         }
       ]
     }
