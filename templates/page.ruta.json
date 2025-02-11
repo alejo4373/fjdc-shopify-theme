@@ -16,7 +16,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/ficha-tecnica-gallito-de-roca_b278f9c1-a9a4-4faa-bc93-ab62e27ff722.jpg",
-            "background_color": "#87ba25",
+            "background_color": "#82bea5",
             "text": "<h4>Descripción: </h4><p>En Támesis vive un ave emblemática, vibrante en apariencia y comportamiento: el Gallito de las Rocas. Más grande y robusto que una mirla, habita el bosque nublado entre los 500 y 2400 m de elevación. Durante el amanecer y el atardecer, especialmente al recorrer la Ruta San Luis, es fácil observar a los machos transformando ramas en escenarios de baile, saltando y emitiendo chillidos agudos, similares a los de un cerdo, para deslumbrar a las hembras. Su plumaje, rojo carmesí o anaranjado, contrasta con sus alas negras, terciarias plateadas y una llamativa cresta redondeada. Las hembras, más discretas, exhiben tonos marrones y un ojo pálido que hipnotiza. Su dieta incluye frutas, insectos grandes, y pequeños vertebrados como lagartijas y ranas, que los adultos preparan con habilidad para sus crías. Anidan en paredes de acantilados o rocas grandes como las del Río Frío. </p>",
             "element_id": "gallito-de-roca"
           }
