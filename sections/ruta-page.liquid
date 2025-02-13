@@ -103,6 +103,11 @@
     border-bottom-width: 3px;
     border-bottom-style: solid;
   }
+
+  #mapa svg {
+    width: 100%;
+    height: auto;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }} rich-text__wrapper section-{{ section.id }}-padding">
@@ -189,7 +194,15 @@
     // Make map draggable and zoomable
     const mapContainer = document.querySelector('#g1');
 
-    const panZoomInstance = panzoom(mapContainer);
+    const panZoomInstance = panzoom(mapContainer, {
+      initialZoom: 0.87,
+      minZoom: 0.87,
+      maxZoom: 3,
+      initialX: 622.5,
+      initialY: 398,
+      bounds: true,
+      boundsPadding: 0.7,
+    });
 
     const ave = document.getElementById('rect681');
 
