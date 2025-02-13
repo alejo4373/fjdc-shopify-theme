@@ -12,7 +12,7 @@
     "main": {
       "type": "quienessomos-page",
       "custom_css": [
-        "p {font-size: 25px; color: #576645; text-align: center; line-height: 1.4;}"
+        "p { text-align: center; line-height: 1.4;}"
       ],
       "settings": {
         "padding_top": 48,

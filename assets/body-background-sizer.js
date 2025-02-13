@@ -14,7 +14,7 @@ const resizeBg = () => {
 
   const bgHeight = firstTwoSectionsHeight + headerMenuHeight;
 
-  let background1Size = `100% ${bgHeight}px`;
+  let background1Size = `auto ${bgHeight}px`;
   let background2Size = `100% auto`;
 
   /* Hide 2nd background if page is not the index page */
