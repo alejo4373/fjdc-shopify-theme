@@ -91,6 +91,26 @@
   <div class="fichas-tecnicas visually-hidden">
     {% for block in section.blocks %}
       {%- case block.type -%}
+        {%- when 'menu-de-rutas' -%}
+          <div class="menu-de-rutas">
+            <ul>
+              <li>
+                <a href="{{ block.settings.page_1.url }}">
+                  {{ block.settings.image_1 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_1 }}
+                </a>
+              </li>
+              <li>
+                <a href="{{ block.settings.page_2.url }}">
+                  {{ block.settings.image_2 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_2 }}
+                </a>
+              </li>
+              <li>
+                <a href="{{ block.settings.page_3.url }}">
+                  {{ block.settings.image_3 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_3 }}
+                </a>
+              </li>
+            </ul>
+          </div>
         {%- when 'ficha-tecnica' -%}
           <div
             class="ficha-tecnica"
@@ -235,6 +255,63 @@
           "id": "element_id",
           "label": "ID del punto en el mapa",
           "info": "Identificador unico"
+        }
+      ]
+    },
+    {
+      "type": "menu-de-rutas",
+      "name": "Menu de rutas",
+      "settings": [
+        { "type": "header", "content": "Ruta 1" },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Imagen"
+        },
+        {
+          "type": "text",
+          "id": "alt_text_1",
+          "label": "Nombre de la ruta"
+        },
+        {
+          "type": "page",
+          "id": "page_1",
+          "label": "Pagina",
+          "info": "Pagina a la que redirigir"
+        },
+        { "type": "header", "content": "Ruta 2" },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Imagen"
+        },
+        {
+          "type": "text",
+          "id": "alt_text_2",
+          "label": "Nombre de la ruta"
+        },
+        {
+          "type": "page",
+          "id": "page_2",
+          "label": "Pagina",
+          "info": "Pagina a la que redirigir"
+        },
+        { "type": "header", "content": "Ruta 3" },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Imagen"
+        },
+        {
+          "type": "text",
+          "id": "alt_text_3",
+          "label": "Nombre de la ruta"
+        },
+        {
+          "type": "page",
+          "id": "page_3",
+          "label": "Pagina",
+          "info": "Pagina a la que redirigir"
         }
       ]
     }
