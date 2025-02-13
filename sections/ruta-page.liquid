@@ -1,36 +1,41 @@
 {{ 'ruta-page.css' | asset_url | stylesheet_tag }}
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  .section-{{ section.id }} {
+    flex-direction: column;
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+  }
 
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-    }
+  .ficha-tecnica {
+    padding: 20px;
+    height: 100%;
+  }
 
-    .ficha-tecnica {
-      padding: 20px;
-      height: 100%;
-    }
+  .ficha-tecnica h4 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
 
-    .ficha-tecnica h4 {
-      font-size: 2rem;
-      margin-bottom: 0;
-      font-weight: bold;
-    }
+  .ficha-tecnica p:first-of-type {
+    margin-top: 0.5rem;
+  }
 
-    .ficha-tecnica p:first-of-type {
-      margin-top: 0.5rem;
-    }
-
-    .ficha-tecnica img {
-      width: 100%;
-    }
+  .ficha-tecnica img {
+    width: 100%;
+  }
 
 
   .drawer {
@@ -82,35 +87,66 @@
     border: none;
     background: none;
   }
+
+  .menu-de-rutas {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .menu-de-rutas__link {
+    display: block;
+  }
+
+  .menu-de-rutas__link.active_link {
+    transform: scale(1.2);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+  }
 {%- endstyle -%}
 
-<div class="page-width section-{{ section.id }}-padding">
+<div class="section-{{ section.id }} rich-text__wrapper section-{{ section.id }}-padding">
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
+  {% for block in section.blocks %}
+    {%- case block.type -%}
+      {%- when 'menu-de-rutas' -%}
+        <ul class="menu-de-rutas list-unstyled">
+          <li>
+            <a
+              href="{{ block.settings.page_1.url }}"
+              class="menu-de-rutas__link {%if request.path == '/pages/rutas' %}active_link{% endif %}"
+              style="border-color: #CB554A"
+            >
+              {{ block.settings.image_1 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_1 }}
+            </a>
+          </li>
+          <li>
+            <a
+              href="{{ block.settings.page_2.url }}"
+              class="menu-de-rutas__link {%if request.path == block.settings.page_2.url %}active_link{% endif %}"
+              style="border-color: #2F6AA3"
+            >
+              {{ block.settings.image_2 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_2 }}
+            </a>
+          </li>
+          <li>
+            <a
+              href="{{ block.settings.page_3.url }} "
+              class="menu-de-rutas__link {%if request.path ==  block.settings.page_3.url %}active_link{% endif %}"
+              style="border-color: #8CBCA8"
+            >
+              {{ block.settings.image_3 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_3 }}
+            </a>
+          </li>
+        </ul>
+    {% endcase %}
+  {% endfor %}
+
   <div class="fichas-tecnicas visually-hidden">
     {% for block in section.blocks %}
       {%- case block.type -%}
-        {%- when 'menu-de-rutas' -%}
-          <div class="menu-de-rutas">
-            <ul>
-              <li>
-                <a href="{{ block.settings.page_1.url }}">
-                  {{ block.settings.image_1 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_1 }}
-                </a>
-              </li>
-              <li>
-                <a href="{{ block.settings.page_2.url }}">
-                  {{ block.settings.image_2 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_2 }}
-                </a>
-              </li>
-              <li>
-                <a href="{{ block.settings.page_3.url }}">
-                  {{ block.settings.image_3 | image_url: width: 100 | image_tag: alt: block.settings.alt_text_3 }}
-                </a>
-              </li>
-            </ul>
-          </div>
         {%- when 'ficha-tecnica' -%}
           <div
             class="ficha-tecnica"
@@ -125,6 +161,7 @@
       {% endcase %}
     {% endfor %}
   </div>
+
   <div id="mapa" class="overflow-hidden" style="border: 1px solid #000">
     {% case section.settings.mapa %}
       {% when 'ruta-el-hacha' %}
