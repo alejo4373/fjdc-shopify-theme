@@ -20,10 +20,25 @@
             "text": "<h4>Descripción: </h4><p>En Támesis vive un ave emblemática, vibrante en apariencia y comportamiento: el Gallito de las Rocas. Más grande y robusto que una mirla, habita el bosque nublado entre los 500 y 2400 m de elevación. Durante el amanecer y el atardecer, especialmente al recorrer la Ruta San Luis, es fácil observar a los machos transformando ramas en escenarios de baile, saltando y emitiendo chillidos agudos, similares a los de un cerdo, para deslumbrar a las hembras. Su plumaje, rojo carmesí o anaranjado, contrasta con sus alas negras, terciarias plateadas y una llamativa cresta redondeada. Las hembras, más discretas, exhiben tonos marrones y un ojo pálido que hipnotiza. Su dieta incluye frutas, insectos grandes, y pequeños vertebrados como lagartijas y ranas, que los adultos preparan con habilidad para sus crías. Anidan en paredes de acantilados o rocas grandes como las del Río Frío. </p>",
             "element_id": "gallito-de-roca"
           }
+        },
+        "menu_de_rutas_iVVKXf": {
+          "type": "menu-de-rutas",
+          "settings": {
+            "image_1": "shopify://shop_images/ruta-el-hacha-boton.svg",
+            "alt_text_1": "Ruta el Hacha",
+            "page_1": "rutas",
+            "image_2": "shopify://shop_images/ruta-san-luis-boton.svg",
+            "alt_text_2": "Ruta San Luis",
+            "page_2": "ruta-san-luis",
+            "image_3": "shopify://shop_images/ruta-la-alacena-boton.svg",
+            "alt_text_3": "Ruta La Alacena",
+            "page_3": "ruta-la-alacena"
+          }
         }
       },
       "block_order": [
-        "ficha_tecnica_iRmjkB"
+        "ficha_tecnica_iRmjkB",
+        "menu_de_rutas_iVVKXf"
       ],
       "custom_css": [],
       "settings": {
