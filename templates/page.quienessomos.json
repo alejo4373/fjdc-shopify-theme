@@ -12,12 +12,14 @@
     "main": {
       "type": "quienessomos-page",
       "custom_css": [
-        "p { text-align: center; line-height: 1.4;}"
+        "p {text-align: center; line-height: 1.4;}"
       ],
       "settings": {
         "padding_top": 48,
         "padding_bottom": 100,
-        "hide_title": true
+        "hide_title": true,
+        "font_scale": "1",
+        "color_scheme": "scheme-4be5f937-7969-47ab-808e-dc8b394d6b7a"
       }
     }
   },
