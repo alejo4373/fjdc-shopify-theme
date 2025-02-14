@@ -48,6 +48,15 @@
             "element_id": ""
           }
         },
+        "ficha_tecnica_iYb9mc": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/casa-de-la-cultura.jpg",
+            "background_color": "#e49162",
+            "text": "<p><strong>Casa de la cultura Hipolito J. Cardenas</strong></p><p>A solo dos cuadras del parque principal se alza la Casa de la Cultura \"Hipólito J. Cárdenas\", un ícono patrimonial que enorgullece a los habitantes de Támesis. Fundada en 1983 y diseñada por el arquitecto Agustín Goovaerts, conocido por el emblemático Palacio de la Cultura de Medellín, esta joya colonial invita a los visitantes a sumergirse en su historia. En su interior, alberga una biblioteca, un museo, un auditorio, un café y salas de exposición que promueven el arte y la cultura local. Su arquitectura y atmósfera brindan una experiencia enriquecedora, ideal para quienes buscan conectar con el espíritu cultural de Támesis.</p>",
+            "element_id": ""
+          }
+        },
         "menu_de_rutas_iVVKXf": {
           "type": "menu-de-rutas",
           "settings": {
@@ -68,6 +77,7 @@
         "ficha_tecnica_D8HaJF",
         "ficha_tecnica_BbUDcF",
         "ficha_tecnica_dFCnJd",
+        "ficha_tecnica_iYb9mc",
         "menu_de_rutas_iVVKXf"
       ],
       "custom_css": [],
