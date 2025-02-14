@@ -74,6 +74,15 @@
             "element_id": "puente-colgante"
           }
         },
+        "ficha_tecnica_LUjAnd": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/omce.jpg",
+            "background_color": "#2698d8",
+            "text": "<p><strong>Café con Historia </strong></p><p>Ubicado en la vereda San Luis, Café con Historia es mucho más que un lugar para disfrutar un buen café: es una experiencia que conecta al visitante con el alma de la cultura cafetera. Rodeado de casas campesinas y flores, emprendedoras locales sirven un café cuidadosamente seleccionado, acompañado de dulces tradicionales. Desde la terraza, se pueden contemplar las vistas al Valle del Cartama y la llegada de turpiales y azulejos al cafetal. Es el lugar ideal para saborear un café que evoca progreso, tradición y comunidad, mientras escuchas las historias de 50 familias que dan vida a este proyecto.</p>",
+            "element_id": ""
+          }
+        },
         "menu_de_rutas_iVVKXf": {
           "type": "menu-de-rutas",
           "settings": {
@@ -97,6 +106,7 @@
         "ficha_tecnica_iYb9mc",
         "ficha_tecnica_NRz9zP",
         "ficha_tecnica_RKTCtM",
+        "ficha_tecnica_LUjAnd",
         "menu_de_rutas_iVVKXf"
       ],
       "custom_css": [],
