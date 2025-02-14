@@ -66,6 +66,14 @@
             "element_id": ""
           }
         },
+        "ficha_tecnica_RKTCtM": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "background_color": "#1db092",
+            "text": "<p><strong>Puente Colgante </strong></p><p>Este icónico puente colgante sobre el Río Frío conecta las veredas San Luis y El Hacha, formando parte de la cautivadora \"Ruta de las Flores\". Perfecto para los amantes de la naturaleza y las caminatas, el puente ofrece una experiencia emocionante al cruzar sobre las aguas del río mientras disfrutas del paisaje montañoso. Es una parada imprescindible para quienes buscan aventura y belleza en un solo lugar.</p>",
+            "element_id": "puente-colgante"
+          }
+        },
         "menu_de_rutas_iVVKXf": {
           "type": "menu-de-rutas",
           "settings": {
@@ -88,6 +96,7 @@
         "ficha_tecnica_dFCnJd",
         "ficha_tecnica_iYb9mc",
         "ficha_tecnica_NRz9zP",
+        "ficha_tecnica_RKTCtM",
         "menu_de_rutas_iVVKXf"
       ],
       "custom_css": [],
