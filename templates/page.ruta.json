@@ -34,7 +34,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/Turpial_3.png",
-            "background_color": "",
+            "background_color": "#edc51b",
             "text": "<p><strong>Especie: </strong>Turpial Montañero /<em> </em>Yellow-backed Oriole /<em> Icterus chrysater</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Distribución: </strong>Residente</p><p><strong>Descripción:</strong> En las montañas, desde el sur de México hasta el norte de Colombia, entre</p><p>los 1000 y 2700 m de elevación, resalta con un plumaje amarillo brillante y un dorso negro</p><p>que se extiende hasta la cabeza y las alas, este vistoso e inconfudible pájaro: el Turpial</p><p>Montañero. Suele encontrarse en parejas o pequeños grupos, moviéndose entre los árboles</p><p>y arbustos en busca de insectos, frutas y néctar. Estas aves que forman parte de las</p><p>oropéndolas, construye nidos colgantes en forma de bolsa, suspendidos en las ramas altas,</p><p>donde empollan sus crías. Su canto melodioso y variado añade vida a los bosquesmontanos y cafetales de las Familias Jardineras del Cielo en Támesis.</p>",
             "element_id": "turpial"
           }
