@@ -39,6 +39,14 @@
             "element_id": "turpial"
           }
         },
+        "ficha_tecnica_dFCnJd": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "background_color": "",
+            "text": "<p><strong>Especie: </strong>Hormiguero Carcajada (Batará carcajada) /<em> </em>Bar-crested Antshrike /</p><p><em>Thamnophilus multistriatus</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Endemismo: Casi Endémica (CE)</strong></p><p><strong>Descripción:</strong> En las estribaciones andinas del norte de Colombia y el noroeste de</p><p>Venezuela, entre los 500 y 2000 m de elevación, resuena la risa distintiva del Hormiguero</p><p>Carcajada. Esta ave de tamaño mediano exhibe un plumaje gris con finas estrías negras en</p><p>todo el cuerpo, y una cresta prominente que levanta cuando está alerta. Se le encuentra en</p><p>parejas, moviéndose con agilidad entre el sotobosque y matorrales, capturando insectos y</p><p>arañas. Su llamado, una serie de notas ascendentes que culminan en una carcajada, es</p><p>inconfundible y a menudo delata su presencia antes de ser visto. Su comportamiento</p><p>esquivo y su preferencia por áreas densas hacen que observarlo sea un deleite para los</p><p>pacientes observadores que visiten la Ruta Familias Jardineras del Cielo en Támesis.</p>",
+            "element_id": ""
+          }
+        },
         "menu_de_rutas_iVVKXf": {
           "type": "menu-de-rutas",
           "settings": {
@@ -58,6 +66,7 @@
         "ficha_tecnica_iRmjkB",
         "ficha_tecnica_D8HaJF",
         "ficha_tecnica_BbUDcF",
+        "ficha_tecnica_dFCnJd",
         "menu_de_rutas_iVVKXf"
       ],
       "custom_css": [],
