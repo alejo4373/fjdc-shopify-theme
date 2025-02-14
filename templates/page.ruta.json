@@ -54,6 +54,15 @@
             "image": "shopify://shop_images/casa-de-la-cultura.jpg",
             "background_color": "#e49162",
             "text": "<p><strong>Casa de la cultura Hipolito J. Cardenas</strong></p><p>A solo dos cuadras del parque principal se alza la Casa de la Cultura \"Hipólito J. Cárdenas\", un ícono patrimonial que enorgullece a los habitantes de Támesis. Fundada en 1983 y diseñada por el arquitecto Agustín Goovaerts, conocido por el emblemático Palacio de la Cultura de Medellín, esta joya colonial invita a los visitantes a sumergirse en su historia. En su interior, alberga una biblioteca, un museo, un auditorio, un café y salas de exposición que promueven el arte y la cultura local. Su arquitectura y atmósfera brindan una experiencia enriquecedora, ideal para quienes buscan conectar con el espíritu cultural de Támesis.</p>",
+            "element_id": "casa-de-la-cultura"
+          }
+        },
+        "ficha_tecnica_NRz9zP": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/Museo-Cartama-de-Tamesis-reabrio-sus-puertas_copy.png",
+            "background_color": "",
+            "text": "<p><strong>Museo arqueológico Cartama</strong> </p><p>Ubicado en la Casa de la Cultura \"Hipólito J. Cárdenas\" en Támesis, el Museo Arqueológico Cartama ofrece una experiencia única que transporta a los visitantes al pasado del Suroeste antioqueño. Con más de 82,000 piezas arqueológicas que relatan la vida de pueblos ancestrales, el museo alberga verdaderos tesoros, como una aguja de hueso de venado y un rodillo de estampado, testigos de las primeras técnicas de la región y halladas durante el proyecto Conexión Pacífico 2. Recientemente renovado, el museo invita a locales y turistas a explorar la rica y milenaria historia de este fascinante territorio.</p>",
             "element_id": ""
           }
         },
@@ -78,6 +87,7 @@
         "ficha_tecnica_BbUDcF",
         "ficha_tecnica_dFCnJd",
         "ficha_tecnica_iYb9mc",
+        "ficha_tecnica_NRz9zP",
         "menu_de_rutas_iVVKXf"
       ],
       "custom_css": [],
