@@ -88,7 +88,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/jardin-botanico.jpg",
-            "background_color": "#576643",
+            "background_color": "#2868a7",
             "text": "<p><strong>Jardín Botánico </strong></p><p>A solo minutos del casco urbano de Támesis, el Jardín Botánico es un tesoro de biodiversidad que enamora con su tranquilidad y paisajes. Ideal para amantes de la naturaleza, este espacio está dedicado a la conservación de flora nativa y educación ambiental, ofreciendo senderos botánicos donde destacan especies medicinales y ornamentales. Desde su entrada, puedes apreciar el petroglifo más cercano al pueblo, mientras recorres el Sendero Patrimonial hacia el Cristo Rey y la cascada La Peinada. Un paraíso para la observación de aves y un sitio perfecto para conectarse con la riqueza natural del Suroeste antioqueño.</p>",
             "element_id": "jardin-botanico"
           }
