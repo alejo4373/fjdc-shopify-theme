@@ -36,7 +36,7 @@
             "image": "shopify://shop_images/hormiguero.jpg",
             "background_color": "",
             "text": "<p><strong>Especie: </strong>Hormiguero Carcajada (Batará carcajada) /<em> </em>Bar-crested Antshrike /</p><p><em>Thamnophilus multistriatus</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Endemismo: Casi Endémica (CE)</strong></p><p><strong>Descripción:</strong> En las estribaciones andinas del norte de Colombia y el noroeste de</p><p>Venezuela, entre los 500 y 2000 m de elevación, resuena la risa distintiva del Hormiguero</p><p>Carcajada. Esta ave de tamaño mediano exhibe un plumaje gris con finas estrías negras en</p><p>todo el cuerpo, y una cresta prominente que levanta cuando está alerta. Se le encuentra en</p><p>parejas, moviéndose con agilidad entre el sotobosque y matorrales, capturando insectos y</p><p>arañas. Su llamado, una serie de notas ascendentes que culminan en una carcajada, es</p><p>inconfundible y a menudo delata su presencia antes de ser visto. Su comportamiento</p><p>esquivo y su preferencia por áreas densas hacen que observarlo sea un deleite para los</p><p>pacientes observadores que visiten la Ruta Familias Jardineras del Cielo en Támesis.</p>",
-            "element_id": ""
+            "element_id": "hormiguero-carcajada"
           }
         },
         "ficha_tecnica_iYb9mc": {
@@ -54,7 +54,7 @@
             "image": "shopify://shop_images/Museo-Cartama-de-Tamesis-reabrio-sus-puertas_copy.png",
             "background_color": "",
             "text": "<p><strong>Museo arqueológico Cartama</strong> </p><p>Ubicado en la Casa de la Cultura \"Hipólito J. Cárdenas\" en Támesis, el Museo Arqueológico Cartama ofrece una experiencia única que transporta a los visitantes al pasado del Suroeste antioqueño. Con más de 82,000 piezas arqueológicas que relatan la vida de pueblos ancestrales, el museo alberga verdaderos tesoros, como una aguja de hueso de venado y un rodillo de estampado, testigos de las primeras técnicas de la región y halladas durante el proyecto Conexión Pacífico 2. Recientemente renovado, el museo invita a locales y turistas a explorar la rica y milenaria historia de este fascinante territorio.</p>",
-            "element_id": ""
+            "element_id": "museo-cartama"
           }
         },
         "ficha_tecnica_RKTCtM": {
@@ -72,7 +72,7 @@
             "image": "shopify://shop_images/omce.jpg",
             "background_color": "#2698d8",
             "text": "<p><strong>Café con Historia </strong></p><p>Ubicado en la vereda San Luis, Café con Historia es mucho más que un lugar para disfrutar un buen café: es una experiencia que conecta al visitante con el alma de la cultura cafetera. Rodeado de casas campesinas y flores, emprendedoras locales sirven un café cuidadosamente seleccionado, acompañado de dulces tradicionales. Desde la terraza, se pueden contemplar las vistas al Valle del Cartama y la llegada de turpiales y azulejos al cafetal. Es el lugar ideal para saborear un café que evoca progreso, tradición y comunidad, mientras escuchas las historias de 50 familias que dan vida a este proyecto.</p>",
-            "element_id": ""
+            "element_id": "omce"
           }
         },
         "ficha_tecnica_fQBmhB": {
