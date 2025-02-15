@@ -108,6 +108,21 @@
     width: 100%;
     height: auto;
   }
+
+  @keyframes jump {
+    50% {
+      transform: translateY(-10px)
+    }
+    100% {
+      transform: translateY(0px)
+    }
+  }
+
+  .map-point:hover {
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }} rich-text__wrapper section-{{ section.id }}-padding">
@@ -149,23 +164,36 @@
     {% endcase %}
   {% endfor %}
 
-  <div class="fichas-tecnicas visually-hidden">
-    {% for block in section.blocks %}
-      {%- case block.type -%}
-        {%- when 'ficha-tecnica' -%}
-          <div
-            class="ficha-tecnica"
-            id="punto-del-mapa"
-            style="background-color: {{ block.settings.background_color }}"
-          >
-            {{ block.settings.image | image_url: width: 400 | image_tag: id: 'gallito-de-roca' }}
-            <div class="rich-text__text rte" {{ block.shopify_attributes }}>
-              {{ block.settings.text }}
+  <div id="side-drawer" class="drawer">
+    <div class="drawer-content">
+      <button id="close-drawer" class="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000">
+          <path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+      {% for block in section.blocks %}
+        {%- case block.type -%}
+          {%- when 'ficha-tecnica' -%}
+            {% liquid
+              assign id = block.settings.element_id | append: '__ficha-tecnica'
+              assign data_map_point_id = block.settings.element_id
+            %}
+            <div
+              class="ficha-tecnica hidden"
+              id="{{ id }}"
+              data-map-point-id="{{ data_map_point_id }}"
+              style="background-color: {{ block.settings.background_color }}"
+            >
+              {{ block.settings.image | image_url: width: 400 | image_tag: alt: block.settings.element_id }}
+              <div class="rich-text__text rte" {{ block.shopify_attributes }}>
+                {{ block.settings.text }}
+              </div>
             </div>
-          </div>
-      {% endcase %}
-    {% endfor %}
+        {% endcase %}
+      {% endfor %}
+    </div>
   </div>
+  <div class="drawer-overlay" id="drawer-overlay">0</div>
 
   <div id="mapa" class="overflow-hidden" style="border: 1px solid #000">
     {% case section.settings.mapa %}
@@ -175,25 +203,12 @@
         <p>Mapa no disponible</p>
     {% endcase %}
   </div>
-
-  <div id="side-drawer" class="drawer">
-    <div class="drawer-content">
-      <button id="close-drawer" class="close-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000">
-          <path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div class="drawer-overlay" id="drawer-overlay">0</div>
 </div>
 
 <script src="https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" defer></script>
 {% javascript %}
   document.addEventListener('DOMContentLoaded', () => {
-    // Make map draggable and zoomable
-    const mapContainer = document.querySelector('#g1');
-
+    const mapContainer = document.querySelector('#ruta-el-hacha-svg');
     const panZoomInstance = panzoom(mapContainer, {
       initialZoom: 0.87,
       minZoom: 0.87,
@@ -204,24 +219,33 @@
       boundsPadding: 0.7,
     });
 
-    const ave = document.getElementById('rect681');
-
-    ['click', 'touchend'].forEach((eventName) => {
-      ave.addEventListener(eventName, () => {
-        document.getElementById('side-drawer').classList.add('open');
-
-        document.querySelector('.drawer-content').appendChild(document.getElementById('punto-del-mapa'));
+    const fichasTecnicas = document.querySelectorAll('.ficha-tecnica');
+    fichasTecnicas.forEach((fichaTecnica) => {
+      ['click', 'touchend'].forEach((eventName) => {
+        const mapPoint = document.querySelector(`#${fichaTecnica.dataset.mapPointId}`);
+        mapPoint?.addEventListener(eventName, () => {
+          openDrawer(fichaTecnica.id);
+        });
       });
     });
 
-    document.getElementById('close-drawer').addEventListener('click', () => {
-      document.getElementById('side-drawer').classList.remove('open');
-    });
+    /** Drawer functionality **/
+    const openDrawer = (fichaTecnicaId) => {
+      const drawer = document.getElementById('side-drawer');
+      drawer.classList.add('open');
+      drawer.dataset.fichaTecnicaId = fichaTecnicaId;
+      document.getElementById(fichaTecnicaId)?.classList.remove('hidden');
+    };
 
-    // Close drawer when clicking outside
-    document.getElementById('drawer-overlay').addEventListener('click', () => {
-      document.getElementById('side-drawer').classList.remove('open');
-    });
+    const closeDrawer = () => {
+      const drawer = document.getElementById('side-drawer');
+      drawer.classList.remove('open');
+      document.getElementById(drawer.dataset.fichaTecnicaId)?.classList.add('hidden');
+      drawer.dataset.fichaTecnicaId = '';
+    };
+
+    document.getElementById('close-drawer').addEventListener('click', closeDrawer);
+    document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
   });
 {% endjavascript %}
 
