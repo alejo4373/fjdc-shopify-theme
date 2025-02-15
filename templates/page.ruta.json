@@ -52,7 +52,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/Museo-Cartama-de-Tamesis-reabrio-sus-puertas_copy.png",
-            "background_color": "",
+            "background_color": "#89bea8",
             "text": "<p><strong>Museo arqueológico Cartama</strong> </p><p>Ubicado en la Casa de la Cultura \"Hipólito J. Cárdenas\" en Támesis, el Museo Arqueológico Cartama ofrece una experiencia única que transporta a los visitantes al pasado del Suroeste antioqueño. Con más de 82,000 piezas arqueológicas que relatan la vida de pueblos ancestrales, el museo alberga verdaderos tesoros, como una aguja de hueso de venado y un rodillo de estampado, testigos de las primeras técnicas de la región y halladas durante el proyecto Conexión Pacífico 2. Recientemente renovado, el museo invita a locales y turistas a explorar la rica y milenaria historia de este fascinante territorio.</p>",
             "element_id": "museo-cartama"
           }
