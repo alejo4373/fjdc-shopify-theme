@@ -34,7 +34,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/hormiguero.jpg",
-            "background_color": "",
+            "background_color": "#eee3c7",
             "text": "<p><strong>Especie: </strong>Hormiguero Carcajada (Batará carcajada) /<em> </em>Bar-crested Antshrike / <em>Thamnophilus multistriatus</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Endemismo: Casi Endémica (CE)</strong></p><p><strong>Descripción:</strong> En las estribaciones andinas del norte de Colombia y el noroeste de Venezuela, entre los 500 y 2000 m de elevación, resuena la risa distintiva del  Hormiguero Carcajada. Esta ave de tamaño mediano exhibe un plumaje gris con finas estrías negras en todo el cuerpo, y una cresta prominente que levanta cuando está alerta. Se le encuentra en parejas, moviéndose con agilidad entre el sotobosque y matorrales, capturando insectos y arañas. Su llamado, una serie de notas ascendentes que culminan en una carcajada, es inconfundible y a menudo delata su presencia antes de ser visto. Su comportamiento esquivo y su preferencia por áreas densas hacen que observarlo sea un deleite para los pacientes observadores que visiten la Ruta Familias Jardineras del Cielo en Támesis.</p>",
             "element_id": "hormiguero-carcajada"
           }
@@ -79,7 +79,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/frutos.jpg",
-            "background_color": "#67c0db",
+            "background_color": "#89bea8",
             "text": "<p><strong>Frutos: Mercado Campesino</strong></p><p>A solo dos cuadras del parque principal, Frutos: Mercado Campesino se erige como el corazón de la economía local en Támesis, donde “tamesino compra a tamesino”. Este mercado colaborativo, gestionado por la Organización Multisectorial Campesinos Emprendedores (OMCE), reúne más de 170 productos frescos y artesanales de la región, desde frutas y hortalizas hasta chocolates, cafés especiales y artesanías únicas. Este espacio invita a los visitantes a llevarse un pedacito de la creatividad y el trabajo de los habitantes de Támesis, celebrando el talento y el compromiso con la tradición local.</p>",
             "element_id": "frutos"
           }
