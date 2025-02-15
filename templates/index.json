@@ -324,7 +324,7 @@
           "type": "boton",
           "settings": {
             "button_label": "Rutas",
-            "button_link": "/mapa"
+            "button_link": "shopify://pages/rutas"
           }
         },
         "boton_BqWMzJ": {
@@ -351,8 +351,8 @@
         "texto_HjkCY9"
       ],
       "custom_css": [
-        "@media screen and (min-width: 1440px) { h2 { max-width: 600px; }}",
-        ".rich-text .block-n-3 { margin-top: unset; }"
+        "@media screen and (min-width: 1440px) {h2 {max-width: 600px; }}",
+        ".rich-text .block-n-3 {margin-top: unset;}"
       ],
       "settings": {
         "color_scheme": "scheme-5",
