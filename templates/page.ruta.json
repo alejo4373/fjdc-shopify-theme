@@ -102,6 +102,15 @@
             "element_id": "jardin-botanico"
           }
         },
+        "ficha_tecnica_RdpFxj": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/parque-educativo.jpg",
+            "background_color": "#4c7aba",
+            "text": "<p><strong>Parque Educativo “Cartama, un encuentro de saberes”</strong></p><p>El Parque Educativo \"Cartama, Un encuentro de saberes\" es un innovador espacio público en Támesis que simboliza el compromiso con la educación como motor de transformación social. Aquí, los visitantes pueden disfrutar de programas educativos variados, que van desde talleres de arte hasta clases de tecnología, para todas las edades. Además, el parque alberga la tienda “Café y Saber”, atendida por baristas adolescentes que enseñan sobre la preparación de café especial, desde la molienda hasta la extracción. Este lugar es ideal para aprender, conectarse y saborear un buen café mientras se promueve el conocimiento y la cultura local.</p>",
+            "element_id": "parque-educativo"
+          }
+        },
         "menu_de_rutas_iVVKXf": {
           "type": "menu-de-rutas",
           "settings": {
@@ -128,6 +137,7 @@
         "ficha_tecnica_LUjAnd",
         "ficha_tecnica_fQBmhB",
         "ficha_tecnica_fkUh7p",
+        "ficha_tecnica_RdpFxj",
         "menu_de_rutas_iVVKXf"
       ],
       "custom_css": [],
