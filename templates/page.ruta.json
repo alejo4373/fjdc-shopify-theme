@@ -16,7 +16,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/Torito_Cabecirojo_3.png",
-            "background_color": "#d12c2c",
+            "background_color": "#eee3c7",
             "text": "<p><strong>Especie: </strong>Torito Cabecirrojo /<em> </em>Red-headed Barbet /<em> Eubucco bourcierii</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Distribución: </strong>Residente</p><p><strong>Descripción:</strong> En los bosques húmedos de montaña, entre los 600 y 2000 m de elevación, se encuentra el Torito Cabecirrojo. Con una longitud de alrededor de 15 cm, los machos lucen un rojo intenso en cabeza y pecho que contrasta con su cuerpo verde esmeralda, mientras que las hembras presentan una coloración más discreta de tono gris azulado nacarado. Solitarios o en parejas, estos pequeños pájaros se desplazan silenciosamente por el sotobosque y el dosel bajo, buscando frutas e insectos. Excavan cavidades en troncos blandos o ramas para anidar, donde la hembra deposita de dos a tres huevos</p><p>blancos. A menudo se les escucha antes de verlos, gracias a sus llamados distintivos,</p><p>parecidos a un trino ronroneante, que resuena en la espesura.</p>",
             "element_id": "torito-cabecirojo"
           }
