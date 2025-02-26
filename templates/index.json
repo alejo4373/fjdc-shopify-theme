@@ -149,7 +149,7 @@
             "button_image": "shopify://shop_images/ruta-san-luis-boton.svg",
             "button_image_width": 200,
             "button_label": "",
-            "button_link": "/ruta-1"
+            "button_link": "shopify://pages/ruta-san-luis"
           }
         },
         "button_Ta6fez": {
@@ -158,7 +158,7 @@
             "button_image": "shopify://shop_images/ruta-el-hacha-boton.svg",
             "button_image_width": 200,
             "button_label": "",
-            "button_link": "/ruta-1"
+            "button_link": "shopify://pages/ruta-el-hacha"
           }
         },
         "button_6wR9wF": {
@@ -167,7 +167,7 @@
             "button_image": "shopify://shop_images/ruta-la-alacena-boton.svg",
             "button_image_width": 100,
             "button_label": "",
-            "button_link": "/ruta-1"
+            "button_link": "shopify://pages/ruta-la-alacena"
           }
         }
       },
