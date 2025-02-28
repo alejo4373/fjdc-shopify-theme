@@ -219,11 +219,16 @@
       boundsPadding: 0.7,
     });
 
+    let panInProgress = false;
+    panZoomInstance.on('panstart', () => (panInProgress = true));
+    panZoomInstance.on('panend', () => (panInProgress = false));
+
     const fichasTecnicas = document.querySelectorAll('.ficha-tecnica');
     fichasTecnicas.forEach((fichaTecnica) => {
       ['click', 'touchend'].forEach((eventName) => {
         const mapPoint = document.querySelector(`#${fichaTecnica.dataset.mapPointId}`);
         mapPoint?.addEventListener(eventName, () => {
+          if (panInProgress) return; // Ignore a touchend if user was panning
           openDrawer(fichaTecnica.id);
         });
       });

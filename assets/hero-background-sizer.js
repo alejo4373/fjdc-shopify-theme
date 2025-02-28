@@ -13,6 +13,7 @@ const resizeBg = () => {
     .getBoundingClientRect().height;
 
   const bgHeight = firstTwoSectionsHeight + headerMenuHeight;
+  console.log(bgHeight, firstTwoSectionsHeight, headerMenuHeight);
 
   let background1Size = `auto ${bgHeight}px`;
   let background2Size = `100% auto`;
@@ -23,11 +24,8 @@ const resizeBg = () => {
   }
 
   document
-    .querySelector("body")
-    .style.setProperty(
-      "background-size",
-      `${background1Size}, ${background2Size}`,
-    );
+    .querySelector(".hero-bg img")
+    .style.setProperty("height", `${bgHeight}px`);
 };
 
 window.addEventListener("resize", () => {

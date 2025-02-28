@@ -34,7 +34,7 @@
     <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'body-background-sizer.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'hero-background-sizer.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
@@ -257,13 +257,6 @@
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
-        background-image:
-          url("{{settings.background_image | image_url: width: settings.background_image.width}}")
-          {% if settings.background_image_2 %}
-            , url("{{settings.background_image_2 | image_url: width: settings.background_image_2.width}}")
-          {% endif %};
-        background-repeat: no-repeat, repeat;
-        background-position: center 0;
         background-color: rgba({{ settings.background_color.red }}, {{ settings.background_color.green }}, {{ settings.background_color.blue }}, {{ settings.background_color.alpha }});
       }`
 
@@ -271,6 +264,48 @@
         body {
           font-size: 1.6rem;
         }
+      }
+      .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+      }
+
+      .bg svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .bg img {
+        width: 100%;
+        height: auto; /** This will later be overridden by hero-background--sizer.js */
+        object-fit: cover;
+      }
+
+      .bg-texture {
+        z-index: -2;
+      }
+
+      .hero-bg {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+      }
+
+      .hero-bg .img-wrapper {
+        max-width: 1440px;
+        display: block;
+        margin: 0 auto;
+        background-color: #556942;
+      }
+
+
+      #MainContent {
+        position: relative;
+        z-index: 1;
       }
     {% endstyle %}
 
@@ -327,7 +362,12 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
-
+    <div class="hero-bg bg">
+      <div class="img-wrapper">
+        {{ settings.background_image | image_url: width: settings.background_image.width | image_tag }}
+      </div>
+    </div>
+    {% render 'textura-fondo' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
