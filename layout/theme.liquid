@@ -34,7 +34,7 @@
     <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'hero-background-sizer.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'body-background-sizer.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
@@ -265,39 +265,44 @@
           font-size: 1.6rem;
         }
       }
+
       .bg {
         position: absolute;
+        display: flex;
+        justify-content: center;
         top: 0;
         left: 0;
         width: 100%;
         pointer-events: none;
+        margin: 0 auto;
       }
 
       .bg svg {
-        width: 100%;
+        position: absolute;
         height: 100%;
       }
 
+
       .bg img {
         width: 100%;
-        height: auto; /** This will later be overridden by hero-background--sizer.js */
+        height: auto; /** This will later be overridden by body-background-sizer.js */
         object-fit: cover;
       }
 
       .bg-texture {
         z-index: -2;
+        text-align: center;
+        overflow: hidden;
       }
 
       .hero-bg {
-        z-index: -1;
         position: absolute;
-        top: 0;
-        bottom: 0;
+        z-index: -1;
+        display: none;
       }
 
       .hero-bg .img-wrapper {
         max-width: 1440px;
-        display: block;
         margin: 0 auto;
         background-color: #556942;
       }

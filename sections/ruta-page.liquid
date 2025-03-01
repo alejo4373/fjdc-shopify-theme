@@ -4,6 +4,8 @@
 {%- style -%}
   .section-{{ section.id }} {
     flex-direction: column;
+    position: relative;
+    z-index: 1;
   }
 
   .section-{{ section.id }}-padding {
@@ -123,9 +125,22 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
+
+  .map-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: -1;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }} rich-text__wrapper section-{{ section.id }}-padding">
+  <div class="map-bg">
+    {% render 'textura-fondo-mapas.svg' %}
+  </div>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
@@ -210,8 +225,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     const mapContainer = document.querySelector('#ruta-el-hacha-svg');
     const panZoomInstance = panzoom(mapContainer, {
-      initialZoom: 0.87,
-      minZoom: 0.87,
+      minZoom: 1,
       maxZoom: 2,
       initialX: 622.5,
       initialY: 398,
