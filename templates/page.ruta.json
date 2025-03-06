@@ -161,7 +161,7 @@
           "settings": {
             "image_1": "shopify://shop_images/ruta-el-hacha-boton.svg",
             "alt_text_1": "Ruta el Hacha",
-            "page_1": "rutas",
+            "page_1": "ruta-el-hacha",
             "image_2": "shopify://shop_images/ruta-san-luis-boton.svg",
             "alt_text_2": "Ruta San Luis",
             "page_2": "ruta-san-luis",
@@ -193,7 +193,7 @@
       "custom_css": [],
       "settings": {
         "padding_top": 48,
-        "padding_bottom": 100,
+        "padding_bottom": 100
       }
     }
   },
