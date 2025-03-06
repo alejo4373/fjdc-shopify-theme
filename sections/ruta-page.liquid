@@ -211,10 +211,10 @@
   <div class="drawer-overlay" id="drawer-overlay">0</div>
 
   <div id="mapa" class="overflow-hidden" style="border: 1px solid #000">
-    {% case section.settings.mapa %}
-      {% when 'ruta-el-hacha' %}
-        {% render 'ruta-el-hacha' %}
-      {% when 'ruta-la-alacena' %}
+    {% case request.path %}
+      {% when '/pages/ruta-el-hacha' %}
+        {% render 'ruta-el-hacha.svg' %}
+      {% when '/pages/ruta-la-alacena' %}
         {% render 'ruta-la-alacena.svg' %}
       {% else %}
         <p>Mapa no disponible</p>
@@ -225,7 +225,9 @@
 <script src="https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" defer></script>
 {% javascript %}
   document.addEventListener('DOMContentLoaded', () => {
-    const mapContainer = document.querySelector('#ruta-el-hacha-svg');
+    const mapId = window.location.pathname.replace('/pages/', '');
+    console.log('af', mapId);
+    const mapContainer = document.getElementById(mapId);
     const panZoomInstance = panzoom(mapContainer, {
       minZoom: 1,
       maxZoom: 2,
@@ -240,6 +242,14 @@
     panZoomInstance.on('panend', () => (panInProgress = false));
 
     const fichasTecnicas = document.querySelectorAll('.ficha-tecnica');
+
+    // Add the .map-point class to the corresponding SVG element from the ficha tecnica
+    fichasTecnicas.forEach((fichaTecnica) => {
+      const matchingSvgElement = document.querySelector(`#${fichaTecnica.dataset.mapPointId}`);
+      console.log('af', matchingSvgElement);
+      matchingSvgElement?.classList.add('map-point');
+    });
+
     fichasTecnicas.forEach((fichaTecnica) => {
       ['click', 'touchend'].forEach((eventName) => {
         const mapPoint = document.querySelector(`#${fichaTecnica.dataset.mapPointId}`);
@@ -303,26 +313,6 @@
     {
       "type": "header",
       "content": "Mapa"
-    },
-    {
-      "type": "select",
-      "id": "mapa",
-      "label": "Mapa",
-      "default": "ruta-el-hacha",
-      "options": [
-        {
-          "label": "Ruta El Hacha",
-          "value": "ruta-el-hacha"
-        },
-        {
-          "label": "Ruta San Luis",
-          "value": "ruta-san-luis"
-        },
-        {
-          "label": "Ruta La Alacena",
-          "value": "ruta-la-alacena"
-        }
-      ]
     }
   ],
   "blocks": [
