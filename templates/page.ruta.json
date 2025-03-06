@@ -48,6 +48,15 @@
             "element_id": "cacique-candela"
           }
         },
+        "ficha_tecnica_Dw8fKd": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/Loro_Maicero_3.png",
+            "background_color": "#667b50",
+            "text": "<p><strong>Especie:</strong> Loro Maicero / Bronze-winged Parrot /<em> Pionus chalcopterus</em></p><p><strong>Estado de conservación: </strong>Preocupación Menor (LC) </p><p><strong>Distribución: Casi Endémica (CE)</strong></p><p><strong>Descripción: </strong>En los bosques húmedos, entre los 1400 y 2400 m de elevación, habita un loro discreto pero fascinante: el Loro Maicero. De tamaño mediano, su plumaje oscuro se ilumina con reflejos bronceados en el dorso y destellos azulados en las alas y la cabeza. Una mancha blanca en la barbilla y un sutil tinte rosado en el pecho lo distinguen entre el follaje. Durante el día, se desplaza en pequeños grupos ruidosos, volando entre las copas de los árboles en busca de frutas y semillas en las Rutas San Luis, La Alacena y El Hacha. Su vuelo es rápido y silencioso, interrumpido por vocalizaciones suaves y roncas. Prefiere anidar en cavidades de árboles, donde la hembra incuba tres o cuatro huevos hasta que los polluelos emergen, listos para conquistar el dosel del bosque. </p>",
+            "element_id": "lorito-maicero"
+          }
+        },
         "ficha_tecnica_iYb9mc": {
           "type": "ficha-tecnica",
           "settings": {
@@ -131,6 +140,7 @@
         "ficha_tecnica_BbUDcF",
         "ficha_tecnica_dFCnJd",
         "ficha_tecnica_A9GeEn",
+        "ficha_tecnica_Dw8fKd",
         "ficha_tecnica_iYb9mc",
         "ficha_tecnica_NRz9zP",
         "ficha_tecnica_RKTCtM",
