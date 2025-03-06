@@ -152,15 +152,6 @@
             "button_link": "shopify://pages/ruta-san-luis"
           }
         },
-        "button_Ta6fez": {
-          "type": "button",
-          "settings": {
-            "button_image": "shopify://shop_images/ruta-el-hacha-boton.svg",
-            "button_image_width": 200,
-            "button_label": "",
-            "button_link": "shopify://pages/ruta-el-hacha"
-          }
-        },
         "button_6wR9wF": {
           "type": "button",
           "settings": {
@@ -173,7 +164,6 @@
       },
       "block_order": [
         "button_rHEMDF",
-        "button_Ta6fez",
         "button_6wR9wF"
       ],
       "custom_css": [
