@@ -34,9 +34,11 @@ const resizeBg = () => {
 
   // Hide bg-texture on rutas pages because they have their own background
   if (
-    ["/pages/rutas", "/pages/ruta-la-alacena", "/pages/ruta-san-luis"].includes(
-      window.location.pathname,
-    )
+    [
+      "/pages/ruta-el-hacha",
+      "/pages/ruta-la-alacena",
+      "/pages/ruta-san-luis",
+    ].includes(window.location.pathname)
   ) {
     document.querySelector(".bg-texture").style.setProperty("display", "none");
   }
