@@ -39,6 +39,15 @@
             "element_id": "hormiguero-carcajada"
           }
         },
+        "ficha_tecnica_A9GeEn": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/Cacique_Candela__3.png",
+            "background_color": "#667b50",
+            "text": "<p><strong>Especie: </strong>Cacique Candela / Red-bellied Grackle / <em>Hypopyrrhus pyrohypogaster</em></p><p><strong>Estado de conservación: </strong>Vulnerable (VU)</p><p><strong>Distribución: Endémica (E)</strong></p><p><strong>Descripción:</strong> En las laderas andinas de Colombia, entre los 1000 y 2400 m de altitud, resplandece el Cacique Candela. Esta ave de plumaje negro azabache sorprende con un vientre y parte inferior de la cola de un rojo encendido, como si llevara el fuego en su interior. Sociable y bullicioso, forma bandadas que recorren el dosel y los bordes del bosque, emitiendo llamados melodiosos y variados, inconfundibles. Se alimenta principalmente de frutas, insectos y néctar, mostrando una predilección por los árboles en floración. Anida en colonias, tejiendo nidos colgantes en las ramas altas, donde la hembra deposita de dos a tres huevos gris verdoso con manchas marrón oscuro y lila. Durante la época de reproducción, las parejas, a menudo asistidas por otros miembros del grupo, construyen nidos en las ramas altas, donde crían a sus polluelos con dedicación.</p>",
+            "element_id": "cacique-candela"
+          }
+        },
         "ficha_tecnica_iYb9mc": {
           "type": "ficha-tecnica",
           "settings": {
@@ -121,6 +130,7 @@
         "ficha_tecnica_D8HaJF",
         "ficha_tecnica_BbUDcF",
         "ficha_tecnica_dFCnJd",
+        "ficha_tecnica_A9GeEn",
         "ficha_tecnica_iYb9mc",
         "ficha_tecnica_NRz9zP",
         "ficha_tecnica_RKTCtM",
