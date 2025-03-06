@@ -57,6 +57,42 @@
             "element_id": "lorito-maicero"
           }
         },
+        "ficha_tecnica_78XbA8": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/R._Flammigerus.png",
+            "background_color": "",
+            "text": "<p><strong>Especie: </strong>Toche Enjalmado /<em> </em>Flame-rumped Tanager /<em> Ramphocelus flammigerus</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Distribución: </strong>Residente</p><p><strong>Descripción:</strong> A lo largo de las tierras bajas y colinas del oeste de Colombia y noroeste de Ecuador, hasta los 1500 m de elevación, brilla el Toche Enjalmado o Tángara flamígera. Esta ave sociable deslumbra con su plumaje escarlata intenso en el dorso que contrasta con sus alas y cola negra aterciopelada. Los machos exhiben colores más vivos, mientras que las hembras presentan tonos más apagados de marrón y naranja. Se les observa en parejas o pequeños grupos, moviéndose con gracia entre la vegetación densa, alimentándose de frutas, insectos y néctar, suelen ser vistos alimentándose en matorrales y árboles frutales. Sus cantos melodiosos añaden una banda sonora encantadora a su entorno tropical.</p>",
+            "element_id": "toche-enjalmado"
+          }
+        },
+        "ficha_tecnica_RdBPRV": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/Gallito_De_Roca__3.png",
+            "background_color": "#667b50",
+            "text": "<p><strong>Especie: </strong>Gallito de roca / Andean Cock-of-the-rock / <em>Rupicola peruvianus</em></p><p><strong>Estado de conservación: </strong>Preocupación Menor (LC) </p><p><strong>Distribución: </strong>Residente</p><p><strong>Descripción: </strong>En Támesis vive un ave emblemática, vibrante en apariencia y comportamiento: el Gallito de las Rocas. Más grande y robusto que una mirla, habita el bosque nublado entre los 500 y 2400 m de elevación. Durante el amanecer y el atardecer, especialmente al recorrer la Ruta San Luis, es fácil observar a los machos transformando ramas en escenarios de baile, saltando y emitiendo chillidos agudos, similares a los de un cerdo, para deslumbrar a las hembras. Su plumaje, rojo carmesí o anaranjado, contrasta con sus alas negras, terciarias plateadas y una llamativa cresta redondeada. Las hembras, más discretas, exhiben tonos marrones y un ojo pálido que hipnotiza. Su dieta incluye frutas, insectos grandes, y pequeños vertebrados como lagartijas y ranas, que los adultos preparan con habilidad para sus crías. Anidan en paredes de acantilados o rocas grandes como las del Río Frío. </p>",
+            "element_id": "gallito-de-roca"
+          }
+        },
+        "ficha_tecnica_DH7NCQ": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/S.fusca.png",
+            "background_color": "",
+            "text": "<p><strong>Especie: </strong>Reinita Gorjinaranja / Blackburnian Warbler / <em>Setophaga fusca</em></p><p><strong>Estado de conservación: </strong>Preocupación Menor (LC) </p><p><strong>Distribución: </strong>Migratoria boreal</p><p><strong>Descripción: </strong>viaja desde los bosques de coníferas de Canadá en la migración boreal. Durante el invierno, se refugia en cafetales con sombra y bosques nublados Andinos. Con sólo 11 cm de longitud, se reconoce por su garganta de intenso color naranja, única entre las aves del género <em>Setophaga. </em>Esta pequeña especialista se mueve ágilmente entre las ramas de las copas de los árboles en busca de larvas e insectos. En Támesis, se le puede encontrar en alturas que varían entre los 900 y 2800 m, aprovechando árboles aislados en potreros y claros para alimentarse y unirse a bandadas mixtas de especies nativas que le ayudan a guiarse y a protegerse de los depredadores. La deforestación en su hábitat de invierno y las plagas que afectan los árboles en su zona de cría ponen en riesgo su supervivencia.</p>",
+            "element_id": "reinita"
+          }
+        },
+        "ficha_tecnica_y7GTbJ": {
+          "type": "ficha-tecnica",
+          "settings": {
+            "image": "shopify://shop_images/S.vitrolina.png",
+            "background_color": "",
+            "text": "<p><strong>Especie:</strong> Tángara Rastrojera / Scrub Tanager /<em> Stilpnia vitriolina</em></p><p><strong>Estado de conservación: </strong>Preocupación Menor (LC) </p><p><strong>Distribución: Casi Endémica (CE)</strong></p><p><strong>Descripción:</strong> Tángara común en los Andes colombianos y ecuatorianos, adaptándose a campos abiertos y áreas arbustivas. Prefiere valles secos, pero su rango se está expandiendo hacia zonas más húmedas tras la deforestación. Con 14 cm de longitud, destaca por su plumaje azul grisáceo y verde plateado, su copete de color óxido y una máscara negra que la hacen reconocible. En Támesis, se encuentra entre los 500 y 2500 m de altitud, en áreas cultivadas o arbustivas, pastizales crecidos, zonas agrícolas, matorrales, cercas arbustivas, a menudo cerca de asentamientos humanos. Se alimenta de frutas e insectos inspeccionando desde arbustos bajos hasta las copas de árboles altos. Aunque generalmente se observa en parejas solitarias, también se une a otras especies en árboles frutales. Actualmente no enfrenta amenazas significativas. </p>",
+            "element_id": "tangara-rastrojera"
+          }
+        },
         "ficha_tecnica_iYb9mc": {
           "type": "ficha-tecnica",
           "settings": {
@@ -141,6 +177,10 @@
         "ficha_tecnica_dFCnJd",
         "ficha_tecnica_A9GeEn",
         "ficha_tecnica_Dw8fKd",
+        "ficha_tecnica_78XbA8",
+        "ficha_tecnica_RdBPRV",
+        "ficha_tecnica_DH7NCQ",
+        "ficha_tecnica_y7GTbJ",
         "ficha_tecnica_iYb9mc",
         "ficha_tecnica_NRz9zP",
         "ficha_tecnica_RKTCtM",
