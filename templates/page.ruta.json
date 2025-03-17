@@ -16,7 +16,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/Torito_Cabecirojo_3.png",
-            "background_color": "#eee3c7",
+            "background_color": "#667b50",
             "text": "<p><strong>Especie: </strong>Torito Cabecirrojo /<em> </em>Red-headed Barbet /<em> Eubucco bourcierii</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Distribución: </strong>Residente</p><p><strong>Descripción:</strong> En los bosques húmedos de montaña, entre los 600 y 2000 m de elevación, se encuentra el Torito Cabecirrojo. Con una longitud de alrededor de 15 cm, los machos lucen un rojo intenso en cabeza y pecho que contrasta con su cuerpo verde esmeralda, mientras que las hembras presentan una coloración más discreta de tono gris azulado nacarado. Solitarios o en parejas, estos pequeños pájaros se desplazan silenciosamente por el sotobosque y el dosel bajo, buscando frutas e insectos. Excavan cavidades en troncos blandos o ramas para anidar, donde la hembra deposita de dos a tres huevos blancos. A menudo se les escucha antes de verlos, gracias a sus llamados distintivos, parecidos a un trino ronroneante, que resuena en la espesura.</p>",
             "element_id": "torito-cabecirojo"
           }
@@ -25,7 +25,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/Turpial_3.png",
-            "background_color": "#edc51b",
+            "background_color": "#667b50",
             "text": "<p><strong>Especie: </strong>Turpial Montañero /<em> </em>Yellow-backed Oriole /<em> Icterus chrysater</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Distribución: </strong>Residente</p><p><strong>Descripción:</strong> En las montañas, desde el sur de México hasta el norte de Colombia, entre los 1000 y 2700 m de elevación, resalta con un plumaje amarillo brillante y un dorso negro que se extiende hasta la cabeza y las alas, este vistoso e inconfundible pájaro: el Turpial Montañero. Suele encontrarse en parejas o pequeños grupos, moviéndose entre los árboles y arbustos en busca de insectos, frutas y néctar. Estas aves que forman parte de las oropéndolas, construye nidos colgantes en forma de bolsa, suspendidos en las ramas altas, donde empollan sus crías. Su canto melodioso y variado añade vida a los bosques montanos y cafetales de las Familias Jardineras del Cielo en Támesis.</p>",
             "element_id": "turpial"
           }
@@ -34,7 +34,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/hormiguero.jpg",
-            "background_color": "#eee3c7",
+            "background_color": "#667b50",
             "text": "<p><strong>Especie: </strong>Hormiguero Carcajada (Batará carcajada) /<em> </em>Bar-crested Antshrike / <em>Thamnophilus multistriatus</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Endemismo: Casi Endémica (CE)</strong></p><p><strong>Descripción:</strong> En las estribaciones andinas del norte de Colombia y el noroeste de Venezuela, entre los 500 y 2000 m de elevación, resuena la risa distintiva del  Hormiguero Carcajada. Esta ave de tamaño mediano exhibe un plumaje gris con finas estrías negras en todo el cuerpo, y una cresta prominente que levanta cuando está alerta. Se le encuentra en parejas, moviéndose con agilidad entre el sotobosque y matorrales, capturando insectos y arañas. Su llamado, una serie de notas ascendentes que culminan en una carcajada, es inconfundible y a menudo delata su presencia antes de ser visto. Su comportamiento esquivo y su preferencia por áreas densas hacen que observarlo sea un deleite para los pacientes observadores que visiten la Ruta Familias Jardineras del Cielo en Támesis.</p>",
             "element_id": "hormiguero-carcajada"
           }
@@ -61,7 +61,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/R._Flammigerus.png",
-            "background_color": "",
+            "background_color": "#667b50",
             "text": "<p><strong>Especie: </strong>Toche Enjalmado /<em> </em>Flame-rumped Tanager /<em> Ramphocelus flammigerus</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Distribución: </strong>Residente</p><p><strong>Descripción:</strong> A lo largo de las tierras bajas y colinas del oeste de Colombia y noroeste de Ecuador, hasta los 1500 m de elevación, brilla el Toche Enjalmado o Tángara flamígera. Esta ave sociable deslumbra con su plumaje escarlata intenso en el dorso que contrasta con sus alas y cola negra aterciopelada. Los machos exhiben colores más vivos, mientras que las hembras presentan tonos más apagados de marrón y naranja. Se les observa en parejas o pequeños grupos, moviéndose con gracia entre la vegetación densa, alimentándose de frutas, insectos y néctar, suelen ser vistos alimentándose en matorrales y árboles frutales. Sus cantos melodiosos añaden una banda sonora encantadora a su entorno tropical.</p>",
             "element_id": "toche-enjalmado"
           }
@@ -79,7 +79,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/S.fusca.png",
-            "background_color": "",
+            "background_color": "#667b50",
             "text": "<p><strong>Especie: </strong>Reinita Gorjinaranja / Blackburnian Warbler / <em>Setophaga fusca</em></p><p><strong>Estado de conservación: </strong>Preocupación Menor (LC) </p><p><strong>Distribución: </strong>Migratoria boreal</p><p><strong>Descripción: </strong>viaja desde los bosques de coníferas de Canadá en la migración boreal. Durante el invierno, se refugia en cafetales con sombra y bosques nublados Andinos. Con sólo 11 cm de longitud, se reconoce por su garganta de intenso color naranja, única entre las aves del género <em>Setophaga. </em>Esta pequeña especialista se mueve ágilmente entre las ramas de las copas de los árboles en busca de larvas e insectos. En Támesis, se le puede encontrar en alturas que varían entre los 900 y 2800 m, aprovechando árboles aislados en potreros y claros para alimentarse y unirse a bandadas mixtas de especies nativas que le ayudan a guiarse y a protegerse de los depredadores. La deforestación en su hábitat de invierno y las plagas que afectan los árboles en su zona de cría ponen en riesgo su supervivencia.</p>",
             "element_id": "reinita"
           }
@@ -88,7 +88,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/S.vitrolina.png",
-            "background_color": "",
+            "background_color": "#667b50",
             "text": "<p><strong>Especie:</strong> Tángara Rastrojera / Scrub Tanager /<em> Stilpnia vitriolina</em></p><p><strong>Estado de conservación: </strong>Preocupación Menor (LC) </p><p><strong>Distribución: Casi Endémica (CE)</strong></p><p><strong>Descripción:</strong> Tángara común en los Andes colombianos y ecuatorianos, adaptándose a campos abiertos y áreas arbustivas. Prefiere valles secos, pero su rango se está expandiendo hacia zonas más húmedas tras la deforestación. Con 14 cm de longitud, destaca por su plumaje azul grisáceo y verde plateado, su copete de color óxido y una máscara negra que la hacen reconocible. En Támesis, se encuentra entre los 500 y 2500 m de altitud, en áreas cultivadas o arbustivas, pastizales crecidos, zonas agrícolas, matorrales, cercas arbustivas, a menudo cerca de asentamientos humanos. Se alimenta de frutas e insectos inspeccionando desde arbustos bajos hasta las copas de árboles altos. Aunque generalmente se observa en parejas solitarias, también se une a otras especies en árboles frutales. Actualmente no enfrenta amenazas significativas. </p>",
             "element_id": "tangara-rastrojera"
           }
@@ -97,7 +97,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/casa-de-la-cultura.jpg",
-            "background_color": "#cf5342",
+            "background_color": "#667b50",
             "text": "<p><strong>Casa de la cultura Hipolito J. Cardenas</strong></p><p>A solo dos cuadras del parque principal se alza la Casa de la Cultura \"Hipólito J. Cárdenas\", un ícono patrimonial que enorgullece a los habitantes de Támesis. Fundada en 1983 y diseñada por el arquitecto Agustín Goovaerts, conocido por el emblemático Palacio de la Cultura de Medellín, esta joya colonial invita a los visitantes a sumergirse en su historia. En su interior, alberga una biblioteca, un museo, un auditorio, un café y salas de exposición que promueven el arte y la cultura local. Su arquitectura y atmósfera brindan una experiencia enriquecedora, ideal para quienes buscan conectar con el espíritu cultural de Támesis.</p>",
             "element_id": "casa-de-la-cultura"
           }
@@ -106,7 +106,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/Museo-Cartama-de-Tamesis-reabrio-sus-puertas_copy.png",
-            "background_color": "#89bea8",
+            "background_color": "#667b50",
             "text": "<p><strong>Museo arqueológico Cartama</strong> </p><p>Ubicado en la Casa de la Cultura \"Hipólito J. Cárdenas\" en Támesis, el Museo Arqueológico Cartama ofrece una experiencia única que transporta a los visitantes al pasado del Suroeste antioqueño. Con más de 82,000 piezas arqueológicas que relatan la vida de pueblos ancestrales, el museo alberga verdaderos tesoros, como una aguja de hueso de venado y un rodillo de estampado, testigos de las primeras técnicas de la región y halladas durante el proyecto Conexión Pacífico 2. Recientemente renovado, el museo invita a locales y turistas a explorar la rica y milenaria historia de este fascinante territorio.</p>",
             "element_id": "museo-cartama"
           }
@@ -115,7 +115,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/PXL_20240623_131835909.jpg",
-            "background_color": "#1db092",
+            "background_color": "#667b50",
             "text": "<p><strong>Puente Colgante </strong></p><p>Este icónico puente colgante sobre el Río Frío conecta las veredas San Luis y El Hacha, formando parte de la cautivadora \"Ruta de las Flores\". Perfecto para los amantes de la naturaleza y las caminatas, el puente ofrece una experiencia emocionante al cruzar sobre las aguas del río mientras disfrutas del paisaje montañoso. Es una parada imprescindible para quienes buscan aventura y belleza en un solo lugar.</p>",
             "element_id": "puente-colgante"
           }
@@ -124,7 +124,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/omce.jpg",
-            "background_color": "#2698d8",
+            "background_color": "#667b50",
             "text": "<p><strong>Café con Historia </strong></p><p>Ubicado en la vereda San Luis, Café con Historia es mucho más que un lugar para disfrutar un buen café: es una experiencia que conecta al visitante con el alma de la cultura cafetera. Rodeado de casas campesinas y flores, emprendedoras locales sirven un café cuidadosamente seleccionado, acompañado de dulces tradicionales. Desde la terraza, se pueden contemplar las vistas al Valle del Cartama y la llegada de turpiales y azulejos al cafetal. Es el lugar ideal para saborear un café que evoca progreso, tradición y comunidad, mientras escuchas las historias de 50 familias que dan vida a este proyecto.</p>",
             "element_id": "omce"
           }
@@ -133,7 +133,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/frutos.jpg",
-            "background_color": "#89bea8",
+            "background_color": "#667b50",
             "text": "<p><strong>Frutos: Mercado Campesino</strong></p><p>A solo dos cuadras del parque principal, Frutos: Mercado Campesino se erige como el corazón de la economía local en Támesis, donde “tamesino compra a tamesino”. Este mercado colaborativo, gestionado por la Organización Multisectorial Campesinos Emprendedores (OMCE), reúne más de 170 productos frescos y artesanales de la región, desde frutas y hortalizas hasta chocolates, cafés especiales y artesanías únicas. Este espacio invita a los visitantes a llevarse un pedacito de la creatividad y el trabajo de los habitantes de Támesis, celebrando el talento y el compromiso con la tradición local.</p>",
             "element_id": "frutos"
           }
@@ -142,7 +142,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/jardin-botanico.jpg",
-            "background_color": "#2868a7",
+            "background_color": "#667b50",
             "text": "<p><strong>Jardín Botánico </strong></p><p>A solo minutos del casco urbano de Támesis, el Jardín Botánico es un tesoro de biodiversidad que enamora con su tranquilidad y paisajes. Ideal para amantes de la naturaleza, este espacio está dedicado a la conservación de flora nativa y educación ambiental, ofreciendo senderos botánicos donde destacan especies medicinales y ornamentales. Desde su entrada, puedes apreciar el petroglifo más cercano al pueblo, mientras recorres el Sendero Patrimonial hacia el Cristo Rey y la cascada La Peinada. Un paraíso para la observación de aves y un sitio perfecto para conectarse con la riqueza natural del Suroeste antioqueño.</p>",
             "element_id": "jardin-botanico"
           }
@@ -151,7 +151,7 @@
           "type": "ficha-tecnica",
           "settings": {
             "image": "shopify://shop_images/parque-educativo.jpg",
-            "background_color": "#4c7aba",
+            "background_color": "#667b50",
             "text": "<p><strong>Parque Educativo “Cartama, un encuentro de saberes”</strong></p><p>El Parque Educativo \"Cartama, Un encuentro de saberes\" es un innovador espacio público en Támesis que simboliza el compromiso con la educación como motor de transformación social. Aquí, los visitantes pueden disfrutar de programas educativos variados, que van desde talleres de arte hasta clases de tecnología, para todas las edades. Además, el parque alberga la tienda “Café y Saber”, atendida por baristas adolescentes que enseñan sobre la preparación de café especial, desde la molienda hasta la extracción. Este lugar es ideal para aprender, conectarse y saborear un buen café mientras se promueve el conocimiento y la cultura local.</p>",
             "element_id": "parque-educativo"
           }
