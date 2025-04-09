@@ -381,7 +381,7 @@
           "type": "boton",
           "settings": {
             "button_label": "Rutas",
-            "button_link": "shopify://pages/rutas"
+            "button_link": "shopify://pages/ruta-san-luis"
           }
         },
         "boton_BqWMzJ": {
