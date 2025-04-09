@@ -1,6 +1,7 @@
 let timeout = undefined;
 
 const resizeBg = () => {
+  const isMobile = window.innerWidth <= 425;
   const firstTwoSectionsHeight = Array.from(
     document.querySelectorAll("section"),
   )
@@ -28,9 +29,13 @@ const resizeBg = () => {
 
   // Set the height of the bg-texture to the height of the body
   // so that the texture covers the whole page background
-  document
-    .querySelector(".bg-texture")
-    .style.setProperty("height", `${bodyHeight}px`);
+  if (isMobile) {
+    document.querySelector(".bg-texture").style.setProperty("height", `100%`);
+  } else {
+    document
+      .querySelector(".bg-texture")
+      .style.setProperty("height", `${bodyHeight}px`);
+  }
 
   // Hide bg-texture on rutas pages because they have their own background
   if (
