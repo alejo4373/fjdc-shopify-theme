@@ -250,20 +250,74 @@
     "slideshow_C9UTjj": {
       "type": "slideshow",
       "blocks": {
-        "slide_eyr4Rx": {
+        "slide_NVJtAE": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1724350426650_1.jpg",
+            "image": "shopify://shop_images/PXL_20250316_173802740.PORTRAIT.jpg",
             "heading": "",
-            "heading_size": "h1",
-            "subheading": "Talleres de co-creación para el diseño de la Ruta Familias Jardineras del Cielo a cargo de Biophilia.",
+            "heading_size": "h2",
+            "subheading": "Un proyecto comunitario",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "bottom-left",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
+            "color_scheme": "scheme-a69a5185-abfe-40d4-af50-1ec79be4517c",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_J3raWt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20240621_164458940.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Casa tradicional campesina",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 20,
+            "color_scheme": "scheme-a69a5185-abfe-40d4-af50-1ec79be4517c",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Vfzhff": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20250316_171019167.PORTRAIT.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Entre amigos",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-a69a5185-abfe-40d4-af50-1ec79be4517c",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_cAbxFz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20240629_145653854.PORTRAIT.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Avistamiento de aves en comunidad",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 20,
             "color_scheme": "scheme-a69a5185-abfe-40d4-af50-1ec79be4517c",
             "text_alignment_mobile": "center"
           }
@@ -288,7 +342,10 @@
         }
       },
       "block_order": [
-        "slide_eyr4Rx",
+        "slide_NVJtAE",
+        "slide_J3raWt",
+        "slide_Vfzhff",
+        "slide_cAbxFz",
         "slide_HgP3EB"
       ],
       "custom_css": [],
