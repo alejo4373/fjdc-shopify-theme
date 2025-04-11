@@ -33,10 +33,10 @@
         "ficha_tecnica_dFCnJd": {
           "type": "ficha-tecnica",
           "settings": {
-            "image": "shopify://shop_images/hormiguero.jpg",
+            "image": "shopify://shop_images/M.aequatorialis.png",
             "background_color": "#667b50",
-            "text": "<p><strong>Especie: </strong>Hormiguero Carcajada (Batará carcajada) /<em> </em>Bar-crested Antshrike / <em>Thamnophilus multistriatus</em></p><p><strong>Estado de conservación: </strong>Preocupación menor (LC)</p><p><strong>Endemismo: Casi Endémica (CE)</strong></p><p><strong>Descripción:</strong> En las estribaciones andinas del norte de Colombia y el noroeste de Venezuela, entre los 500 y 2000 m de elevación, resuena la risa distintiva del  Hormiguero Carcajada. Esta ave de tamaño mediano exhibe un plumaje gris con finas estrías negras en todo el cuerpo, y una cresta prominente que levanta cuando está alerta. Se le encuentra en parejas, moviéndose con agilidad entre el sotobosque y matorrales, capturando insectos y arañas. Su llamado, una serie de notas ascendentes que culminan en una carcajada, es inconfundible y a menudo delata su presencia antes de ser visto. Su comportamiento esquivo y su preferencia por áreas densas hacen que observarlo sea un deleite para los pacientes observadores que visiten la Ruta Familias Jardineras del Cielo en Támesis.</p>",
-            "element_id": "hormiguero-carcajada"
+            "text": "<p><strong>Especie: </strong>Barranquero / Andean Motmot / <em>Momotus aequatorialis</em></p><p><strong>Estado de conservación:</strong> Preocupación Menor (LC) </p><p><strong>Distribución: </strong>Residente</p><p><strong>Descripción:</strong> En los bosques húmedos de montaña de los Andes, desde Colombia hasta Bolivia, entre los 900 y 3000 metros de altitud, se desliza silenciosamente el Momoto Andino (Momotus aequatorialis). Con un plumaje verde vibrante, una corona azul, su distintiva cola en forma de raqueta y una máscara negra que le da un aire enigmático, se le observa solitario o en parejas, posado en ramas bajas, desde donde pacientemente caza insectos y pequeños vertebrados. Sus llamados profundos y resonantes añaden un toque místico a los bosques andinos. Cuando se le molesta, mece bruscamente su cola de un lado a otro.</p>",
+            "element_id": "barranquero"
           }
         },
         "ficha_tecnica_A9GeEn": {
