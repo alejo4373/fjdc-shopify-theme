@@ -1475,11 +1475,6 @@
         "label": "Background image",
       },
       {
-        "type": "image_picker",
-        "id": "background_image_2",
-        "label": "2nd Background image",
-      },
-      {
         "type": "color",
         "id": "background_color",
         "label": "Background color",
